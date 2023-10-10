@@ -1,5 +1,7 @@
 import './globals.css'
+import common from './styles/common.module.css'
 import type { Metadata } from 'next'
+import NavBarAdmin from '@/components/Admin/NavBarAdmin'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ua">
-      <body>{children}</body>
+      <body className={inter.className}>
+        <div className={common.containerMy}>
+          <NavBarAdmin />
+          <div className="mt-8">{children}</div>
+        </div>
+      </body>
     </html>
   )
 }

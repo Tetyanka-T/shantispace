@@ -4,7 +4,7 @@ import Article from "@/interface/interface";
 const getArticles = async () => {
     try {
        const res = await fetch("http://localhost:3000/api/articles", {
-            cache: "force-cache"
+        cache: "no-store",
         })
 
         if(!res.ok) {

@@ -2,17 +2,6 @@ import { NextResponse } from "next/server";
 import Article from "../../../models/article";
 import connectMongoDb from "../../../libs/mongodb";
 
-// export const GET = async (request) => {
-//   try {
-//     const id = request.nextUrl.searchParams.get("id");
-//     await connectMongoDb();
-//     const result = await Article.findById(id);
-//     return NextResponse.json({ result });
-//   } catch (error) {
-//     return NextResponse("Not found posts" + error, { status: 500 });
-//   }
-// };
-
 export const GET = async () => {
   try {
     await connectMongoDb();

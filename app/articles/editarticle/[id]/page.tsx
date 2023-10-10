@@ -1,11 +1,11 @@
-import ArticlePage from "@/components/ArticlePage";
-
+import EditArticle from "@/components/Admin/EditArticle";
 
 type Params = {
 	params: {
 		id: string
 	}
 }
+
 const getArticleById = async (id: string) => {
     try {
       const res = await fetch(`http://localhost:3000/api/articles/${id}`, {
@@ -22,12 +22,15 @@ const getArticleById = async (id: string) => {
     }
   };
   
-  const Article = async ({ params }: Params) => {
-    const {article} = await getArticleById(params.id);
-  
-    return <>
-    <ArticlePage article={article}/>
-    </>
-  }
 
-  export default Article
+const EditArticlePage = async ({ params }: Params) => {
+    const {article} = await getArticleById(params.id);
+  return (
+    <>
+    <EditArticle article={article}/>
+    </>
+  )
+}
+
+export default EditArticlePage
+
