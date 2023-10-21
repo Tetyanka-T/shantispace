@@ -1,13 +1,24 @@
-import BlogMenuAdmin from "@/components/Admin/BlogMenuAdmin"
+"use client"
+
 import ArticlesList from "@/components/ArticlesList"
+import Navigation from "@/components/Navigation"
+import ProfileAdminBlog from "@/components/ProfileAdminBlog"
+
 
 
 const BlogAdminPage = () => {
+
   return (
     <>
-    <BlogMenuAdmin/>
-    <ArticlesList/>
-    </>
+    
+        <Navigation section="Блог"/>
+        <ProfileAdminBlog/>
+  
+        <ArticlesList/>
+      </>
+
+
+
   )
 }
 

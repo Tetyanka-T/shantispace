@@ -1,37 +1,64 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
-import { HiUser } from "react-icons/hi"
+import {BiDownArrowAlt} from "react-icons/bi"
 
 
-const NavBar = () => {
+
+
+const NavBarAdminMobile = ({ onClick }: {onClick: Function}) => {
+    const [adminMenu, setAdminMenu] = useState(false)
+
+    const onShowMenu = () => {
+        setAdminMenu(true);
+        toggleMenu();
+      };
+      const toggleMenu = () => {
+        adminMenu ? setAdminMenu(false) : setAdminMenu(true);
+      };
   return (
-    <nav className="">
-        <ul className="flex flex-row justify-center">
-            <li className="mr-10">
-                <Link href="/">Logo</Link>
+    <nav className="absolute bg-slate-100 w-full top-0 left-0 text-lg font-normal tracking-wide leading-6">
+      
+        <ul className="px-8 py-20">
+            <li className="mb-2 border-b-2 border-amber-600 py-3">
+                <div className="flex items-center">
+                <Link href="/blog-admin" onClick={() => onClick()}>Блог</Link>
+                <button onClick={() => onShowMenu()} className="ml-auto"> 
+                    <BiDownArrowAlt size={24} className="fill-amber-800"/>
+                </button>
+                </div>
+                
+                {adminMenu && (
+                    <ul className="px-3">
+                        <li onClick={() => onClick()} className="my-2">
+                            <Link href="/articles/editarticle">Редагувати статтю</Link>
+                        </li>
+                        <li onClick={() => onClick()} className="my-2">
+                            <Link href="/articles/addarticle">Додати статтю</Link>
+                        </li>
+                        <li onClick={() => onClick()} className="my-2">
+                            <Link href="/chat">Чат</Link>
+                        </li>
+                        <li onClick={() => onClick()} className="my-2">
+                            <Link href="/questions">Питання</Link>
+                        </li>
+                    </ul>
+                )}
             </li>
-            <li className="mr-5">
-                <Link href="/blog-admin">Блог</Link>
-            </li>
-            <li className="mr-5">
+            <li className="mb-2 border-b-2 border-amber-600 py-3" onClick={() => onClick()}>
                 <Link href="/yoga">Йога</Link>
             </li>
-            <li className="mr-5">
+            <li className="mb-2 border-b-2 border-amber-600 py-3" onClick={() => onClick()}>
                 <Link href="/LFK">ЛФК</Link>
             </li>
-            <li>
+            <li className="border-b-2 border-amber-600 py-3" onClick={() => onClick()}>
                 <Link href="/physical-therapy">Фізична терапія</Link>
             </li>
-            <li className="ml-auto color-amber-800">
-                <button >
-                    <HiUser size={24} className="fill-amber-800"/>
-                </button>
-            
-            </li>
-
-
         </ul>
+        
     </nav>
   )
 }
 
-export default NavBar
+export default NavBarAdminMobile

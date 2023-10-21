@@ -8,6 +8,9 @@ const AddArticle = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [thema, setThema] = useState("");
+  const [imgSrc, setImgSrc] = useState("");
+  
+
 
   const router = useRouter();
 
@@ -39,7 +42,7 @@ const AddArticle = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 justify-center">
         <input
         onChange={(e) => setThema(e.target.value)}
         value={thema}
@@ -62,10 +65,16 @@ const AddArticle = () => {
         type="text"
         placeholder="Текст статті"
       />
-
+   <input
+        onChange={(e) => setImgSrc(e.target.value)}
+        value={imgSrc}
+        className="border border-slate-500 px-8 py-2"
+        type="text"
+        placeholder="Посилання на фото для данної статті"
+      />
       <button
         type="submit"
-        className="bg-green-600 font-bold text-white py-3 px-6 w-fit"
+        className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
       >
         Добавити статтю
       </button>

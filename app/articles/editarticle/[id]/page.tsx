@@ -1,4 +1,5 @@
 import EditArticle from "@/components/Admin/EditArticle";
+import Navigation from "@/components/Navigation";
 
 type Params = {
 	params: {
@@ -27,6 +28,7 @@ const EditArticlePage = async ({ params }: Params) => {
     const {article} = await getArticleById(params.id);
   return (
     <>
+    <Navigation section="Редагування статті"/>
     <EditArticle article={article}/>
     </>
   )

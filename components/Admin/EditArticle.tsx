@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import Article from "@/interface/interface"
+import Article from "@/app/interface/interface"
 
 type State = {
   thema: string;
@@ -15,6 +15,7 @@ const EditArticle = ({article} : ({article: Article})) => {
     const [title, setTitle] = useState(article.title);
     const [description, setDescription] = useState(article.description);
     const [thema, setThema] = useState(article.thema);
+    const [imgSrc, setImgSrc] = useState(article.imgSrc);
     const router = useRouter();
   
 
@@ -50,7 +51,7 @@ const EditArticle = ({article} : ({article: Article})) => {
           name="thema"
           className="border border-slate-500 px-8 py-2"
           type="text"
-          placeholder="Topic Description"
+          placeholder="Дордайте тему для статті"
         />
       <input
         id="title"
@@ -59,7 +60,7 @@ const EditArticle = ({article} : ({article: Article})) => {
         name="title"
         className="border border-slate-500 px-8 py-2"
         type="text"
-        placeholder="Topic Title"
+        placeholder="Додайте заголовок для статті"
       />
 
       <input
@@ -69,12 +70,21 @@ const EditArticle = ({article} : ({article: Article})) => {
         name="description"
         className="border border-slate-500 px-8 py-2"
         type="text"
-        placeholder="Topic Description"
+        placeholder="Додайте текс для статті"
+      />
+       <input
+        id="imgSrc"
+        onChange={(e) => setImgSrc(e.target.value)}
+        value={imgSrc}
+        name="imgSrc"
+        className="border border-slate-500 px-8 py-2"
+        type="text"
+        placeholder="Змініть фото для статті"
       />
 
   
-        <button className="bg-green-600 font-bold text-white py-3 px-6 w-fit">
-          Update Topic
+        <button className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mx-auto mt-3">
+          Редагувати
         </button>
       </form>
     );

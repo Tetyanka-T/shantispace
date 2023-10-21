@@ -1,9 +1,10 @@
 import Link from "next/link";
-import Article from "@/interface/interface";
+import Article from "@/app/interface/interface";
 // import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
 import DeleteButton from "@/components/DeleteButton";
-import BlogMenuAdmin from "@/components/Admin/BlogMenuAdmin";
+import Navigation from "@/components/Navigation";
+
 
 const getArticles = async () => {
     try {
@@ -28,8 +29,7 @@ const ArticlesListWithEdit = async () => {
 
   return (
     <>
-    <BlogMenuAdmin/>
-    <h1>Articles Page</h1>
+         <Navigation section="Редагувати статтю"/>
    
          {articles.map((article: Article) => (
             <li key={article._id} className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start">

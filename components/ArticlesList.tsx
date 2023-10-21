@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Article from "@/interface/interface";
+import Article from "@/app/interface/interface";
 
 const getArticles = async () => {
     try {

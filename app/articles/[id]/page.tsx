@@ -1,4 +1,5 @@
-import ArticlePage from "@/components/ArticlePage";
+import ArticlePage from "@/components/ArticlePageDescription";
+import Navigation from "@/components/Navigation";
 
 
 type Params = {
@@ -26,6 +27,7 @@ const getArticleById = async (id: string) => {
     const {article} = await getArticleById(params.id);
   
     return <>
+    <Navigation section={article.title}/>
     <ArticlePage article={article}/>
     </>
   }

@@ -1,13 +1,14 @@
 import AddArticle from "@/components/Admin/AddArticle";
-import BlogMenuAdmin from "@/components/Admin/BlogMenuAdmin";
+import Navigation from "@/components/Navigation";
+
 
 
 export default function AddArticlesPage() {
     return (
-      <main>
-       <BlogMenuAdmin/>
-       <AddArticle/>
-      </main>
+      <div>
+        <Navigation section="Додати нову статтю"/>
+        <AddArticle/>
+      </div>
     )
   }
   
