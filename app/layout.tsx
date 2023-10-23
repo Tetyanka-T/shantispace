@@ -2,7 +2,7 @@ import './globals.css'
 import common from './styles/common.module.css'
 import type { Metadata } from 'next'
 import {AuthProvider} from "../Providers"
-import NavBarAdmin from '@/components/Admin/NavBarAdmin'
+import NavBarAdmin from '@/components/Admin/NavBarAdminMobile'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/NavBar/NavBar'
 

@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react"
 import { redirect } from "next/navigation"
 import ArticlesList from "@/components/ArticlesList"
-import BlogMenuUser from "@/components/User/BlogMenuUser"
+
 
 
 const BlogUserPage = () => {
@@ -16,7 +16,7 @@ const BlogUserPage = () => {
   // })
   return (
     <div>
-        <BlogMenuUser/>
+  
         <ArticlesList/>
     </div>
   )
