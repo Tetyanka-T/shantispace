@@ -24,9 +24,9 @@ const NavBar = () => {
 
     // const isAuth = status === "authenticated";
     
-const isAuth = true;
+const isAuth = false;
 
-const isUser = true;
+const isUser = false;
 const isAdmin = false;
 const [showMenu, setShowMenu] = useState(false)
 
@@ -38,7 +38,7 @@ const onShowMenu = () => {
     showMenu ? setShowMenu(false) : setShowMenu(true);
   };
   return (
-    <header className="p-2 flex justify-center items-center border-b-2 relative">
+    <header className="p-3 flex justify-center items-center border-b-2 relative lg:px-8 xl:px-10">
         <button onClick={() => onShowMenu()} className="mr-4 lg:hidden">
             <RiMenu3Fill size={28} />
         </button>

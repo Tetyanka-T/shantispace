@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <AuthProvider> */}
         <NavBar/>
-          <div className='container mx-auto px-2'>
+          <div className='mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10'>
       
             {children}
           </div>

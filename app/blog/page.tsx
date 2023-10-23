@@ -1,8 +1,13 @@
+import Navigation from "@/components/Navigation"
+import ProfileAdminBlog from "@/components/ProfileAdminBlog"
 
 
 const BlogPage = () => {
   return (
-    <div>BlogPage</div>
+    <div>
+      <Navigation section="Блог"/>
+      <ProfileAdminBlog/>
+    </div>
   )
 }
 
