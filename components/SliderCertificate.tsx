@@ -14,7 +14,7 @@ import { Scrollbar } from 'swiper/modules';
 
 const SliderCertificate = () => {
   return (
-    <div className="mt-4 md:mt-6">
+    <div className="my-4 md:my-6 mx-auto">
        <Swiper
         scrollbar={{
           hide: true,

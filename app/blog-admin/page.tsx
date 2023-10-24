@@ -1,4 +1,4 @@
-"use client"
+
 
 import ArticlesList from "@/components/ArticlesList"
 import Navigation from "@/components/Navigation"
@@ -11,10 +11,10 @@ const BlogAdminPage = () => {
   return (
     <>
     
-        <Navigation section="Блог"/>
-        <ProfileAdminBlog/>
+      <Navigation section="Блог"/>
+      <ProfileAdminBlog/>
   
-        <ArticlesList/>
+      <ArticlesList/>
       </>
 
 

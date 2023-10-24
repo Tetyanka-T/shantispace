@@ -5,6 +5,7 @@ import {AuthProvider} from "../Providers"
 import NavBarAdmin from '@/components/Admin/NavBarAdminMobile'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/NavBar/NavBar'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,10 +25,11 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <AuthProvider> */}
         <NavBar/>
-          <div className='mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10'>
+          <div className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10'>
       
             {children}
           </div>
+          <Footer/>
         {/* </AuthProvider> */}
       </body>
     </html>

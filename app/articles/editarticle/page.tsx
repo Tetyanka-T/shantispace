@@ -4,6 +4,7 @@ import Article from "@/app/interface/interface";
 import { HiPencilAlt } from "react-icons/hi";
 import DeleteButton from "@/components/DeleteButton";
 import Navigation from "@/components/Navigation";
+import FilterArticles from "@/components/FilterArticles";
 
 
 const getArticles = async () => {
@@ -29,29 +30,25 @@ const ArticlesListWithEdit = async () => {
 
   return (
     <>
-         <Navigation section="Редагувати статтю"/>
-   
-         {articles.map((article: Article) => (
-            <li key={article._id} className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start">
-             <div>
-             <h2>{article.thema}</h2>
-                <p>{article.title}</p>
-                <p>{article.description}</p>
-             </div>
-              
-             
-                <div className="flex gap-2">
-            <DeleteButton id={article._id} />
-            <Link href={`/articles/editarticle/${article._id}`}>
-              <HiPencilAlt size={24} />
-            </Link>
-          </div>
+      <Navigation section="Редагувати статтю"/>
+      <FilterArticles articles={articles}/>
+         <ul className="mx-auto mt-3 text-base font-normal sm:grid grid-cols-2 gap-3 w-280px lg:grid-cols-3 xl:grid-cols-4">
+            {articles.map((article: Article) => (
+              <li key={article._id} className="p-4 border border-slate-300 my-3 h-100">
+                  <div className="flex items-center justify-end ">
+                    <DeleteButton id={article._id} />
+                    <Link href={`/articles/editarticle/${article._id}`}>
+                      <HiPencilAlt size={24} className="fill-amber-900 ml-3"/>
+                    </Link>
+                  </div>
+                
+                    <h2 className="my-2">{article.thema}</h2>
+                    <p className="text-center mb-2">{article.title}</p>
+                    <p className="truncate">{article.description}</p>
                
-
-            </li>
-        ))}
-        
-
+              </li>
+            ))}
+          </ul>
     </>
   
   )

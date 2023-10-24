@@ -20,8 +20,7 @@ const BlogUserPage = () => {
     <div>
       <Navigation section="Блог"/>
       <ProfileAdminBlog/>
-  
-        <ArticlesList/>
+      <ArticlesList/>
     </div>
   )
 }

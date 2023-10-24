@@ -28,8 +28,8 @@ const EditArticlePage = async ({ params }: Params) => {
     const {article} = await getArticleById(params.id);
   return (
     <>
-    <Navigation section="Редагування статті"/>
-    <EditArticle article={article}/>
+     <Navigation section="Редагування статті"/>
+     <EditArticle article={article}/>
     </>
   )
 }

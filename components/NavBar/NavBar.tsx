@@ -24,10 +24,10 @@ const NavBar = () => {
 
     // const isAuth = status === "authenticated";
     
-const isAuth = false;
+const isAuth = true;
 
 const isUser = false;
-const isAdmin = false;
+const isAdmin = true;
 const [showMenu, setShowMenu] = useState(false)
 
 const onShowMenu = () => {
@@ -53,7 +53,7 @@ const onShowMenu = () => {
             {showMenu &&  (
                 <div className="block">
                     <button onClick={() => onShowMenu()} className="absolute top-3 right-2 z-10">
-                        <AiOutlineClose size={24} className="fill-amber-800"/>
+                        <AiOutlineClose size={24} className="fill-amber-900"/>
                     </button>
                    {isAdmin && <NavBarAdminMobile onClick={onShowMenu}/>}
                    {isUser && <NavBarUserMobile onClick={onShowMenu}/>}
@@ -91,12 +91,12 @@ const onShowMenu = () => {
                }
            
     
-                <li className="ml-auto">
+                <div className="ml-auto">
                     {!isAuth && 
                     
                     <button>
                         <Link href="/login">
-                            <GrYoga size={24} className="fill-amber-800"/>
+                            <GrYoga size={24} className="fill-amber-900"/>
                             {/* <HiUser size={24} className="fill-amber-800"/> */}
                         </Link>
                     </button> 
@@ -109,11 +109,11 @@ const onShowMenu = () => {
                         <button 
                         // onClick={() => signOut()}
                         >
-                            <TbYoga size={24}/>
+                            <TbYoga size={24} className="fill-amber-900"/>
                             <span className="text-xs">Вихід</span>
                         </button>
                     </div>} 
-                </li>
+                </div>
          
     </header>
 )

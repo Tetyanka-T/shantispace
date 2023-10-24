@@ -28,7 +28,7 @@ const AddArticle = () => {
         headers: {
           "Content-type": "application/json",
         },
-        body: JSON.stringify({ title, description, thema }),
+        body: JSON.stringify({ title, description, thema, imgSrc }),
       });
 
       if (res.ok) {
@@ -58,11 +58,11 @@ const AddArticle = () => {
         placeholder="Заголовок статті"
       />
 
-      <input
+      <textarea
         onChange={(e) => setDescription(e.target.value)}
         value={description}
         className="border border-slate-500 px-8 py-2"
-        type="text"
+      
         placeholder="Текст статті"
       />
    <input

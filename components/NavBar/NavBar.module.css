@@ -1,6 +1,7 @@
 .logo {
     overflow: hidden;
     width: 100px;
+    margin-right: 30px;
 }
 .logo_img {
     width: 100%;

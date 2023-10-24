@@ -11,12 +11,12 @@ const Navigation = ({section}: {section: string}) => {
     <ul className="flex items-center p-4">
        <li className="mr-2">
         <Link href="/">
-          <AiOutlineHome size={20} className="fill-amber-800 "/> 
+          <AiOutlineHome size={20} className="fill-amber-900 "/> 
         </Link>
           
        </li>
         <li className="mr-2">
-            <GrFormNext size={16} className="fill-amber-800 "/>
+            <GrFormNext size={16} className="fill-amber-900 "/>
         </li>
         <li>{section}</li>
     </ul>
