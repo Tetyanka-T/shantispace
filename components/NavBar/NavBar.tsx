@@ -52,7 +52,7 @@ const onShowMenu = () => {
                
             {showMenu &&  (
                 <div className="block">
-                    <button onClick={() => onShowMenu()} className="absolute top-3 right-2 z-10">
+                    <button onClick={() => onShowMenu()} className="absolute top-3 right-2 z-20">
                         <AiOutlineClose size={24} className="fill-amber-900"/>
                     </button>
                    {isAdmin && <NavBarAdminMobile onClick={onShowMenu}/>}

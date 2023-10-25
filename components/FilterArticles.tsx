@@ -9,6 +9,12 @@ const FilterArticles = ({articles, onClickFilter, onShowAll} : ({articles: Artic
    
   const [showFilter, setShowFilter] = useState(false);
 
+ 
+ 
+  const allTopics = articles.map(art => art.thema);
+  const uniqueTopics = Array.from(new Set(allTopics))
+
+
   const onShowMenu = () => {
     setShowFilter(true);
     toggleMenu();
@@ -18,6 +24,7 @@ const FilterArticles = ({articles, onClickFilter, onShowAll} : ({articles: Artic
   };
 
  const handleChangeThema = (value: string) => {
+
   onClickFilter(value)
   setShowFilter(false)
  }
@@ -25,6 +32,7 @@ const FilterArticles = ({articles, onClickFilter, onShowAll} : ({articles: Artic
  const handleShowAllArticless = () => {
   onShowAll();
   setShowFilter(false)
+
  }
 
   return (
@@ -36,8 +44,8 @@ const FilterArticles = ({articles, onClickFilter, onShowAll} : ({articles: Artic
         {showFilter && (
              <ul className="p-4 bg-slate-50 w-52 absolute top-7">
               <li className="mt-2" onClick={() => handleShowAllArticless()}>Читати всі статті</li>
-             {articles.map((article: Article) => (
-                 <li key={article._id} className="mt-2" onClick={() => handleChangeThema(article.thema)}>{article.thema}</li>
+             {uniqueTopics.map((article) => (
+                 <li key={uniqueTopics.indexOf(article)} className="mt-2" onClick={() => handleChangeThema(article)}>{article}</li>
              ))}
          </ul>
         )}

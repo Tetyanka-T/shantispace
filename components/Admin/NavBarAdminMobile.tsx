@@ -18,7 +18,7 @@ const NavBarAdminMobile = ({ onClick }: {onClick: Function}) => {
         adminMenu ? setAdminMenu(false) : setAdminMenu(true);
       };
   return (
-    <nav className="absolute bg-slate-100 w-full top-0 left-0 text-lg font-normal tracking-wide leading-6 translate-x-50 translate-y-50">
+    <nav className="absolute z-10 bg-slate-100 w-full top-0 left-0 text-lg font-normal tracking-wide leading-6 translate-x-50 translate-y-50">
       
         <ul className="px-8 py-20">
             <li className="mb-2 border-b-2 border-amber-900 py-3">

@@ -1,6 +1,6 @@
 
 
-import ArticlesList from "@/components/ArticlesPage"
+import ArticlesPage from "@/components/ArticlesPage"
 import Navigation from "@/components/Navigation"
 import ProfileAdminBlog from "@/components/ProfileAdminBlog"
 
@@ -13,9 +13,8 @@ const BlogAdminPage = () => {
     
       <Navigation section="Блог"/>
       <ProfileAdminBlog/>
-  
-      <ArticlesList/>
-      </>
+      <ArticlesPage/>
+    </>
 
 
 

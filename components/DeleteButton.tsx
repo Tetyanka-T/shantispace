@@ -3,7 +3,7 @@
 import { HiOutlineTrash } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 
-const DeleteButton = ({ id }: ({id: String})) => {
+const DeleteButton = ({ id }: ({id: String | null})) => {
   const router = useRouter();
   const removeTopic = async () => {
     const confirmed = confirm("Are you sure?");

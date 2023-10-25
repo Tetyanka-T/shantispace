@@ -1,5 +1,4 @@
 
-import FilterArticles from "./FilterArticles";
 import ArticlesList from "./ArticlesList";
 
 const getArticles = async () => {

@@ -36,20 +36,20 @@ const EditArticle = ({article} : ({article: Article})) => {
         }
   
         router.refresh();
-        router.push("/blog-admin");
+        router.push("/articles/editarticle");
       } catch (error) {
         console.log(error);
       }
     };
   
     return (
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+      <form onSubmit={handleSubmit} className="mx-auto flex flex-col justify-center items-center my-4">
         <input
           id="thema"
           onChange={(e) => setThema(e.target.value)}
           value={thema}
           name="thema"
-          className="border border-slate-500 px-8 py-2"
+          className="border border-slate-500 py-2 mb-3"
           type="text"
           placeholder="Дордайте тему для статті"
         />
@@ -58,18 +58,18 @@ const EditArticle = ({article} : ({article: Article})) => {
         onChange={(e) => setTitle(e.target.value)}
         value={title}
         name="title"
-        className="border border-slate-500 px-8 py-2"
+        className="border border-slate-500 py-2 mb-3"
         type="text"
         placeholder="Додайте заголовок для статті"
       />
 
-      <input
+      <textarea
         id="description"
         onChange={(e) => setDescription(e.target.value)}
         value={description}
         name="description"
-        className="border border-slate-500 px-8 py-2"
-        type="text"
+        className="border border-slate-500 py-2 max-h-max mb-3"
+        
         placeholder="Додайте текс для статті"
       />
        <input
@@ -77,13 +77,13 @@ const EditArticle = ({article} : ({article: Article})) => {
         onChange={(e) => setImgSrc(e.target.value)}
         value={imgSrc}
         name="imgSrc"
-        className="border border-slate-500 px-8 py-2"
+        className="border border-slate-500 py-2 mb-3"
         type="text"
         placeholder="Змініть фото для статті"
       />
 
   
-        <button className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mx-auto mt-3">
+        <button className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mt-3">
           Редагувати
         </button>
       </form>
