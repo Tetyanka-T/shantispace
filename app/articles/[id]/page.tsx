@@ -1,4 +1,4 @@
-import ArticlePage from "@/components/ArticlePageDescription";
+import ArticlePageDescription from "@/components/ArticlePageDescription";
 import Navigation from "@/components/Navigation";
 
 
@@ -26,10 +26,11 @@ const getArticleById = async (id: string) => {
   const Article = async ({ params }: Params) => {
     const {article} = await getArticleById(params.id);
   
-    return <>
-    <Navigation section={article.title}/>
-    <ArticlePage article={article}/>
-    </>
+    return (
+    <>
+      <Navigation section={article.title}/>
+      <ArticlePageDescription article={article}/>
+    </>)
   }
 
   export default Article

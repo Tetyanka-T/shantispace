@@ -1,4 +1,4 @@
-import ArticlesList from "@/components/ArticlesList"
+import ArticlesList from "@/components/ArticlesPage"
 import Navigation from "@/components/Navigation"
 import ProfileAdminBlog from "@/components/ProfileAdminBlog"
 

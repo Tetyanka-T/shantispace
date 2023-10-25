@@ -1,9 +1,9 @@
 import Image from "next/image"
-import Article from "@/app/interface/interface"
-import Navigation from "./Navigation"
+import ArticleI from "@/app/interface/interface"
 
 
-const ArticlePage = ({article}: ({article: Article})) => {
+
+const ArticlePageDescription = ({article}: ({article: ArticleI})) => {
 
   return (
     <div className="my-4 mx-auto">
@@ -17,4 +17,4 @@ const ArticlePage = ({article}: ({article: Article})) => {
   )
 }
 
-export default ArticlePage
+export default ArticlePageDescription

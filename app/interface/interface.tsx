@@ -1,4 +1,4 @@
-export default interface Article {
+export default interface ArticleI {
     _id: null | string,
     thema: string,
     title: string,

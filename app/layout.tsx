@@ -25,10 +25,10 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* <AuthProvider> */}
         <NavBar/>
-          <div className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10'>
+          <main className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10'>
       
             {children}
-          </div>
+          </main>
           <Footer/>
         {/* </AuthProvider> */}
       </body>

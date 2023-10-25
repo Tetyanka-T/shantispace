@@ -30,6 +30,6 @@
     "app/api/register/router.js",
     "app/api/singup/route.js",
     "app/api/auth/[...nextauth]/route.js"
-  ],
+, "components/ArticlesPagetsx"  ],
   "exclude": ["node_modules"]
 }
