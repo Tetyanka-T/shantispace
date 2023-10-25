@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 const DeleteButton = ({ id }: ({id: String | null})) => {
   const router = useRouter();
   const removeTopic = async () => {
-    const confirmed = confirm("Are you sure?");
+    const confirmed = confirm("Ви впевнені, що хочете видалити цю статтю?");
 
     if (confirmed) {
       const res = await fetch(`http://localhost:3000/api/articles?id=${id}`, {
