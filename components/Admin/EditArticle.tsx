@@ -51,7 +51,7 @@ const EditArticle = ({article} : ({article: Article})) => {
           name="thema"
           className="border border-slate-500 py-2 mb-3"
           type="text"
-          placeholder="Дордайте тему для статті"
+          placeholder="Додайте тему для статті"
         />
       <input
         id="title"
@@ -68,7 +68,7 @@ const EditArticle = ({article} : ({article: Article})) => {
         onChange={(e) => setDescription(e.target.value)}
         value={description}
         name="description"
-        className="border border-slate-500 py-2 max-h-max mb-3"
+        className="border border-slate-500 py-2 h-40 mb-3"
         
         placeholder="Додайте текс для статті"
       />
