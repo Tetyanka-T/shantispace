@@ -43,6 +43,9 @@ const NavBarAdminMobile = ({ onClick }: {onClick: Function}) => {
                         <li onClick={() => onClick()} className="my-2">
                             <Link href="/questions">Питання</Link>
                         </li>
+                        <li onClick={() => onClick()} className="my-2">
+                            <Link href="/questions/newquestion">Нове питання</Link>
+                        </li>
                     </ul>
                 )}
             </li>

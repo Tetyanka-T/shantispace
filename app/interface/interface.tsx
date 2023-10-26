@@ -14,3 +14,12 @@ export default interface IUser {
     password: string,
     role: string
 }
+
+export default interface IQuestion {
+    _id: null | string,
+    userEmail: string,
+    userName: string,
+    text: string,
+    adminAnswer: string,
+    adminNane: string
+}

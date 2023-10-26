@@ -24,7 +24,7 @@ const ArticlesPage= async () => {
  
 
   return (
-    <section className="">
+    <section className="my-4">
 
         <ArticlesList articles={articles}/>
      

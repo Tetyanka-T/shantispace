@@ -18,6 +18,9 @@ const NavBarUserDesctop = () => {
     <nav className="text-lg font-normal tracking-wide leading-6">
 
         <ul className="flex items-center justify-center">
+            <li className="mr-9" >
+                <Link href="/">Головна</Link>
+            </li>
             <li className="relative mr-10">
                 <div className="flex items-center">
                 <Link href="/blog-user">Блог</Link>

@@ -9,9 +9,10 @@ const NavBarNotAuthMobile = ({ onClick }: {onClick: Function}) => {
       
     <ul className="px-8 py-20">
         <li className="mb-2 border-b-2 border-amber-600 py-3">
-            <div className="flex items-center">
+            <Link href="/" onClick={() => onClick()}>Головна</Link>
+        </li>
+        <li className="mb-2 border-b-2 border-amber-600 py-3">
             <Link href="/blog" onClick={() => onClick()}>Блог</Link>
-            </div>
         </li>
         <li className="mb-2 border-b-2 border-amber-600 py-3" onClick={() => onClick()}>
             <Link href="/yoga">Йога</Link>

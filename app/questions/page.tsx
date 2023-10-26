@@ -1,13 +1,17 @@
+import Navigation from "@/components/Navigation"
+import QuestionsList from "@/components/QuestionsList"
 
 
-const QuestionsPage = () => {
+const Questions = () => {
   return (
     <>
+      <Navigation section="Питання Дарині"/>
+  
 
-     <div>questions</div>
+     
     </>
    
   )
 }
 
-export default QuestionsPage
+export default Questions

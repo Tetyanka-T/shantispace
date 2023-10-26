@@ -1,7 +1,6 @@
-
 "use client";
 
-import { ChangeEvent, FormEvent, SyntheticEvent, useState } from "react";
+import { FormEvent, SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const AddArticle = () => {
@@ -9,7 +8,6 @@ const AddArticle = () => {
   const [description, setDescription] = useState("");
   const [thema, setThema] = useState("");
   const [selectedFile, setSelectedFile] = useState<File | undefined>()
-  // const [imgSrc, setImgSrc] = useState("");
 
   const router = useRouter();
 
@@ -18,7 +16,7 @@ const AddArticle = () => {
       files: FileList;
     }
 
- setSelectedFile(target.files[0])
+  setSelectedFile(target.files[0])
 
 };
 
@@ -105,7 +103,6 @@ const AddArticle = () => {
         className="border border-slate-500 px-8 py-2"
         type="file"
         name="image"
-        // placeholder="Посилання на фото для данної статті"
       />
       <button
         type="submit"

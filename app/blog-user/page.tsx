@@ -1,10 +1,8 @@
-"use client"
 
-import { useSession } from "next-auth/react"
-import { redirect } from "next/navigation"
 import ArticlesList from "@/components/ArticlesPage"
 import Navigation from "@/components/Navigation"
 import ProfileAdminBlog from "@/components/ProfileAdminBlog"
+import AddQuestionButton from "@/components/User/AddQuestionButton"
 
 
 
@@ -14,6 +12,7 @@ const BlogUserPage = () => {
     <div>
       <Navigation section="Блог"/>
       <ProfileAdminBlog/>
+      <AddQuestionButton/>
       <ArticlesList/>
     </div>
   )

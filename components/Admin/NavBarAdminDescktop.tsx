@@ -39,8 +39,11 @@ const NavBarAdminDescktop = () => {
                         <li className="mr-8" onClick={() => setAdminMenu(false)}>
                             <Link href="/chat">Чат</Link>
                         </li>
-                        <li className="" onClick={() => setAdminMenu(false)}>
+                        <li className="mr-8" onClick={() => setAdminMenu(false)}>
                             <Link href="/questions">Питання</Link>
+                        </li>
+                        <li className="" onClick={() => setAdminMenu(false)}>
+                            <Link href="/questions/newquestion">Нове питання</Link>
                         </li>
                     </ul>
                 )}

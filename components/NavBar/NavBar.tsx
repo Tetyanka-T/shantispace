@@ -75,6 +75,9 @@ const onShowMenu = () => {
             <nav className={s.visible}>
                 <ul className="flex justify-center items-center text-lg font-normal tracking-wide leading-6">
                     <li className="mr-8">
+                        <Link href="/">Головна</Link>
+                    </li>
+                    <li className="mr-8">
                         <Link href="/blog">Блог</Link>
                     </li>
                     <li className="mr-8">
@@ -97,6 +100,7 @@ const onShowMenu = () => {
                     <button>
                         <Link href="/login">
                             <GrYoga size={24} className="fill-amber-900"/>
+                            <span className="text-xs">Увійти</span>
                             {/* <HiUser size={24} className="fill-amber-800"/> */}
                         </Link>
                     </button> 

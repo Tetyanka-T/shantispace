@@ -28,9 +28,6 @@ const ArticlesListWithEdit = async () => {
     <>
       <Navigation section="Редагувати статтю"/>
       <EditArticlesList articles={articles}/>
-
-
-     
     </>
   
   )

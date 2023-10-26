@@ -63,28 +63,34 @@ const handleSubmit = async (e: FormEvent) => {
   }
 }
   return (
-    <div className="grid place-items-center mt-20">
-      <div className="shadow-lg p-5 rounded-lg border-t-4 border-amber-800">
-        <h1 className="text-xl font-bold my-4">Форма реєстрації</h1>
-        <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
-          <input type="text"
+    <div className="my-20 w-290px mx-auto sm:w-96">
+      <div className="shadow-lg p-3 rounded-lg border-t-4 border-amber-800">
+        <h1 className="text-xl font-bold my-4 text-center">Форма реєстрації</h1>
+        <form className="flex flex-col justify-center items-center gap-3" onSubmit={handleSubmit}>
+          <input
+           className="sm:w-80"
+           type="text"
            name="name"
            onChange={handleChange}
            placeholder="Ім'я Прізвище"/>
-          <input type="text"
+          <input
+           className="sm:w-80"
+           type="text"
            name="email"
            onChange={handleChange}
            placeholder="email"/>
-          <input type="text"
+          <input
+           className="sm:w-80"
+           type="text"
            name="password"
            onChange={handleChange}
            placeholder="пароль"/>
-          <button className="bg-amber-800 text-white font-bold cursor-pointer px-6 py-2 w-48 mx-auto my-4">
+          <button className="bg-amber-900 text-white font-bold cursor-pointer px-6 py-2 w-48 mx-auto my-4">
           Зареєструватися
           </button>
           {error && <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">{error}</div>}
           
-          <Link href="/login" className="underline text-sm mt-3 text-right">
+          <Link href="/login" className="underline text-sm mt-3 ml-auto">
               Вже є акаунт
           </Link>
         </form>
