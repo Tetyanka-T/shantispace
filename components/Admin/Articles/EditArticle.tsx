@@ -4,11 +4,6 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import Article from "@/app/interface/interface"
 
-type State = {
-  thema: string;
-  title: string;
-  description: string;
-};
 
 const EditArticle = ({article} : ({article: Article})) => {
    

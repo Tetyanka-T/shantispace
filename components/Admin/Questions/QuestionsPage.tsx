@@ -1,11 +1,11 @@
-import QuestionsList from "../QuestionsList"
+import QuestionsList from "./QuestionsList"
 
 const getQuestions = async () => {
     try {
        const res = await fetch("http://localhost:3000/api/questions", {
         cache: "no-store",
         })
-      
+
         if(!res.ok) {
             throw new Error("Failed to fetch question")
         }
@@ -19,10 +19,10 @@ const QuestionsPage = async () => {
 
     const {questions} = await getQuestions()
 
-
   return (
     <section className="my-4">
         <QuestionsList questions={questions}/>
+  
     </section>
   )
 }

@@ -11,7 +11,7 @@ const AddQuestionForm = () => {
     const userEmail = "tata@gmail.com"
   
   
-    const handleSubmit = async (e: SyntheticEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
       e.preventDefault();
   
       if (!text) {

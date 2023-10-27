@@ -1,4 +1,3 @@
-import ArticlesList from "@/components/ArticlesPage";
 
 export default function Home() {
 

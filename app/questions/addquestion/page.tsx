@@ -1,5 +1,5 @@
 import Navigation from "@/components/Navigation"
-import AddQuestionForm from "@/components/User/AddQuestionForm"
+import AddQuestionForm from "@/components/User/Questions/AddQuestionForm"
 
 
 const AddQuestionPage = () => {

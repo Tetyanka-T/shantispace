@@ -1,5 +1,5 @@
 
-import QuestionsPage from '@/components/Admin/QuestionsPage'
+import QuestionsPage from '@/components/Admin/Questions/QuestionsPage'
 
 import Navigation from '@/components/Navigation'
 

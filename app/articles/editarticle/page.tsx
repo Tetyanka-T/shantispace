@@ -1,6 +1,6 @@
 
 import Navigation from "@/components/Navigation";
-import EditArticlesList from "@/components/Admin/EditArticlesList";
+import EditArticlesList from "@/components/Admin/Articles/EditArticlesList";
 
 
 const getArticles = async () => {

@@ -2,7 +2,7 @@ import './globals.css'
 import common from './styles/common.module.css'
 import type { Metadata } from 'next'
 import {AuthProvider} from "../Providers"
-import NavBarAdmin from '@/components/Admin/NavBarAdminMobile'
+import NavBarAdmin from '@/components/Admin/NavBar/NavBarAdminMobile'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/Footer'
@@ -23,14 +23,14 @@ export default function RootLayout({
   return (
     <html lang="ua">
       <body className={inter.className}>
-        {/* <AuthProvider> */}
+        <AuthProvider>
         <NavBar/>
           <main className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-20'>
       
             {children}
           </main>
           <Footer/>
-        {/* </AuthProvider> */}
+        </AuthProvider>
       </body>
     </html>
   )

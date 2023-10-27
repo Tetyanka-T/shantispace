@@ -1,4 +1,4 @@
-import ArticlePageDescription from "@/components/ArticlePageDescription";
+import ArticlePageDescription from "@/components/Articles/ArticlePageDescription";
 import Navigation from "@/components/Navigation";
 
 

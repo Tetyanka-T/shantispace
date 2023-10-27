@@ -8,12 +8,9 @@ export const authOptions = {
   providers: [
     CredentialsProvider({
       name: "credentials",
-      credentials: {
-        // email: { lable: "Email", type: "text" },
-        // password: { label: "Password", type: "password" },
-      },
+      credentials: {},
       async authorize(credentials) {
-        const { email, password } = credentials;
+        const { email, password, role } = credentials;
         try {
           await connectMongoDb();
           const user = await User.findOne({ email });

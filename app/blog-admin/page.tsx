@@ -1,6 +1,6 @@
 
 
-import ArticlesPage from "@/components/ArticlesPage"
+import ArticlesPage from "@/components/Articles/ArticlesPage"
 import Navigation from "@/components/Navigation"
 import ProfileAdminBlog from "@/components/ProfileAdminBlog"
 

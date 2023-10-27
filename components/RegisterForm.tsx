@@ -47,11 +47,11 @@ const handleSubmit = async (e: FormEvent) => {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({name, email, password})
+      body: JSON.stringify({name, email, password, role: "user"})
     })
 
     if(response.ok) {
-      router.push("/blog-user");
+      router.push("/login");
       setEmail("");
       setName("");
       setPassword("")

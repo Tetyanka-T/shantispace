@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import ArticleI from "@/app/interface/interface";
-import FilterArticles from "@/components/FilterArticles";
+import FilterArticles from "@/components/Articles/FilterArticles";
 import { HiPencilAlt } from "react-icons/hi";
-import DeleteButton from "@/components/DeleteButton";
+import DeleteButton from "@/components/Articles/DeleteButton";
 
 const EditArticlesList = ({articles}: ({articles: ArticleI[]})) => {
   const [filter, setFilter] = useState(false)

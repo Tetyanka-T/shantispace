@@ -1,14 +1,18 @@
 import connectMongoDb from "../../../../libs/mongodb";
 import { NextResponse } from "next/server";
-import Question from "../../../../models/question";
+import Question from "@/models/question";
 
 export const PUT = async (request, { params }) => {
   try {
     const { id } = params;
-    const question = await request.json();
+    const newQuestion = await request.json();
     await connectMongoDb();
-    await Question.findByIdAndUpdate(id, question);
-    return NextResponse.json({ message: "success updated" }, { status: 200 });
+    await Question.findByIdAndUpdate(id, newQuestion);
+    return NextResponse.json(
+      { message: "success updated" },
+      { status: 200 },
+      { newQuestion }
+    );
   } catch (error) {
     return NextResponse("Not found posts");
   }

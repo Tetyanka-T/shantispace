@@ -21,5 +21,5 @@ export default interface IQuestion {
     userName: string,
     text: string,
     adminAnswer: string,
-    adminNane: string
+    adminName: string
 }

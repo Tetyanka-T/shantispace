@@ -23,7 +23,7 @@ const NavBarUserDesctop = () => {
             </li>
             <li className="relative mr-10">
                 <div className="flex items-center">
-                <Link href="/blog-user">Блог</Link>
+                <Link href="/blog-user" onClick={() => setUserMenu(false)}>Блог</Link>
                 <button onClick={() => onShowMenu()} className="ml-5"> 
                     <BiDownArrowAlt size={24} className="fill-amber-800"/>
                 </button>

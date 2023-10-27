@@ -1,4 +1,4 @@
-import EditArticle from "@/components/Admin/EditArticle";
+import EditArticle from "@/components/Admin/Articles/EditArticle";
 import Navigation from "@/components/Navigation";
 
 type Params = {

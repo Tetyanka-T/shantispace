@@ -8,6 +8,7 @@ import {signIn} from "next-auth/react"
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [role, setRole] = useState("user")
   const [error, setError] = useState("")
   const router = useRouter();
 
@@ -31,10 +32,10 @@ const LoginForm = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
-      const res = await signIn("credentials", {
-        email, password, redirect: false
+     await signIn("credentials", {
+        email, password, role, redirect: false
       })
-console.log(res)
+
       // if (res.error) {
       //   setError("Неправильні дані")
       //   return

@@ -1,33 +1,34 @@
 "use client"
 
 import {useSession, signOut} from "next-auth/react"
-import { redirect } from "next/navigation"
+
 import Link from "next/link"
 import Image from "next/image"
-import { HiUser } from "react-icons/hi"
 import {GrYoga} from 'react-icons/gr'
 import {TbYoga} from 'react-icons/tb'
-import {ImExit} from "react-icons/im"
 import s from "./NavBar.module.css"
-import NavBarAdminMobile from "../Admin/NavBarAdminMobile"
+import NavBarAdminMobile from "../Admin/NavBar/NavBarAdminMobile"
 import { useState } from "react"
 import {RiMenu3Fill} from "react-icons/ri"
 import {AiOutlineClose} from "react-icons/ai"
-import NavBarAdminDescktop from "../Admin/NavBarAdminDescktop"
-import NavBarUserMobile from "../User/NavBarUserMobile"
-import NavBarUserDesctop from "../User/NavBarUserDesctop"
+import NavBarAdminDescktop from "../Admin/NavBar/NavBarAdminDescktop"
+import NavBarUserMobile from "../User/NavBar/NavBarUserMobile"
+import NavBarUserDesctop from "../User/NavBar/NavBarUserDesctop"
 import NavBarNotAuthMobile from "./NavBarNotAuthMobile"
 
 
 const NavBar = () => {
-    // const {data: session, status} = useSession()
+    const {data: session, status} = useSession()
 
-    // const isAuth = status === "authenticated";
+    console.log(session)
+    console.log(status)
+
+const isAuth = status === "authenticated";
     
-const isAuth = true;
 
-const isUser = false;
-const isAdmin = true;
+
+const isUser = status === "authenticated";
+const isAdmin = false;
 const [showMenu, setShowMenu] = useState(false)
 
 const onShowMenu = () => {
@@ -108,10 +109,9 @@ const onShowMenu = () => {
                   
                     {isAuth &&
                       <div className="flex justify-center">
-                        {/* <span>{session?.user.name}</span>  */}
-                        <span className="mr-2 text-base font-medium">Привіт, Дарина</span> 
+                        <span className="mr-2 text-base font-medium">Привіт, {session?.user.name}</span> 
                         <button 
-                        // onClick={() => signOut()}
+                        onClick={() => signOut()}
                         >
                             <TbYoga size={24} className="fill-amber-900"/>
                             <span className="text-xs">Вихід</span>

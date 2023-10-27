@@ -1,4 +1,4 @@
-import AddArticle from "@/components/Admin/AddArticle";
+import AddArticle from "@/components/Admin/Articles/AddArticle";
 import Navigation from "@/components/Navigation";
 
 

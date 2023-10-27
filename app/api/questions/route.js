@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import Question from "../../../models/question";
+import Question from "@/models/question";
 import connectMongoDb from "../../../libs/mongodb";
 
 export const GET = async () => {

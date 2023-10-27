@@ -14,15 +14,19 @@ const questionSchema = new Schema(
       type: String,
       required: true,
     },
-    adminAnswer: String,
+    adminAnswer: {
+      type: String,
+      default: "",
+    },
     adminName: {
       type: String,
-      default: "Дарина Полозок"
+      default: "Дарина Полозок",
     },
   },
   { versionKey: false, timestamps: true }
 );
 
-const Question = models.Question || mongoose.model("question", questionSchema);
+const Question =
+  mongoose.models.Question || mongoose.model("Question", questionSchema);
 
 export default Question;
