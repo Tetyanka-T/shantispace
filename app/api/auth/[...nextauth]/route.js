@@ -31,33 +31,39 @@ export const authOptions = {
       },
     }),
   ],
-  // callbacks: {
-  //   jwt: async ({ token, user }) => {
-  //     user && (token.user = user);
-  //     return token;
-  //     // if (params.user?.role) {
-  //     //   params.token.role = params.user.role;
-  //     //   params.token.id = params.user.id;
-  //     // }
-  //     // return params.token;
-  //   },
-  //   session: async ({ session, token }) => {
-  //     const user = token.user;
-  //     session.user = user;
-  //     return session;
-  //     //   if (session.user) {
-  //     //     session.user.id = token.id;
-  //     //     session.user.role = token.role;
-  //     //   }
-  //     //   return session;
-  //   },
-  // },
+  callbacks: {
+    async jwt({ token, user, session }) {
+      if (user) {
+        token.accessToken = user.accessToken;
+        token.refreshToken = user.refreshToken;
+        token.accessTokenExpires = user.accessTokenExpires;
+        token.role = user.role;
+        token.id = user.id;
+      }
+
+      return token;
+    },
+
+    async session({ session, token, user }) {
+      return {
+        ...session,
+        user: {
+          ...session.user,
+          accessToken: token.accessToken,
+          refreshToken: token.refreshToken,
+          role: token.role,
+          id: token.id,
+        },
+        error: token.error,
+      };
+    },
+  },
   session: {
     strategy: "jwt",
   },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
-    signIn: "/register",
+    signIn: "/",
   },
 };
 

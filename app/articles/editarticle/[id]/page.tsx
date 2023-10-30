@@ -1,4 +1,5 @@
 import EditArticle from "@/components/Admin/Articles/EditArticle";
+import GoBackButton from "@/components/GoBackButton";
 import Navigation from "@/components/Navigation";
 
 type Params = {
@@ -29,6 +30,7 @@ const EditArticlePage = async ({ params }: Params) => {
   return (
     <>
      <Navigation section="Редагування статті"/>
+     <GoBackButton/>
      <EditArticle article={article}/>
     </>
   )

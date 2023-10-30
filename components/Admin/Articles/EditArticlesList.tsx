@@ -30,7 +30,7 @@ const EditArticlesList = ({articles}: ({articles: ArticleI[]})) => {
                <div className="flex items-center justify-end ">
                     <DeleteButton id={article._id} />
                     <Link href={`/articles/editarticle/${article._id}`}>
-                      <HiPencilAlt size={24} className="fill-amber-900 ml-3"/>
+                      <HiPencilAlt size={24} className="fill-amber-950 ml-3"/>
                     </Link>
                   </div>
                 
@@ -48,7 +48,7 @@ const EditArticlesList = ({articles}: ({articles: ArticleI[]})) => {
                   <div className="flex items-center justify-end ">
                     <DeleteButton id={article._id} />
                     <Link href={`/articles/editarticle/${article._id}`}>
-                      <HiPencilAlt size={24} className="fill-amber-900 ml-3"/>
+                      <HiPencilAlt size={24} className="fill-amber-950 ml-3"/>
                     </Link>
                   </div>
                 

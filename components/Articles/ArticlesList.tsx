@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import ArticleI from "@/app/interface/interface";
 import FilterArticles from "./FilterArticles";
@@ -26,6 +27,7 @@ const ArticlesList = ({articles}: ({articles: ArticleI[]})) => {
               <li key={article._id} className="border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50">
                 <Link href={`/articles/${article._id}`}>
                   <h2 className="text-right">{article.thema}</h2>
+                  <Image src={article.imgSrc} width={280} height={200} alt=""/>
                   <p className="text-center my-2">{article.title}</p>
                   <p className="truncate">{article.description}</p>
                   <p className="text-right my-3 text-sm">Читати далі</p>
@@ -38,10 +40,11 @@ const ArticlesList = ({articles}: ({articles: ArticleI[]})) => {
             {articles.map((article: ArticleI) => (
               <li key={article._id} className="border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50">
                 <Link href={`/articles/${article._id}`}>
-                  <h2 className="text-right">{article.thema}</h2>
+                  <h2 className="text-right mb-2">{article.thema}</h2>
+                  <Image src={article?.coverImg} width={290} height={200} alt="article photo" className="mx-auto"/>
                   <p className="text-center my-2">{article.title}</p>
                   <p className="truncate">{article.description}</p>
-                  <p className="text-right my-3 text-sm">Читати далі</p>
+                  <p className="text-right my-3 text-sm bottom-0">Читати далі</p>
                 </Link>
               </li>
             ))}

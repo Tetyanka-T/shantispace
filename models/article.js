@@ -14,6 +14,10 @@ const articleSchema = new Schema(
       type: String,
       required: true,
     },
+    coverImg: {
+      type: String,
+      required: true,
+    },
     imgSrc: String,
   },
   { versionKey: false, timestamps: true }

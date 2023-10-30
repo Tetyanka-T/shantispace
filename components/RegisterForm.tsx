@@ -47,7 +47,7 @@ const handleSubmit = async (e: FormEvent) => {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({name, email, password, role: "user"})
+      body: JSON.stringify({name, email, password})
     })
 
     if(response.ok) {
@@ -64,7 +64,7 @@ const handleSubmit = async (e: FormEvent) => {
 }
   return (
     <div className="my-20 w-290px mx-auto sm:w-96">
-      <div className="shadow-lg p-3 rounded-lg border-t-4 border-amber-800">
+      <div className="shadow-lg p-3 rounded-lg border-t-4 border-amber-950">
         <h1 className="text-xl font-bold my-4 text-center">Форма реєстрації</h1>
         <form className="flex flex-col justify-center items-center gap-3" onSubmit={handleSubmit}>
           <input
@@ -85,7 +85,7 @@ const handleSubmit = async (e: FormEvent) => {
            name="password"
            onChange={handleChange}
            placeholder="пароль"/>
-          <button className="bg-amber-900 text-white font-bold cursor-pointer px-6 py-2 w-48 mx-auto my-4">
+          <button className="bg-amber-950 text-white font-bold cursor-pointer px-6 py-2 w-48 mx-auto my-4">
           Зареєструватися
           </button>
           {error && <div className="bg-red-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2">{error}</div>}

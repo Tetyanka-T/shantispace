@@ -67,6 +67,8 @@ const AddArticle = () => {
   };
 
   return (
+    <>
+    <h2 className="text-lg font-bold text-center">Створити нову статтю</h2>
     <form onSubmit={handleSubmit} className="flex flex-col gap-3 justify-center items-center my-4">
         <input
         onChange={(e) => setThema(e.target.value)}
@@ -106,11 +108,13 @@ const AddArticle = () => {
       />
       <button
         type="submit"
-        className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
+        className="bg-amber-950 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
       >
         Добавити статтю
       </button>
     </form>
+    </>
+    
   );
 }
 

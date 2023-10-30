@@ -3,7 +3,8 @@ export default interface ArticleI {
     thema: string,
     title: string,
     description: string,
-    imgSrc: string
+    imgSrc: string,
+    coverImg: string,
 
 }
 

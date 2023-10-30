@@ -39,7 +39,7 @@ const FilterArticles = ({articles, onClickFilter, onShowAll} : ({articles: Artic
     <div className='relative ml-3 my-4'>
         <button onClick={() => onShowMenu()} className='flex items-center'>
             <span>Читати по темі</span>
-            <GoMultiSelect size={20} className="ml-2 fill-amber-900"/>
+            <GoMultiSelect size={20} className="ml-2 fill-amber-950"/>
         </button>
         {showFilter && (
              <ul className="p-4 bg-slate-50 w-52 absolute top-7">

@@ -1,3 +1,5 @@
+import GoBackButton from "@/components/GoBackButton"
+import QuestionNewList from "./QuestionNewList"
 import QuestionsList from "./QuestionsList"
 
 const getQuestions = async () => {
@@ -15,13 +17,17 @@ const getQuestions = async () => {
     }
 }
 
-const QuestionsPage = async () => {
+const QuestionsPage = async ({vision}: {vision: string}) => {
 
     const {questions} = await getQuestions()
 
   return (
     <section className="my-4">
-        <QuestionsList questions={questions}/>
+        <GoBackButton/>
+        {vision === "all" && <QuestionsList questions={questions}/>}
+        {vision === "new" && <QuestionNewList questions={questions}/>}
+        
+        
   
     </section>
   )

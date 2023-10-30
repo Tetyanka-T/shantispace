@@ -2,13 +2,15 @@
 
 import { FormEvent, SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import {useSession} from "next-auth/react"
 
 const AddQuestionForm = () => {
     const [text, setText] = useState('')
     const router = useRouter();
 
-    const userName = "Galya";
-    const userEmail = "tata@gmail.com"
+    const {data: session, status} = useSession()
+    const userName = session?.user.name;
+    const userEmail = session?.user.email
   
   
     const handleSubmit = async (e: FormEvent) => {
@@ -41,22 +43,26 @@ const AddQuestionForm = () => {
     };
   
     return (
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3 justify-center items-center my-4">
-          <textarea
+      <>
+        <h2 className="text-center text-xl font-bold">Задайте питання Дарині</h2>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3 justify-center items-center my-4">
+          <textarea 
           onChange={(e) => setText(e.target.value)}
           value={text}
-          className="border border-slate-500 px-8 py-2"
+          className="border border-slate-500 px-8 py-2 h-72"
         
           placeholder="Напишіть Ваше питання"
         />
      
          <button
           type="submit"
-          className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
+          className="bg-amber-950 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
          >
-          Добавити питання
+          Відправити
          </button>
       </form>
+      </>
+    
     );
   }
   

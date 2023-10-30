@@ -19,7 +19,7 @@ const QuestionsList = ({questions} : {questions : IQuestion[]}) => {
     };
   return (
 
-    <ul className="">
+    <ul className="mx-auto md:w-2/3">
        {questions?.map(q => (
             <li key={q._id} className="border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50">
                 <p className="text-right">{q.userName}</p>

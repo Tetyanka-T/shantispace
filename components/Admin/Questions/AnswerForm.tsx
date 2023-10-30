@@ -37,7 +37,7 @@ const AnswerForm = ({question} : {question: IQuestion}) => {
            value={adminAnswer}
            onChange={(e) => setAdminAnswer(e.target.value)}
         />
-        <button className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mt-3">Відповісти</button>
+        <button className="bg-amber-950 font-bold text-white py-3 px-6 w-fit mt-3">Відповісти</button>
     </form>
   )
 }

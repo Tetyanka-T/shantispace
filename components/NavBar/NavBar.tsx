@@ -20,15 +20,10 @@ import NavBarNotAuthMobile from "./NavBarNotAuthMobile"
 const NavBar = () => {
     const {data: session, status} = useSession()
 
-    console.log(session)
-    console.log(status)
-
 const isAuth = status === "authenticated";
-    
+const isUser = session?.user.role === "user";
+const isAdmin = session?.user.role === "admin";
 
-
-const isUser = status === "authenticated";
-const isAdmin = false;
 const [showMenu, setShowMenu] = useState(false)
 
 const onShowMenu = () => {
@@ -54,7 +49,7 @@ const onShowMenu = () => {
             {showMenu &&  (
                 <div className="block">
                     <button onClick={() => onShowMenu()} className="absolute top-3 right-2 z-20">
-                        <AiOutlineClose size={24} className="fill-amber-900"/>
+                        <AiOutlineClose size={24} className="fill-amber-950"/>
                     </button>
                    {isAdmin && <NavBarAdminMobile onClick={onShowMenu}/>}
                    {isUser && <NavBarUserMobile onClick={onShowMenu}/>}
@@ -82,13 +77,13 @@ const onShowMenu = () => {
                         <Link href="/blog">Блог</Link>
                     </li>
                     <li className="mr-8">
-                        <Link href="/yoga">Йога</Link>
+                        <Link href="/yoga">Простір йоги</Link>
                     </li>
-                    <li className="mr-8">
+                    {/* <li className="mr-8">
                         <Link href="/LFK">ЛФК</Link>
-                    </li>
+                    </li> */}
                     <li>
-                        <Link href="/physical-therapy">Фізична терапія</Link>
+                        <Link href="/physical-therapy">Фізична реабілітація</Link>
                     </li>
                 </ul>
             </nav>
@@ -100,20 +95,19 @@ const onShowMenu = () => {
                     
                     <button>
                         <Link href="/login">
-                            <GrYoga size={24} className="fill-amber-900"/>
+                            <GrYoga size={24} className="fill-amber-950"/>
                             <span className="text-xs">Увійти</span>
-                            {/* <HiUser size={24} className="fill-amber-800"/> */}
                         </Link>
                     </button> 
                     }
                   
                     {isAuth &&
                       <div className="flex justify-center">
-                        <span className="mr-2 text-base font-medium">Привіт, {session?.user.name}</span> 
+                        <span className="mr-2 text-base font-medium">Привіт, {session?.user?.name}</span> 
                         <button 
                         onClick={() => signOut()}
                         >
-                            <TbYoga size={24} className="fill-amber-900"/>
+                            <TbYoga size={24} className="fill-amber-950"/>
                             <span className="text-xs">Вихід</span>
                         </button>
                     </div>} 

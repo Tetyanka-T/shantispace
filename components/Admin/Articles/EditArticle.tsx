@@ -10,7 +10,7 @@ const EditArticle = ({article} : ({article: Article})) => {
     const [title, setTitle] = useState(article.title);
     const [description, setDescription] = useState(article.description);
     const [thema, setThema] = useState(article.thema);
-    const [imgSrc, setImgSrc] = useState(article.imgSrc);
+    const [coverImg, setCoverImg] = useState(article.coverImg);
     const router = useRouter();
   
 
@@ -38,7 +38,9 @@ const EditArticle = ({article} : ({article: Article})) => {
     };
   
     return (
-      <form onSubmit={handleSubmit} className="mx-auto flex flex-col justify-center items-center my-4">
+      <>
+      <h2 className="text-lg font-bold text-center">Відредагувати статтю</h2>
+       <form onSubmit={handleSubmit} className="mx-auto flex flex-col justify-center items-center my-4">
         <input
           id="thema"
           onChange={(e) => setThema(e.target.value)}
@@ -69,8 +71,8 @@ const EditArticle = ({article} : ({article: Article})) => {
       />
        <input
         id="imgSrc"
-        onChange={(e) => setImgSrc(e.target.value)}
-        value={imgSrc}
+        onChange={(e) => setCoverImg(e.target.value)}
+        value={coverImg}
         name="imgSrc"
         className="border border-slate-500 py-2 mb-3"
         type="text"
@@ -78,10 +80,12 @@ const EditArticle = ({article} : ({article: Article})) => {
       />
 
   
-        <button className="bg-amber-800 font-bold text-white py-3 px-6 w-fit mt-3">
+        <button className="bg-amber-950 font-bold text-white py-3 px-6 w-fit mt-3">
           Редагувати
         </button>
       </form>
+      </>
+     
     );
 }
 

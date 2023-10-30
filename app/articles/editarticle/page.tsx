@@ -1,6 +1,7 @@
 
 import Navigation from "@/components/Navigation";
 import EditArticlesList from "@/components/Admin/Articles/EditArticlesList";
+import GoBackButton from "@/components/GoBackButton";
 
 
 const getArticles = async () => {
@@ -27,6 +28,7 @@ const ArticlesListWithEdit = async () => {
   return (
     <>
       <Navigation section="Редагувати статтю"/>
+      <GoBackButton/>
       <EditArticlesList articles={articles}/>
     </>
   
