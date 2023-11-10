@@ -77,9 +77,9 @@ const options = {
     },
     [INLINES.HYPERLINK]: (node, children) => {
       return (
-        <a className='font-bold' href={node.data.uri} target='_blank'>
+        <Link className='font-bold' href={node.data.uri} target='_blank'>
           {children}
-        </a>
+        </Link>
       )
     },
     [BLOCKS.HEADING_1]: (node, children) => {
@@ -105,12 +105,13 @@ const options = {
     }
   },
   [BLOCKS.EMBEDDED_ASSET]: node => {
+    const { title, file } = node.data.target.fields
     return (
       <Image
-        src={'https:' + node.data.target.fields.file.url}
+        src={'https:' + file?.url}
         height={280}
         width={320}
-        alt={node.data.target.fields.title}
+        alt={title}
         className='mx-auto my-2'
       />
     )
@@ -121,7 +122,7 @@ const options = {
 }
 
 const RichText = ({ content }) => {
-  return <div>{documentToReactComponents(content, options)}</div>
+  return <article>{documentToReactComponents(content, options)}</article>
 }
 
 export default RichText

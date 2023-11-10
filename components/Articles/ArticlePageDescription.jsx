@@ -1,16 +1,13 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import Image from 'next/image'
-import ArticleI from '@/app/interface/interface'
 import GoBackButton from '../GoBackButton'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import Richtext from '@/components/Articles/Contentful/Richtext'
+import ReactMarkdown from 'react-markdown'
 
 const ArticlePageDescription = ({ article }) => {
-  const { title, dateCreatePost, coverImg, thema, content } = article.fields
+  const { title, dateCreatePost, coverImg, thema, contentPost } = article.fields
   // const router = useRouter()
-
+  console.log(article)
   return (
     <>
       <GoBackButton />
@@ -24,21 +21,8 @@ const ArticlePageDescription = ({ article }) => {
           })}
         </span>
         <h2 className='text-right my-2'>{thema}</h2>
-        {/* {article.imgSrc && (
-        <Image
-          alt='article photo'
-          src={article.imgSrc}
-          width={320}
-          height={280}
-          className='mx-auto'
-        />
-      )} */}
-
         <p className='text-center my-3'>{title}</p>
-
-        <Richtext content={content} />
-        {/* <div>{documentToReactComponents(content)}</div> */}
-        {/* <p className='whitespace-pre-wrap'>{content}</p> */}
+        <ReactMarkdown className='markdown'>{contentPost}</ReactMarkdown>
       </div>
     </>
   )

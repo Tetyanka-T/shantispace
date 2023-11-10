@@ -30,6 +30,6 @@
     "app/api/register/router.js",
     "app/api/singup/route.js",
     "app/api/auth/[...nextauth]/route.js"
-, "components/ArticlesPagetsx", "app/questions/addquestion", "components/Articles/ArticlesPage.jsx", "components/Articles/ArticlesList.jsx", "app/articles/[slug]/page.tsx", "components/Articles/ArticlePageDescription.jsx"  ],
+, "components/ArticlesPagetsx", "app/questions/addquestion", "components/Articles/ArticlesPage.jsx", "components/Articles/ArticlesList.jsx", "app/articles/[slug]/page.tsx", "components/Articles/ArticlePageDescription.jsx", "components/Articles/FilterArticles.jsx"  ],
   "exclude": ["node_modules"]
 }
