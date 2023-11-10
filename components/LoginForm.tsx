@@ -36,10 +36,6 @@ const LoginForm = () => {
         email, password, redirect: false
       })
 
-      // if (res.error) {
-      //   setError("Неправильні дані")
-      //   return
-      // }
       router.replace("/")
     } catch (error) {
       console.log(error)

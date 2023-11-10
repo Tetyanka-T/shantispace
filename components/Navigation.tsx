@@ -5,7 +5,7 @@ import {AiOutlineHome} from "react-icons/ai"
 import {GrFormNext} from "react-icons/gr"
 
 
-const Navigation = ({section}: {section: string}) => {
+const Navigation = ({section}: {section: string | any}) => {
     
   return (
     <ul className="flex items-center p-4">

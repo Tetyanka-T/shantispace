@@ -21,6 +21,7 @@ const NavBar = () => {
     const {data: session, status} = useSession()
 
 const isAuth = status === "authenticated";
+const isNotAuth = status === "unauthenticated";
 const isUser = session?.user.role === "user";
 const isAdmin = session?.user.role === "admin";
 
@@ -40,7 +41,7 @@ const onShowMenu = () => {
         </button>
         <div className={s.logo}>
             <Link href="/">
-                <Image src='/logo1.png' alt="logo" width={100} height={70} className={s.logo_img}/>
+                <Image src='/logo1.png' alt="logo" width={100} height={70} className={s.logo_img} />
             </Link>
         </div> 
            
@@ -53,7 +54,7 @@ const onShowMenu = () => {
                     </button>
                    {isAdmin && <NavBarAdminMobile onClick={onShowMenu}/>}
                    {isUser && <NavBarUserMobile onClick={onShowMenu}/>}
-                   {!isAuth && <NavBarNotAuthMobile onClick={onShowMenu}/>}
+                   {isNotAuth && <NavBarNotAuthMobile onClick={onShowMenu}/>}
                 </div>
               )  
             }
@@ -67,7 +68,7 @@ const onShowMenu = () => {
                 <NavBarUserDesctop/>
             </div>
             }
-            {!isAuth && 
+            {isNotAuth && 
             <nav className={s.visible}>
                 <ul className="flex justify-center items-center text-lg font-normal tracking-wide leading-6">
                     <li className="mr-8">
@@ -79,9 +80,6 @@ const onShowMenu = () => {
                     <li className="mr-8">
                         <Link href="/yoga">Простір йоги</Link>
                     </li>
-                    {/* <li className="mr-8">
-                        <Link href="/LFK">ЛФК</Link>
-                    </li> */}
                     <li>
                         <Link href="/physical-therapy">Фізична реабілітація</Link>
                     </li>
@@ -91,7 +89,7 @@ const onShowMenu = () => {
            
     
                 <div className="ml-auto">
-                    {!isAuth && 
+                    {isNotAuth && 
                     
                     <button>
                         <Link href="/login">

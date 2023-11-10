@@ -5,6 +5,7 @@ export default interface ArticleI {
     description: string,
     imgSrc: string,
     coverImg: string,
+    createdAt: string
 
 }
 

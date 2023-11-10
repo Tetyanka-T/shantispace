@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.0",
+    "@contentful/rich-text-types": "^16.3.0",
     "bcryptjs": "^2.4.3",
+    "cf-content-types-generator": "^2.12.9",
+    "contentful": "^10.6.5",
     "mongoose": "^7.5.3",
     "next": "latest",
     "next-auth": "^4.23.2",
