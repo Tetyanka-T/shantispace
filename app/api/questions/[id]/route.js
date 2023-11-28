@@ -1,6 +1,6 @@
 import connectMongoDb from "../../../../libs/mongodb";
 import { NextResponse } from "next/server";
-import Question from "@/models/question";
+import Question from "../../../../models/question";
 
 export const PUT = async (request, { params }) => {
   try {

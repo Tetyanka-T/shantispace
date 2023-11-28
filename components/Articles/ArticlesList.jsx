@@ -33,6 +33,9 @@ const ArticlesList = ({ articles }) => {
               className='border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50'
             >
               <Link href={`/articles/${article.fields.slug}`}>
+                <h2 className='text-right mb-2'>
+                  Тема: {article.fields.thema}
+                </h2>
                 <p className='text-right text-sm my-2'>
                   Опубліковано{' '}
                   {new Date(article.fields.dateCreate).toLocaleDateString(
@@ -54,9 +57,6 @@ const ArticlesList = ({ articles }) => {
                   />
                 </div>
 
-                <h2 className='text-right mb-2'>
-                  Тема: {article.fields.thema}
-                </h2>
                 <h2 className='text-center my-2'>{article.fields.title}</h2>
 
                 <p className='truncate'>{article.fields.description}</p>

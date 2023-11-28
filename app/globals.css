@@ -126,11 +126,24 @@ blockquote {
 }
 .markdown img {
   display: block;
-  width: 100%;
+  width: 300px;
   height: auto;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .markdown img {
+    
+    width: 500px;
+    
+  }
+}
+@media screen and (min-width: 1200px) {
+  .markdown img {
+  width: auto;
+    height: 780px;
+  }
+}
 .markdown ul {
   margin-top: 1em;
   margin-bottom: 1em;

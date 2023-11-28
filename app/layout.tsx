@@ -34,7 +34,7 @@ export default function RootLayout({
           <ActiveStatus/>
           {children}
         </main>
-        {/* <Footer/> */}
+        <Footer/>
         </AuthProvider>
       </body>
     </html>
