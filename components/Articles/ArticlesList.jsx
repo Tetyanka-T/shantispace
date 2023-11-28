@@ -3,9 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { BlogQueryResult } from '@/types'
-import ImageComponent from '@/components/Articles/Contentful/ImageComponent'
-import ArticleI from '@/app/interface/interface'
 import FilterArticles from './FilterArticles'
 import s from '@/app/styles/common.module.css'
 
@@ -36,6 +33,17 @@ const ArticlesList = ({ articles }) => {
               className='border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50'
             >
               <Link href={`/articles/${article.fields.slug}`}>
+                <p className='text-right text-sm my-2'>
+                  Опубліковано{' '}
+                  {new Date(article.fields.dateCreate).toLocaleDateString(
+                    'uk-Uk',
+                    {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    }
+                  )}
+                </p>
                 <div className={s.img_container}>
                   <Image
                     src={'https:' + article.fields.coverImg?.fields.file?.url}
@@ -45,17 +53,7 @@ const ArticlesList = ({ articles }) => {
                     className='mx-auto'
                   />
                 </div>
-                <span className='text-right text-sm'>
-                  Опубліковано{' '}
-                  {new Date(article.fields.dateCreatePost).toLocaleDateString(
-                    'uk-Uk',
-                    {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    }
-                  )}
-                </span>
+
                 <h2 className='text-right mb-2'>
                   Тема: {article.fields.thema}
                 </h2>
@@ -70,20 +68,23 @@ const ArticlesList = ({ articles }) => {
       ) : (
         <ul className='mx-auto mt-3 text-base font-normal sm:grid grid-cols-2 gap-3 w-280px lg:grid-cols-3 '>
           {articles.items.map(article => {
-            const {
-              slug,
-              title,
-              dateCreatePost,
-              coverImg,
-              thema,
-              description
-            } = article.fields
+            const { slug, title, dateCreate, coverImg, thema, description } =
+              article.fields
             return (
               <li
                 key={slug}
                 className='border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50'
               >
                 <Link href={`/articles/${slug}`}>
+                  <h2 className='text-right mb-2 fonb'>{thema}</h2>
+                  <p className='text-right text-sm my-2'>
+                    Опубліковано{' '}
+                    {new Date(dateCreate).toLocaleDateString('uk-Uk', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
                   <div className={s.img_container}>
                     <Image
                       src={'https:' + coverImg?.fields.file?.url}
@@ -93,15 +94,7 @@ const ArticlesList = ({ articles }) => {
                       className='mx-auto'
                     />
                   </div>
-                  <span className='text-right text-sm'>
-                    Опубліковано{' '}
-                    {new Date(dateCreatePost).toLocaleDateString('uk-Uk', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </span>
-                  <h2 className='text-right mb-2'>Тема: {thema}</h2>
+
                   <h2 className='text-center my-2'>{title}</h2>
 
                   <p className='truncate'>{description}</p>

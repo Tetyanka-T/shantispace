@@ -3,6 +3,7 @@
 import { FormEvent, SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import {useSession} from "next-auth/react"
+import {toast} from "react-hot-toast";
 
 const AddQuestionForm = () => {
     const [text, setText] = useState('')
@@ -32,7 +33,7 @@ const AddQuestionForm = () => {
         });
   
         if (res.ok) {
-          alert("Як тільки Дарина надасть відповідь на Ваше питання, воно з'явиться у розділі Питання");
+          toast("Як тільки Дарина надасть відповідь на Ваше питання, воно з'явиться у розділі Питання");
           router.push("/blog-user");
         } else {
           throw new Error("Failed to create a question");
@@ -56,7 +57,7 @@ const AddQuestionForm = () => {
      
          <button
           type="submit"
-          className="bg-amber-950 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
+          className="shadow-lg shadow-neutral-500 rounded-md bg-amber-950 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
          >
           Відправити
          </button>

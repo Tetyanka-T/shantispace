@@ -1,4 +1,4 @@
-import GoBackButton from "@/components/GoBackButton"
+
 import QuestionsListWithAnswer from "./QuestionsListWithAnswer"
 
 const getQuestions = async () => {
@@ -21,7 +21,6 @@ const QuestionsListForUsers = async () => {
 
   return (
     <section>
-      <GoBackButton/>
       <QuestionsListWithAnswer questions={questions}/>
     </section>
   )

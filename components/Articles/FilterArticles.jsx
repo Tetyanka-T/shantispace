@@ -1,6 +1,3 @@
-'use client'
-import Link from 'next/link'
-import Article from '@/app/interface/interface'
 import { useState } from 'react'
 import { GoMultiSelect } from 'react-icons/go'
 
@@ -32,12 +29,18 @@ const FilterArticles = ({ articles, onClickFilter, onShowAll }) => {
 
   return (
     <div className='relative ml-3 my-4'>
-      <button onClick={() => onShowMenu()} className='flex items-center'>
+      <div className='flex items-center'>
         <span>Читати по темі</span>
-        <GoMultiSelect size={20} className='ml-2 fill-amber-950' />
-      </button>
+        <button
+          onClick={() => onShowMenu()}
+          className='p-2 shadow-md shadow-neutral-200 rounded-md ml-2'
+        >
+          <GoMultiSelect size={20} className='fill-amber-950' />
+        </button>
+      </div>
+
       {showFilter && (
-        <ul className='p-4 bg-slate-50 w-52 absolute top-7'>
+        <ul className='p-4 bg-slate-50 w-52 absolute top-11 -left-3'>
           <li className='mt-2' onClick={() => handleShowAllArticless()}>
             Читати всі статті
           </li>

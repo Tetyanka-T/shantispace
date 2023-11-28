@@ -31,12 +31,12 @@ const NavBarAdminMobile = ({ onClick }: {onClick: Function}) => {
                 
                 {adminMenu && (
                     <ul className="px-3">
-                        <li onClick={() => onClick()} className="my-2">
+                        {/* <li onClick={() => onClick()} className="my-2">
                             <Link href="/articles/editarticle">Редагувати статтю</Link>
                         </li>
                         <li onClick={() => onClick()} className="my-2">
                             <Link href="/articles/addarticle">Додати статтю</Link>
-                        </li>
+                        </li> */}
                         <li onClick={() => onClick()} className="my-2">
                             <Link href="/chat">Чат</Link>
                         </li>

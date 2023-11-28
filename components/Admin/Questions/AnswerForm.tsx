@@ -17,7 +17,7 @@ const AnswerForm = ({question} : {question: IQuestion}) => {
               headers: {
                 "Content-type": "application/json",
               },
-              body: JSON.stringify({ text: question.text, userEmail: question.userEmail, userName: question.userName, adminName: question.adminNane, adminAnswer }),
+              body: JSON.stringify({ text: question.text, userEmail: question.userEmail, userName: question.userName, adminName: question.adminName, adminAnswer }),
             });
       
             if (!res.ok) {
@@ -37,7 +37,7 @@ const AnswerForm = ({question} : {question: IQuestion}) => {
            value={adminAnswer}
            onChange={(e) => setAdminAnswer(e.target.value)}
         />
-        <button className="bg-amber-950 font-bold text-white py-3 px-6 w-fit mt-3">Відповісти</button>
+        <button className="shadow-xl shadow-neutral-500 rounded-md bg-amber-950 font-bold text-white py-3 px-6 w-fit mt-3">Відповісти</button>
     </form>
   )
 }

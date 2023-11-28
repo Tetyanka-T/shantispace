@@ -7,7 +7,7 @@ import React from 'react'
 const AllQuestionsPage = () => {
   return (
     <div>
-        <Navigation section='Всі питання'/>
+        <Navigation section='Редагування відповіді'/>
         <QuestionsPage vision="all"/>
        
     </div>

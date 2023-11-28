@@ -1,11 +1,11 @@
 import './globals.css'
-import common from './styles/common.module.css'
 import type { Metadata } from 'next'
-import {AuthProvider} from "../Providers"
-import NavBarAdmin from '@/components/Admin/NavBar/NavBarAdminMobile'
+import {AuthProvider} from "../context/Providers"
 import { Inter } from 'next/font/google'
-import NavBar from '@/components/NavBar/NavBar'
+import NavBar from '../components/NavBar/NavBar'
 import Footer from '@/components/Footer'
+import ToasterContext from '../context/ToasterContext'
+import ActiveStatus from '../components/Chat/ActiveStatus'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,11 +29,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
         <NavBar/>
-          <main className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-20'>
-      
-            {children}
-          </main>
-          <Footer/>
+        <main className='min-h-full text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-6 lg:px-8 xl:px-20'>
+          <ToasterContext/>
+          <ActiveStatus/>
+          {children}
+        </main>
+        {/* <Footer/> */}
         </AuthProvider>
       </body>
     </html>

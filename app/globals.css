@@ -122,6 +122,7 @@ blockquote {
 
 .markdown p {
   margin-bottom: 15px;
+  font-size: 20px;
 }
 .markdown img {
   display: block;
@@ -142,4 +143,17 @@ blockquote {
 
 .markdown a {
   font-weight: 600;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #ccc;
+  opacity: 0.7;
+}
+th, td{
+  border: 1px solid #ccc;
+  padding: 5px;
 }

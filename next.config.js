@@ -2,10 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // images: {
-  //   loader: 'custom'
-  // }
+
   images: {
+    domains: ['lh3.googleusercontent.com'],
     remotePatterns: [
       {
         protocol: 'https',

@@ -30,12 +30,12 @@ const NavBarAdminDescktop = () => {
                 
                 {adminMenu && (
                     <ul className="absolute top-10 left-0 bg-slate-100 p-5 flex justify-center items-center w-max">
-                        <li className="mr-8" onClick={() => setAdminMenu(false)}>
+                        {/* <li className="mr-8" onClick={() => setAdminMenu(false)}>
                             <Link href="/articles/editarticle">Редагувати статтю</Link>
                         </li>
                         <li className="mr-8" onClick={() => setAdminMenu(false)}>
                             <Link href="/articles/addarticle">Додати статтю</Link>
-                        </li>
+                        </li> */}
                         <li className="mr-8" onClick={() => setAdminMenu(false)}>
                             <Link href="/chat">Чат</Link>
                         </li>

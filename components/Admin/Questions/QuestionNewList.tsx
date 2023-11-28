@@ -18,6 +18,8 @@ const QuestionNewList = ({questions} : {questions : IQuestion[]}) => {
     };
 
   return (
+    <>
+    <h2 className="text-center font-bold my-3 text-lg">Надайте відповідь на питання</h2>
     <ul className="mx-auto md:w-2/3">
        {questions?.map(q => (
         <li key={q._id} >
@@ -42,6 +44,9 @@ const QuestionNewList = ({questions} : {questions : IQuestion[]}) => {
          </li>
  ))}
  </ul>
+
+    </>
+ 
   )
 }
 

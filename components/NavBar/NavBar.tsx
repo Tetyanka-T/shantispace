@@ -18,12 +18,13 @@ import NavBarNotAuthMobile from "./NavBarNotAuthMobile"
 
 
 const NavBar = () => {
-    const {data: session, status} = useSession()
+const {data: session, status} = useSession()
 
 const isAuth = status === "authenticated";
 const isNotAuth = status === "unauthenticated";
-const isUser = session?.user.role === "user";
-const isAdmin = session?.user.role === "admin";
+const isUser = session?.user.role === "USER";
+const isAdmin = session?.user.role === "ADMIN";
+// const isVipUser = session?.user.role === "VIPUSER"
 
 const [showMenu, setShowMenu] = useState(false)
 
