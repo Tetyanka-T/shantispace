@@ -17,7 +17,7 @@ const NavBarAdminDescktop = () => {
       };
 
   return (
-    <nav className="text-lg font-normal tracking-wide leading-6">
+    <nav className="text-lg font-normal tracking-wide leading-6 ">
 
         <ul className="flex items-center justify-center">
             <li className="relative mr-10">
@@ -29,23 +29,17 @@ const NavBarAdminDescktop = () => {
                 </div>
                 
                 {adminMenu && (
-                    <ul className="absolute top-10 left-0 bg-slate-100 p-5 flex justify-center items-center w-max">
-                        {/* <li className="mr-8" onClick={() => setAdminMenu(false)}>
-                            <Link href="/articles/editarticle">Редагувати статтю</Link>
-                        </li>
-                        <li className="mr-8" onClick={() => setAdminMenu(false)}>
-                            <Link href="/articles/addarticle">Додати статтю</Link>
-                        </li> */}
-                        <li className="mr-8" onClick={() => setAdminMenu(false)}>
+                    <ul className="text-gray-700 absolute top-[55px] left-0 bg-slate-200 p-5 flex justify-center items-center w-max z-50 rounded-md">
+                        <li className="mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950" onClick={() => setAdminMenu(false)}>
                             <Link href="/chat">Чат</Link>
                         </li>
-                        <li className="mr-8" onClick={() => setAdminMenu(false)}>
+                        <li className="mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950" onClick={() => setAdminMenu(false)}>
                             <Link href="/questions">Питання</Link>
                         </li>
-                        <li className="mr-8" onClick={() => setAdminMenu(false)}>
+                        <li className="mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950" onClick={() => setAdminMenu(false)}>
                             <Link href="/questions/newquestion">Нове питання</Link>
                         </li>
-                        <li onClick={() => setAdminMenu(false)} className="my-2">
+                        <li onClick={() => setAdminMenu(false)} className="my-2 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950">
                             <Link href="/questions/allquestions">Відредагувати відповідь</Link>
                         </li>
                     </ul>

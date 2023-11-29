@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
     <div 
       className="
         bg-white 
-        w-full 
+    
         flex 
         border-b-[1px] 
         sm:px-4 

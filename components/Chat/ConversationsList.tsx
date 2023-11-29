@@ -83,13 +83,13 @@ const ConversationList: React.FC<ConversationListProps> = ({
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)}
       />
-    <aside className={clsx(`
-     inset-y-0 pb-20 lg:pb-0 lg:w-80 lg:block overflow-y-auto border-r border-gray-200
+    <aside className={clsx(`-ml-[10px]
+     inset-y-0 pb-20 lg:pb-0 lg:w-80 lg:min-h-screen lg:block overflow-y-auto border-r border-gray-200 lg:ml-0
     `, isOpen ? "hidden" : "block w-full left-0")}>
         <div className="px-5">
             <div className="flex justify-between mb-4 pt-4">
                 <div className="text-2xl font-bold text-neutral-800">
-                    Спілкування
+                    Чати
                 </div>
                 <div onClick={() => setIsModalOpen(true)} 
                 className="rounded-full p-2 bg-gray-100 text-gray-600 cursor-pointer hover:opacity-75 transition">

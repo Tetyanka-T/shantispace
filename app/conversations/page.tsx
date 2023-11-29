@@ -7,7 +7,7 @@ import EmptyState from "../../components/Chat/EmptyState"
 const ConversationsPage = () => {
   const {isOpen} = useConversation()
   return (
-    <div className={clsx("lg:pl-80 h-full lg:block", isOpen ? "block" : "hidden")}>
+    <div className={clsx("lg:pl-80 lg:mx-auto lg:block", isOpen ? "block" : "hidden")}>
       <EmptyState/>
     </div>
   )

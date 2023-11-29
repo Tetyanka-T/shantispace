@@ -5,10 +5,10 @@ import getCurrentUser from '../../actions/getCurrentUser'
 async function SideBar({ children }) {
   const currentUser = await getCurrentUser()
   return (
-    <div className='h-full'>
+    <div className='mx-auto'>
       <DesctopSidebar currentUser={currentUser} />
       <MobileFooter />
-      <main className='lg:pl-10 h-full xl:pl-0'>{children}</main>
+      <div className='lg:pl-8 xl:pl-0'>{children}</div>
     </div>
   )
 }
