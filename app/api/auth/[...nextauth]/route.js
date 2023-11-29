@@ -52,7 +52,7 @@ export const authOptions = {
   ],
   debug: process.env.NODE_ENV === 'development',
   callbacks: {
-    async jwt({ token, user, session }) {
+    async jwt({ token, user }) {
       if (user) {
         token.accessToken = user.accessToken
         token.refreshToken = user.refreshToken
@@ -64,7 +64,7 @@ export const authOptions = {
       return token
     },
 
-    async session({ session, token, user }) {
+    async session({ session, token }) {
       return {
         ...session,
         user: {

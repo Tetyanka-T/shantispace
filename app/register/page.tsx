@@ -3,7 +3,7 @@ import RegisterForm from "@/components/RegisterForm"
 const RegisterPage = async () => {
 
   return (
-    <div>
+    <div className="h-screen">
         <RegisterForm/>
     </div>
   )
