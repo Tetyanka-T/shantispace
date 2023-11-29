@@ -54,7 +54,7 @@ const NavBar = () => {
         <div className='block'>
           <button
             onClick={() => onShowMenu()}
-            className='absolute top-3 right-2 z-20'
+            className='absolute top-3 right-2 z-50'
           >
             <AiOutlineClose size={24} className='fill-amber-950' />
           </button>

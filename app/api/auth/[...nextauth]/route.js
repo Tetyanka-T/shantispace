@@ -1,4 +1,4 @@
-import NextAuth from 'next-auth/next'
+import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import GoogleProvider from 'next-auth/providers/google'
 import bcrypt from 'bcryptjs'
@@ -19,15 +19,14 @@ export const authOptions = {
         password: { label: 'password', type: 'password' }
       },
       async authorize(credentials) {
-        const { email, password } = credentials
-        if (!email || !password) {
+        if (!credentials?.email || !credentials?.password) {
           throw new Error('Invalid credentials')
         }
 
         try {
           const user = await prisma.user.findUnique({
             where: {
-              email: email
+              email: credentials.email
             }
           })
 
@@ -35,7 +34,7 @@ export const authOptions = {
             throw new Error('Invalid credentials')
           }
           const passwordMatch = await bcrypt.compare(
-            password,
+            credentials.password,
             user.hashedPassword
           )
 
