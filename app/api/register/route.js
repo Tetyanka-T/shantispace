@@ -26,7 +26,8 @@ export const POST = async (req, res) => {
       data: {
         email,
         name,
-        hashedPassword
+        hashedPassword,
+        role
       }
     })
     // await connectMongoDb()
