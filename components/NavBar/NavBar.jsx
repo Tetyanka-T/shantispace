@@ -1,14 +1,13 @@
 'use client'
 
 import { useSession, signOut } from 'next-auth/react'
-import { User } from '@prisma/client'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GrYoga } from 'react-icons/gr'
 import { TbYoga } from 'react-icons/tb'
 import s from './NavBar.module.css'
 import NavBarAdminMobile from '../Admin/NavBar/NavBarAdminMobile'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { AiOutlineClose } from 'react-icons/ai'
 import NavBarAdminDescktop from '../Admin/NavBar/NavBarAdminDescktop'
@@ -77,16 +76,16 @@ const NavBar = () => {
       {isNotAuth && (
         <nav className={s.visible}>
           <ul className='flex justify-center items-center text-lg font-normal tracking-wide leading-6'>
-            <li className='mr-8'>
+            <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/'>Головна</Link>
             </li>
-            <li className='mr-8'>
+            <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/blog'>Блог</Link>
             </li>
-            <li className='mr-8'>
+            <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/yoga'>Простір йоги</Link>
             </li>
-            <li>
+            <li className='hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/physical-therapy'>Фізична реабілітація</Link>
             </li>
           </ul>

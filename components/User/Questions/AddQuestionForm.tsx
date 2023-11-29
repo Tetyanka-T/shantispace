@@ -10,8 +10,8 @@ const AddQuestionForm = () => {
     const router = useRouter();
 
     const {data: session, status} = useSession()
-    const userName = session?.user.name;
-    const userEmail = session?.user.email
+    const userName = session?.user?.name;
+    const userEmail = session?.user?.email
   
   
     const handleSubmit = async (e: FormEvent) => {
