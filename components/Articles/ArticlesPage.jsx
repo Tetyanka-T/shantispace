@@ -1,5 +1,5 @@
 import ArticlesList from './ArticlesList'
-import { client } from '@/libs/contentful/client'
+import { client } from '../../libs/contentful/client'
 
 const getArticles = async () => {
   const res = await client.getEntries({ content_type: 'post' })

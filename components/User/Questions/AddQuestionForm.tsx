@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, SyntheticEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import {useSession} from "next-auth/react"
 import {toast} from "react-hot-toast";

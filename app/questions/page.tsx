@@ -1,6 +1,6 @@
-import Navigation from "@/components/Navigation"
-import GoBackButton from "@/components/GoBackButton"
-import QuestionsListForUsers from "@/components/User/Questions/QuestionsListForUsers"
+import Navigation from "../../components/Navigation"
+import GoBackButton from "../../components/GoBackButton"
+import QuestionsListForUsers from "../../components/User/Questions/QuestionsListForUsers"
 
 
 const Questions = () => {

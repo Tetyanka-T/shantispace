@@ -1,8 +1,7 @@
-import QuestionsPage from '@/components/Admin/Questions/QuestionsPage'
+import QuestionsPage from '../../../components/Admin/Questions/QuestionsPage'
+import Navigation from '../../..//components/Navigation'
 
-import Navigation from '@/components/Navigation'
 
-import React from 'react'
 
 const AllQuestionsPage = () => {
   return (
