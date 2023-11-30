@@ -19,7 +19,7 @@ const getQuestions = async () => {
 
 const QuestionsPage = async ({vision}: {vision: string}) => {
 
-    const questions = await getQuestions()
+    const {questions} = await getQuestions()
 
   return (
     <section className="my-4">
