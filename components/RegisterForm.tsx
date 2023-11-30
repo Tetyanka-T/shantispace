@@ -52,7 +52,7 @@ const handleSubmit = async (e: FormEvent) => {
   }
   try {
     setLoading(true)
-   const response = await fetch("https://shantispace.vercel.app/api/register", {
+   const response = await fetch("/api/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
