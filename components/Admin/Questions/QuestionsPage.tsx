@@ -1,10 +1,10 @@
-import GoBackButton from "@/components/GoBackButton"
+import GoBackButton from "../../../components/GoBackButton"
 import QuestionNewList from "./QuestionNewList"
 import QuestionsList from "./QuestionsList"
 
 const getQuestions = async () => {
     try {
-       const res = await fetch("http://localhost:3000/api/questions", {
+       const res = await fetch("/api/questions", {
         cache: "no-store",
         })
 

@@ -12,7 +12,7 @@ const AnswerForm = ({question} : {question: IQuestion}) => {
     const onSubmit = async (e: FormEvent) => {
         e.preventDefault()
         try {
-            const res = await fetch(`http://localhost:3000/api/questions/${question._id}`, {
+            const res = await fetch(`/api/questions/${question._id}`, {
               method: "PUT",
               headers: {
                 "Content-type": "application/json",

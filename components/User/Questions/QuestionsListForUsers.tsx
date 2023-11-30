@@ -3,7 +3,7 @@ import QuestionsListWithAnswer from "./QuestionsListWithAnswer"
 
 const getQuestions = async () => {
     try {
-       const res = await fetch("http://localhost:3000/api/questions", {
+       const res = await fetch("/api/questions", {
         cache: "no-store",
         })
 
