@@ -9,7 +9,7 @@ const DeleteQuestionButton = ({ id }: ({id: String | null})) => {
     const confirmed = confirm("Ви впевнені, що хочете видалити це питання?");
 
     if (confirmed) {
-      const res = await fetch(`http://localhost:3000/api/questions?id=${id}`, {
+      const res = await fetch(`https://shantispace.vercel.app/api/questions?id=${id}`, {
         method: "DELETE",
       });
 

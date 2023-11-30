@@ -4,7 +4,7 @@ import QuestionsList from "./QuestionsList"
 
 const getQuestions = async () => {
     try {
-       const res = await fetch("http://localhost:3000/api/questions", {
+       const res = await fetch("https://shantispace.vercel.app/api/questions", {
         cache: "no-store",
         })
 

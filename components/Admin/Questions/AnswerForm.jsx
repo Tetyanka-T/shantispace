@@ -12,7 +12,7 @@ const AnswerForm = ({question}) => {
     const onSubmit = async (e) => {
         e.preventDefault()
         try {
-            const res = await fetch(`http://localhost:3000/api/questions/${question._id}`, {
+            const res = await fetch(`https://shantispace.vercel.app/${question._id}`, {
               method: "PUT",
               headers: {
                 "Content-type": "application/json",
