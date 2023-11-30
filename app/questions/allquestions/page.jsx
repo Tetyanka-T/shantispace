@@ -1,14 +1,11 @@
 import QuestionsPage from '../../../components/Admin/Questions/QuestionsPage'
 import Navigation from '../../../components/Navigation'
 
-
-
 const AllQuestionsPage = () => {
   return (
-    <div className='h-screen'>
-        <Navigation section='Редагування відповіді'/>
-        <QuestionsPage vision="all"/>
-       
+    <div className='h-full'>
+      <Navigation section='Редагування відповіді' />
+      <QuestionsPage vision='all' />
     </div>
   )
 }
