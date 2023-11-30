@@ -17,7 +17,7 @@ const getQuestions = async () => {
 }
 
 const QuestionsListForUsers = async () => {
-    const {questions} = await getQuestions()
+    const questions = await getQuestions()
 
   return (
     <section>
