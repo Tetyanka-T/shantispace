@@ -5,11 +5,11 @@ import QuestionsListForUsers from "@/components/User/Questions/QuestionsListForU
 
 const Questions = () => {
   return (
-    <>
+    <div className="h-screen">
       <Navigation section="Питання Дарині"/>
       <GoBackButton/>
       <QuestionsListForUsers/>
-    </>
+    </div>
    
   )
 }

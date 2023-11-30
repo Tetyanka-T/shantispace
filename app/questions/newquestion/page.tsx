@@ -7,7 +7,7 @@ import React from 'react'
 
 const NewQuestionPage = () => {
   return (
-    <div>
+    <div className='h-screen'>
         <Navigation section='Нове питання'/>
         <QuestionsPage vision='new'/>
        

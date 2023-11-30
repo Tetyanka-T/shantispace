@@ -5,7 +5,7 @@ import AddQuestionForm from "@/components/User/Questions/AddQuestionForm"
 
 const AddQuestionPage = () => {
   return (
-    <div>
+    <div className="h-screen">
         <Navigation section="Задати питання Дарині"/>
         <GoBackButton/>
         <AddQuestionForm/>

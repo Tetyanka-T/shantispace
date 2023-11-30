@@ -6,7 +6,7 @@ import React from 'react'
 
 const AllQuestionsPage = () => {
   return (
-    <div>
+    <div className='h-screen'>
         <Navigation section='Редагування відповіді'/>
         <QuestionsPage vision="all"/>
        
