@@ -1,15 +1,15 @@
 "use client"
 
-import { useState, FormEvent } from "react"
+import { useState } from "react"
 import { useRouter } from "next/navigation";
-import IQuestion from "../../../app/interface/interface"
 
-const AnswerForm = ({question} : {question: IQuestion}) => {
+
+const AnswerForm = ({question}) => {
     const [adminAnswer, setAdminAnswer] = useState(question.adminAnswer)
 
     const router = useRouter()
 
-    const onSubmit = async (e: FormEvent) => {
+    const onSubmit = async (e) => {
         e.preventDefault()
         try {
             const res = await fetch(`http://localhost:3000/api/questions/${question._id}`, {
