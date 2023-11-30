@@ -1,6 +1,6 @@
 "use client";
 
-import IQuestion from "@/app/interface/interface"
+import IQuestion from "../../../app/interface/interface"
 
 
 const QuestionsListWithAnswer = ({questions} : {questions: IQuestion[]}) => {

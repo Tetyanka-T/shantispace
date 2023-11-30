@@ -1,6 +1,6 @@
 "use client"
 import {BsPlusCircleDotted} from "react-icons/bs"
-import IQuestion from "@/app/interface/interface"
+import IQuestion from "../../../app/interface/interface"
 import { useState } from "react"
 import AnswerForm from "./AnswerForm"
 import DeleteQuestionButton from "./DeleteQuestionButton"

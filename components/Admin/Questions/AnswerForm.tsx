@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from "react"
 import { useRouter } from "next/navigation";
-import IQuestion from "@/app/interface/interface"
+import IQuestion from "../../../app/interface/interface"
 
 const AnswerForm = ({question} : {question: IQuestion}) => {
     const [adminAnswer, setAdminAnswer] = useState(question.adminAnswer)
