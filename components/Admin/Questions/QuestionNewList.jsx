@@ -15,12 +15,18 @@ const QuestionNewList = ({ questions }) => {
   const toggleMenu = () => {
     getAnswer ? setGetAnswer(false) : setGetAnswer(true)
   }
-
   return (
     <>
-      <h2 className='text-center font-bold my-3 text-lg'>
-        Надайте відповідь на питання
-      </h2>
+      {questions.length !== 0 ? (
+        <h2 className='text-center font-bold my-3 text-lg'>
+          Надайте відповідь на питання
+        </h2>
+      ) : (
+        <h2 className='text-center font-bold my-3 text-lg'>
+          Відсутні нові запитання
+        </h2>
+      )}
+
       <ul className='mx-auto md:w-2/3'>
         {questions?.map(q => (
           <li key={q._id}>
@@ -28,6 +34,13 @@ const QuestionNewList = ({ questions }) => {
               <div className='border-2 border-solid p-3 rounded-lg min-[-320px]:mb-3 shadow-slate-50'>
                 <p className='text-right'>{q.userName}</p>
                 <p className='text-right'>{q.userEmail}</p>
+                <p className='text-right'>
+                  {new Date(q.createdAt).toLocaleDateString('uk-Uk', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </p>
                 <p className='border-b-2 p-2'>{q.text}</p>
                 <p className='p-2'>{q.adminAnswer}</p>
                 <div className='flex justify-end items-center'>

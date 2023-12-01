@@ -6,10 +6,11 @@ import { useRouter } from "next/navigation";
 const DeleteQuestionButton = ({ id }: ({id: String | null})) => {
   const router = useRouter();
   const removeQuestion = async () => {
+    
     const confirmed = confirm("Ви впевнені, що хочете видалити це питання?");
 
     if (confirmed) {
-      const res = await fetch(`https://shantispace.vercel.app/api/questions?id=${id}`, {
+      const res = await fetch(`/api/questions?id=${id}`, {
         method: "DELETE",
       });
 

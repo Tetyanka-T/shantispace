@@ -22,7 +22,7 @@ const QuestionsPage = async ({vision}: {vision: string}) => {
     const {questions} = await getQuestions()
 
   return (
-    <section className="my-4">
+    <section className="my-6">
         <GoBackButton/>
         {vision === "all" && <QuestionsList questions={questions}/>}
         {vision === "new" && <QuestionNewList questions={questions}/>}

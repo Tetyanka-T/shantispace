@@ -24,7 +24,7 @@ const AddQuestionForm = () => {
   
       try {
   
-        const res = await fetch("https://shantispace.vercel.app/api/questions", {
+        const res = await fetch("/api/questions", {
           method: "POST",
           headers: {
             "Content-type": "application/json",
