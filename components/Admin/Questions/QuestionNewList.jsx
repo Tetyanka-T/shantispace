@@ -49,7 +49,6 @@ const QuestionNewList = ({ questions }) => {
                   </button>
                   <DeleteQuestionButton id={q._id} />
                 </div>
-
                 {getAnswer && <AnswerForm question={q} />}
               </div>
             )}
