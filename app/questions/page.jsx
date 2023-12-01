@@ -4,7 +4,7 @@ import QuestionsListForUsers from '../../components/User/Questions/QuestionsList
 
 const Questions = () => {
   return (
-    <div className='h-screen'>
+    <div className='h-full'>
       <Navigation section='Питання Дарині' />
       <GoBackButton />
       <QuestionsListForUsers />
