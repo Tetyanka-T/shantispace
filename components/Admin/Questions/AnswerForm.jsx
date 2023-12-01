@@ -28,7 +28,7 @@ const AnswerForm = ({ question }) => {
       if (!res.ok) {
         throw new Error('Failed to update question')
       }
-
+      router.refresh()
       router.push('/questions')
     } catch (error) {
       console.log(error)
