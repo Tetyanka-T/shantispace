@@ -14,6 +14,7 @@ import NavBarAdminDescktop from '../Admin/NavBar/NavBarAdminDescktop'
 import NavBarUserMobile from '../User/NavBar/NavBarUserMobile'
 import NavBarUserDesctop from '../User/NavBar/NavBarUserDesctop'
 import NavBarNotAuthMobile from './NavBarNotAuthMobile'
+import { Yoga, Yoga2, Yoga3 } from '../svg'
 
 const NavBar = () => {
   const { data: session, status } = useSession()
@@ -41,7 +42,7 @@ const NavBar = () => {
       <div className={s.logo}>
         <Link href='/'>
           <Image
-            src='/logo1.png'
+            src='/logo3.png'
             alt='logo'
             width={100}
             height={70}
@@ -96,20 +97,25 @@ const NavBar = () => {
         {isNotAuth && (
           <button>
             <Link href='/login'>
-              <GrYoga size={24} className='fill-amber-950' />
+              <Image src='/yoga6.png' alt='' width={40} height={70} />
+              {/* <Yoga3 className='fill-amber-950' /> */}
+              {/* <GrYoga size={24} className='fill-amber-950' /> */}
               <span className='text-xs'>Увійти</span>
             </Link>
           </button>
         )}
 
         {isAuth && (
-          <div className='flex justify-center'>
+          <div className='flex justify-center items-center'>
             <span className='mr-2 text-base font-medium'>
               Привіт, {session?.user?.name}
             </span>
             <button onClick={() => signOut()}>
-              <TbYoga size={24} className='fill-amber-950' />
-              <span className='text-xs'>Вихід</span>
+              <div>
+                <Image src='/yoga3.png' alt='' width={80} height={80} />
+                {/* <TbYoga size={24} className='fill-amber-950' /> */}
+                <span className='text-xs'>Вихід</span>
+              </div>
             </button>
           </div>
         )}
