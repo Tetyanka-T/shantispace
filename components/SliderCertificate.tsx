@@ -39,6 +39,12 @@ const SliderCertificate = () => {
         <SwiperSlide>
             <Image src="/5.jpg" alt="" width={200} height={200}/>
         </SwiperSlide>
+        <SwiperSlide>
+            <Image src="/6.jpg" alt="" width={200} height={200}/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <Image src="/7.jpg" alt="" width={200} height={200}/>
+        </SwiperSlide>
       </Swiper>
     </div>
     <div className={s.slider_desktop}>

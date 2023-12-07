@@ -3,8 +3,6 @@
 import { useSession, signOut } from 'next-auth/react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { GrYoga } from 'react-icons/gr'
-import { TbYoga } from 'react-icons/tb'
 import s from './NavBar.module.css'
 import NavBarAdminMobile from '../Admin/NavBar/NavBarAdminMobile'
 import { useState } from 'react'
@@ -14,7 +12,6 @@ import NavBarAdminDescktop from '../Admin/NavBar/NavBarAdminDescktop'
 import NavBarUserMobile from '../User/NavBar/NavBarUserMobile'
 import NavBarUserDesctop from '../User/NavBar/NavBarUserDesctop'
 import NavBarNotAuthMobile from './NavBarNotAuthMobile'
-import { Yoga, Yoga2, Yoga3 } from '../svg'
 
 const NavBar = () => {
   const { data: session, status } = useSession()
@@ -36,16 +33,16 @@ const NavBar = () => {
   }
   return (
     <header className='p-3 flex justify-center items-center border-b-2 relative lg:px-8 xl:px-10'>
-      <button onClick={() => onShowMenu()} className='mr-4 lg:hidden'>
-        <RiMenu3Fill size={28} />
+      <button onClick={() => onShowMenu()} className='mr-4 my-2 lg:hidden'>
+        <RiMenu3Fill size={28} className='fill-zinc-800' />
       </button>
       <div className={s.logo}>
         <Link href='/'>
           <Image
-            src='/logo3.png'
+            src='/logo.png'
             alt='logo'
-            width={100}
-            height={70}
+            width={120}
+            height={80}
             className={s.logo_img}
           />
         </Link>
@@ -97,9 +94,7 @@ const NavBar = () => {
         {isNotAuth && (
           <button>
             <Link href='/login'>
-              <Image src='/yoga6.png' alt='' width={40} height={70} />
-              {/* <Yoga3 className='fill-amber-950' /> */}
-              {/* <GrYoga size={24} className='fill-amber-950' /> */}
+              <Image src='/scorpio.png' alt='' width={70} height={70} />
               <span className='text-xs'>Увійти</span>
             </Link>
           </button>
@@ -112,8 +107,8 @@ const NavBar = () => {
             </span>
             <button onClick={() => signOut()}>
               <div>
-                <Image src='/yoga3.png' alt='' width={80} height={80} />
-                {/* <TbYoga size={24} className='fill-amber-950' /> */}
+                <Image src='/twist.png' alt='асана' width={70} height={60} />
+
                 <span className='text-xs'>Вихід</span>
               </div>
             </button>
