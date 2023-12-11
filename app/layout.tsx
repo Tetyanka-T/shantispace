@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <head>
-      <link rel="icon" href="/logo1.png" />
+      <link rel="icon" href="/logo.png" />
       </head>
       <body className={inter.className}>
         <AuthProvider>

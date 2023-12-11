@@ -15,27 +15,36 @@
 
 }
 .yoga_hero {
-  margin: 0 -10px;
+  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px 400px;
+  padding: 78px 43px;
+}
 
-  position: relative;
-}
-.yoga_hero_container {
-  margin: 0 auto;
-
-  mask-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4));
-}
-.yoga_hero_container img {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
 .yoga_img_container img{
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
-  
+.couch_container_img {
+  margin: 0 -10px;
+}
+.couch_container_img img{
+width: 100%;
+height: auto;
+}
+.contact_maplocation iframe {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .yoga_img_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+ }
   @media screen and (min-width: 768px) {
     .slider_desktop {
       display: block;
@@ -46,8 +55,10 @@
     }
     .yoga_hero {
       margin: 0 -20px;
-    
+      background-size: 768px 400px;
+      padding: 120px 50px;
     }
+
    }
   
 
@@ -55,20 +66,22 @@
     .img_container {
       height: 300px;
     }
-  
+  .yoga_hero {
+    background-size: 1400px 600px;
+    padding: 220px 50px;
+  }
    }
+
+
    @media screen and (min-width: 1500px) {
     .hero {
       margin: 0 -30px;
+    }
+    .yoga_hero {
+      background-size: 1600px 600px;
+      padding: 220px 50px;
+    }
     
-    }
-    .hero_container {
-     height: 800px;
-    }
-    .hero_container img {
-      width: auto;
-      height: 100%;
-    }
   
    }
   

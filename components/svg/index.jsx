@@ -1,5 +1,0 @@
-export { default as Yoga } from './yoga.svg'
-export { default as Yoga2 } from './yoga2.svg'
-export { default as Yoga3 } from './yoga3.svg'
-export { default as Yoga4 } from './yoga4.svg'
-export { default as Yoga5 } from './yoga5.svg'

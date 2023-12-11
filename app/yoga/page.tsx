@@ -1,18 +1,17 @@
-import Image from "next/image"
+
 import JoinIn from "@/components/JoinIn"
 import Yoga from "../../components/Yoga"
-import s from "@/app/styles/common.module.css"
+import JoinInButton from "@/components/JoinInButton"
+import Contact from "@/components/Contact"
 
 
 const YogaPage = () => {
   return (
     <div className="h-full">
       <Yoga/>
-      
-      
-      
-  
       <JoinIn/>
+      <Contact/>
+
     </div>
     
   )
