@@ -6,14 +6,14 @@ import s from "@/app/styles/common.module.css"
 function Contact() {
   return (
     <>
-      <h3 className="text-lg text-center">Контакти</h3>
-      <div className="flex items-center justify-center">
-        <Image src="/logo.png" alt="logo" width={80} height={80}/>
-        <p className="text-lg mt-7 ml-2">Простір здоров&apos;я</p>
+      <h3 className="text-lg text-center 2xl:text-2xl">Контакти</h3>
+      <div className="flex items-center justify-start">
+        <Image src="/logo.png" alt="logo" width={90} height={90}/>
+        <p className="text-lg mt-9 ml-3 2xl:text-2xl">Простір здоров&apos;я</p>
       </div>
-      <div className="md:grid md:grid-cols-2 my-3">
-        <ul className="text-lg md:mt-20">
-          <li className="flex items-center">
+      <div className="md:grid md:grid-cols-2 my-3 2xl:text-2xl">
+        <ul className="text-lg md:mt-20 2xl:text-xl">
+          <li className="flex items-center mb-3">
             <MdOutlinePhoneIphone className="fill-amber-950 mr-2"/>
             <a href="tel:+380977339045">+380977339045</a>
           </li>

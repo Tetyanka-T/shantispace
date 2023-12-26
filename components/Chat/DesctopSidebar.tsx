@@ -21,7 +21,7 @@ const DesctopSidebar: React.FC<DesctopSidebarProps> = ({currentUser}) => {
   return (
     <>
     <SettingsModal currentUser={currentUser} isOpen={isOpen} onClose={() => setIsOpen(false)}/>
-     <div className="hidden lg:absolute lg:h-full lg:inset-y-0 lg:left-0 lg:top-[128px] lg:z-40 lg:w-20 xl:px-6 lg:bg-white lg:border-r-[1px] lg:pb-4 lg:flex lg:flex-col justify-between">
+     <div className="hidden lg:absolute lg:h-full lg:inset-y-0 lg:left-0 lg:top-[110px] lg:z-40 lg:w-20 xl:px-6 lg:bg-white lg:border-r-[1px] lg:pb-4 lg:flex lg:flex-col justify-between">
         <nav className="my-4 flex flex-col justify-between">
             <ul role="list" className="flex flex-col space-y-1">
                 {routes.map((item) => (

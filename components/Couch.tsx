@@ -9,6 +9,7 @@ const Couch = () => {
           <Image src="/couch.jpeg" alt="" width={320} height={300}/>
         </div>
         <p className="text-md my-2 lg:text-lg lg:ml-10">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</p>
+        <Link className="text-md my-2 lg:text-lg lg:ml-10 cursor-pointer" href="/blog">Читати корисні статті</Link>
       </div>
       <div className="md:ml-8">
       <p className="text-center text-lg my-2 lg:text-xl lg:ml-10">Розклад йога-практик</p>
