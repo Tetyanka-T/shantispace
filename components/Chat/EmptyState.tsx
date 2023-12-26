@@ -4,7 +4,7 @@ const EmptyState = () => {
   return (
     <div className="
     absolute
-    top-[110px]
+    top-[128px]
     w-[600px]
     h-full
     flex 
