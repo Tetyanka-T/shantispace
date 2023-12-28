@@ -1,20 +1,9 @@
 'use client'
 
-import { BsPlusCircleDotted } from 'react-icons/bs'
-import { useState } from 'react'
-import AnswerForm from './AnswerForm'
 import DeleteQuestionButton from './DeleteQuestionButton'
+import Link from 'next/link'
 
 const QuestionNewList = ({ questions }) => {
-  const [getAnswer, setGetAnswer] = useState(false)
-
-  const onGetAnswer = () => {
-    setGetAnswer(true)
-    toggleMenu()
-  }
-  const toggleMenu = () => {
-    getAnswer ? setGetAnswer(false) : setGetAnswer(true)
-  }
   return (
     <>
       {questions.length !== 0 ? (
@@ -44,12 +33,15 @@ const QuestionNewList = ({ questions }) => {
                 <p className='border-b-2 p-2'>{q.text}</p>
                 <p className='p-2'>{q.adminAnswer}</p>
                 <div className='flex justify-end items-center'>
-                  <button className='my-2 mr-2' onClick={() => onGetAnswer()}>
-                    <BsPlusCircleDotted size={24} />
-                  </button>
+                  <Link
+                    href={`/questions/newquestion/${q._id}`}
+                    className='my-2 mr-2 border-2 rounded-md p-2 bg-amber-950 text-white'
+                  >
+                    Відповісти
+                  </Link>
+
                   <DeleteQuestionButton id={q._id} />
                 </div>
-                {getAnswer && <AnswerForm question={q} />}
               </div>
             )}
           </li>

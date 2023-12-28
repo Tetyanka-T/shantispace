@@ -1,6 +1,7 @@
 import { client, previewClient } from '../../../libs/contentful/client'
 import ArticlePageDescription from '../../../components/Articles/ArticlePageDescription'
 import Navigation from '../../../components/Navigation'
+import Footer from '@/components/Footer'
 
 type Params = {
   params: {

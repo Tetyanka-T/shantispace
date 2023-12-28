@@ -44,6 +44,7 @@ height: auto;
   align-items: center;
   margin: 30px 20px;
 }
+
 @media screen and (min-width: 600px) {
   .yoga_img_container {
     display: grid;

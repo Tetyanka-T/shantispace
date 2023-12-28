@@ -7,6 +7,7 @@ import {toast} from "react-hot-toast";
 
 const AddQuestionForm = () => {
     const [text, setText] = useState('')
+    const [disabled, setDisabled] = useState(false);
     const router = useRouter();
 
     const {data: session, status} = useSession()
@@ -16,7 +17,7 @@ const AddQuestionForm = () => {
   
     const handleSubmit = async (e: FormEvent) => {
       e.preventDefault();
-  
+      setDisabled(true);
       if (!text) {
         alert("Напишіть питання");
         return;
@@ -57,6 +58,7 @@ const AddQuestionForm = () => {
      
          <button
           type="submit"
+          disabled={disabled}
           className="shadow-lg shadow-neutral-500 rounded-md bg-amber-950 font-bold text-white py-3 px-6 w-fit mx-auto mt-3"
          >
           Відправити
