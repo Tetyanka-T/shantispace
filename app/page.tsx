@@ -1,19 +1,19 @@
 import Image from "next/image"
+import Link from "next/link"
 import s from "@/app/styles/common.module.css"
+
 export default function Home() {
 
   return (
-    <section className="h-full">
-      <div className={s.home_hero}>
-        <Image src="/hero.jpg" alt="" width={320} height={320}/>
-
-      </div>
+    <section className="h-full -mx-[10px]">
+           <div className={s.home_hero}>
+              <div className="text-center leading-7 text-2xl font-black tracking-wider">
+                <h1 className="text-2xl font-bold leading-5 md:text-[36px] lg:text-[40px] 2xl:text-[45px]">Простір здоров&apos;я</h1>
+                <p className="text-xl font-semibold leading-5 mt-3 md:text-[26px] md:mt-5 lg:text-[38px] lg:mt-8 2xl:mt-12">Віднайди гармонію!</p>
+              </div>
+           </div>
       
-      <div>
-        <h1>Shanti_Space</h1>
-        <p>Простір здоров&apos;я</p>
-        <p>Віднайди гармонію!</p>
-      </div>
+ 
       
     </section>
   )

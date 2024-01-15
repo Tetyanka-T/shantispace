@@ -73,7 +73,7 @@ const NavBar = () => {
       )}
       {isNotAuth && (
         <nav className={s.visible}>
-          <ul className='flex justify-center items-center text-lg font-normal tracking-wide leading-6'>
+          <ul className='flex justify-center items-center text-lg font-normal tracking-wide leading-6 lg:text-xl'>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/'>Головна</Link>
             </li>

@@ -13,12 +13,19 @@
   height: 100%;
   object-fit: cover;
 }
-.yoga_hero {
-  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero.jpg);
+.home_hero {
+  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_main.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px 400px;
-  padding: 78px 60px;
+  background-size: cover;
+  padding: 140px 30px;
+}
+.yoga_hero {
+  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_yoga.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 140px 50px;
 }
 
 .yoga_img_container img{
@@ -44,14 +51,17 @@ height: auto;
   align-items: center;
   margin: 30px 20px;
 }
-
+@media screen and (min-width: 500px) {
+.home_hero {
+  padding: 200px 50px;
+}
+ }
 @media screen and (min-width: 600px) {
   .yoga_img_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
-
  }
   @media screen and (min-width: 768px) {
     .slider_desktop {
@@ -63,8 +73,10 @@ height: auto;
     }
     .yoga_hero {
       margin: 0 -20px;
-      background-size: 768px 400px;
-      padding: 120px 50px;
+      padding: 200px 50px;
+    }
+    .home_hero {
+      padding: 300px 50px;
     }
 
    }
@@ -74,20 +86,27 @@ height: auto;
     .img_container {
       height: 300px;
     }
-  .yoga_hero {
-    background-size: 1400px 600px;
-    padding: 220px 50px;
+  .yoga_hero{
+    margin: 0 -45px;
+    padding: 280px 50px;
+  }
+  .home_hero {
+    background-size: 1300px 1100px;
+    padding: 350px 90px;
   }
    }
 
 
    @media screen and (min-width: 1500px) {
  
-    .yoga_hero {
-      background-size: 1700px 1000px;
-      padding: 290px 50px;
+    .yoga_hero{
+      margin: 0 -60px;
+      padding: 370px 50px;
     }
-    
+    .home_hero {
+      background-size: 1700px 1200px;
+      padding: 400px 90px;
+    }
   
    }
   
