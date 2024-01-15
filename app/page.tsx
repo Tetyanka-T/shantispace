@@ -5,7 +5,7 @@ import s from "@/app/styles/common.module.css"
 export default function Home() {
 
   return (
-    <section className="h-full -mx-[10px]">
+    <section className="h-full -mx-[8px]">
            <div className={s.home_hero}>
               <div className="text-center leading-7 text-2xl font-black tracking-wider">
                 <h1 className="text-2xl font-bold leading-5 md:text-[36px] lg:text-[40px] 2xl:text-[45px]">Простір здоров&apos;я</h1>

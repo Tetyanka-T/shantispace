@@ -17,7 +17,7 @@ const NavBarUserDesctop = () => {
   return (
     <nav className="text-lg font-normal tracking-wide leading-6">
 
-        <ul className="flex items-center justify-center text-xl">
+        <ul className="flex items-center justify-center text-xl text-amber-950">
             <li className="mr-9 font-semibold hover:text-amber-950 hover:border-b-2 hover:border-amber-950" >
                 <Link href="/">Головна</Link>
             </li>

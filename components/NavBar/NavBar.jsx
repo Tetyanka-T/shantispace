@@ -73,7 +73,7 @@ const NavBar = () => {
       )}
       {isNotAuth && (
         <nav className={s.visible}>
-          <ul className='flex justify-center items-center text-lg font-normal tracking-wide leading-6 lg:text-xl'>
+          <ul className='flex justify-center text-amber-950 items-center text-lg font-normal tracking-wide leading-6 lg:text-xl'>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/'>Головна</Link>
             </li>
@@ -95,21 +95,21 @@ const NavBar = () => {
           <button>
             <Link href='/login'>
               <Image src='/scorpio.png' alt='' width={70} height={70} />
-              <span className='text-xs'>Увійти</span>
+              <span className='text-xs text-amber-950'>Увійти</span>
             </Link>
           </button>
         )}
 
         {isAuth && (
           <div className='flex justify-center items-center'>
-            <span className='mr-2 text-base font-medium'>
+            <span className='mr-2 text-base font-medium text-amber-950'>
               Привіт, {session?.user?.name}
             </span>
             <button onClick={() => signOut()}>
               <div>
                 <Image src='/twist.png' alt='асана' width={70} height={60} />
 
-                <span className='text-xs'>Вихід</span>
+                <span className='text-xs text-amber-950'>Вихід</span>
               </div>
             </button>
           </div>

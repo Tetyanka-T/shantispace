@@ -19,7 +19,7 @@ const NavBarAdminDescktop = () => {
   return (
     <nav className="text-lg font-normal tracking-wide leading-6 ">
 
-        <ul className="flex items-center justify-center">
+        <ul className="flex items-center justify-center text-amber-950 text-xl">
             <li className="relative mr-10">
                 <div className="flex items-center">
                 <Link href="/blog-admin">Блог</Link>

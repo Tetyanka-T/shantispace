@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Yoga = () => {
   return (
-    <section className="-mx-[10px]">
+    <section className="-mx-[8px]">
       <div className={s.yoga_hero}>
           <div className="text-center leading-7 text-2xl font-black tracking-wider">
             <h1 className="text-3xl md:text-[36px] lg:text-[48px]">Простір йоги</h1>
