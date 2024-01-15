@@ -12,6 +12,19 @@ export default function Home() {
                 <p className="text-xl font-semibold leading-5 mt-3 md:text-[26px] md:mt-5 lg:text-[38px] lg:mt-8 2xl:mt-12">Віднайди гармонію!</p>
               </div>
            </div>
+           <div className={s.container_text__yoga}>
+            <p className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_space це місце де кожен може отримати:</p>
+            <ul className="text-lg lg:text-xl 2xl:text-2xl">
+              <li className="flex items-center mt-2">
+                <p>кваліфіковану допомогу у здобутті фізичної та душевної гармонії,</p>
+                </li>
+              <li className="flex items-center mt-2">емоційну підтримку,</li>
+              <li className="flex items-center mt-2">дієві інструменти та техніки для гармонійного фізичного розвитку,</li>
+              <li className="flex items-center mt-2">відновлення  фізичного стану, корегування окремих обмежень (особливостей).</li>
+            </ul>
+
+           </div>
+           
       
  
       

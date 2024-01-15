@@ -43,11 +43,13 @@
   object-fit: contain;
 }
 .couch_container_img {
-  margin: 0 -10px;
+margin: 0 -12px;
 }
 .couch_container_img img{
 width: 100%;
 height: auto;
+/* margin: 0 auto; */
+object-fit: contain;
 }
 .contact_maplocation iframe {
   width: 100%;
@@ -67,6 +69,7 @@ height: auto;
 .physical_hero {
   padding: 240px 50px;
 }
+
  }
 @media screen and (min-width: 600px) {
   .yoga_img_container {
@@ -79,7 +82,7 @@ height: auto;
     .slider_desktop {
       display: block;
     }
-   
+ 
     .img_container {
       height: 350px;
     }
