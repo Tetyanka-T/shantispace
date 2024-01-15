@@ -37,7 +37,7 @@ const Yoga = () => {
                 <p className="ml-2">здобути гармонію та баланс стану збудження-розслаблення.</p>
               </li>
             </ul>
-         </div>
+      </div>
       <div className={s.yoga_img_container}>
         <Image src="/darina.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
         <Image src="/darina2.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
