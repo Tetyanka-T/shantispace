@@ -42,7 +42,6 @@ export default function Home() {
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Йога-практики</h3>
           <div className={s.home_classes_container_img_yoga}>
-            <Image src="/yoga.jpg" width={320} height={300} alt="Дарина в бакасані" className="w-full h-auto"/>
             <Link href="/yoga" className="absolute bottom-4 right-3 border-b-2 border-amber-950 text-amber-950 text-md">Детальніше</Link>
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Йога як метод дуже добре впливає на емоційність, збудливість, порушення сну та  дисбаланси в станах збудження-розслаблення (депресивні стани).</p>
@@ -72,20 +71,13 @@ export default function Home() {
         </li>
       </ul>
       <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Дарина та Світлана - засновниці та тренери Shanti_space </p>
-      <Image src="/couches_main.jpg" width={320} height={300} alt="Дарина та Світлана - тренери та засновниці Shanti_space" className="w-full h-auto"/>
+      <Image src="/couches_main.jpg" width={320} height={300} alt="Дарина та Світлана - тренери та засновниці Shanti_space" className="w-full h-auto mx-auto object-cover md:w-[500px] lg:w-[650px]"/>
       <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Людям потрібен простір для емоційних зустрічей. Колективні заняття стають тією емоційною пітримкою, яку людина прагне отримати від тренера та друзів по заняттю.</p>
       <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Індивідуальний підхід - це можливість врахувати індивідуальні потреби та особливості організму кожного практикуючого.</p>
-      <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Стратегія для занять йогою та фізичною реабілітацією адаптована до потоного стану здоров’я, фізичних можливостей та особистих цілей практикуючих.
+      <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Стратегія для занять йогою та фізичною реабілітацією адаптована до поточного стану здоров’я, фізичних можливостей та особистих цілей практикуючих.
          Ви матимете можливість більш глибоко зануритись в пізнання себе та бути для себе відкриттям!
       </p>
       <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">До зустрічі у просторі Shanti!</p>
-
-
- 
-           
-      
- 
-      
     </section>
   )
 }

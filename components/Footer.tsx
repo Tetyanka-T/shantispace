@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className='bg-amber-950 text-center py-2 text-white'>
-      <Link href="/contacts" className="text-lg text-center 2xl:text-2xl">Контакти</Link>
+    <footer className='bg-amber-950 py-2 text-white'>
+      <Link href="/contacts" className="mx-[20px] text-lg 2xl:text-xl">Контакти</Link>
       <ul className="text-md mx-[20px] my-[20px] md:mt-20 2xl:text-xl">
         <li className="flex items-center mb-3">
           <MdOutlinePhoneIphone className="fill-white mr-2"/>
@@ -26,7 +26,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/_shanti_space/" target="_blank">@shanti_space</a>
         </li>
       </ul>
-      <p className='mt-3'>&#169; {new Date().getFullYear()}</p>
+      <p className='mt-3 border-t-2 py-2 text-center'>&#169; {new Date().getFullYear()}</p>
     </footer>
   )
 }
