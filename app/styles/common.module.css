@@ -81,6 +81,11 @@ object-fit: contain;
 }
 .home_classes_container_img_therapy {
   position: relative;
+  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/therapy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 130px 30px;
 }
 .home_classes_container_img_nails {
   display: grid;
@@ -100,7 +105,7 @@ object-fit: contain;
 .physical_hero {
   padding: 240px 50px;
 }
-.home_classes_container_img_yoga {
+.home_classes_container_img_yoga, .home_classes_container_img_therapy {
   padding: 220px 30px;
 }
 
@@ -135,6 +140,7 @@ object-fit: contain;
     .home_classes_container_img_yoga {
       padding: 280px 30px;
     }
+ 
    }
   
 

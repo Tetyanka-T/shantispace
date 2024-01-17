@@ -50,7 +50,7 @@ export default function Home() {
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Фізична реабілітація</h3>
           <div className={s.home_classes_container_img_therapy}>
-            <Image src="/therapy.jpg" width={320} height={300} alt="Фізична реабілітація" className="w-full h-auto"/>
+            {/* <Image src="/therapy.jpg" width={320} height={300} alt="Фізична реабілітація" className="w-full h-auto"/> */}
             <Link href="/physical-therapy" className="absolute top-5 left-4 border-b-2 border-amber-950 text-amber-950 text-md">Детальніше</Link>
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Фізична реабілітація – це комплекс заходів, спрямованих на відновлення повноцінної функціональності організму, особливо після серйозних травм та операцій.</p>
