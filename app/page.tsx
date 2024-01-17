@@ -60,8 +60,8 @@ export default function Home() {
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Практика стояння на цвяхах</h3>
           <div className={s.home_classes_container_img_nails}>
-            <Image src="/nails.jpg" width={320} height={300} alt="Дошка Садху"/>
-            <Image src="/nails2.jpg" width={320} height={300} alt="Дарина в бакасані"/>
+            {/* <Image src="/nails.jpg" width={320} height={300} alt="Дошка Садху"/>
+            <Image src="/nails2.jpg" width={320} height={300} alt="Дарина в бакасані"/> */}
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Практика стояння на цвяхах (дошка Садху) — шлях до внутрішнього звільнення та гармонізації через енергетичні канали та нейронні зв&apos;язки.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Стоячи на цвяхах, варто віддати себе моменту і відчути внутрішню силу, яка притаманна кожному з нас. Розслаблення тіла та розуму дозволяє відпустити напругу і відкрити для себе нові рівні усвідомлення.
