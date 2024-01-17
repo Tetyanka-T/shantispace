@@ -96,7 +96,6 @@ object-fit: contain;
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
 }
 @media screen and (min-width: 500px) {
 .home_hero {
@@ -137,10 +136,13 @@ object-fit: contain;
       margin: 0 -15px;
       padding: 320px 50px;
     }
-    .home_classes_container_img_yoga {
-      padding: 280px 30px;
+    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_img_container {
+      padding: 300px 30px;
     }
- 
+    .home_classes_container_img_nails img{
+      height: 670px;
+    }
+  
    }
   
 
@@ -161,12 +163,15 @@ object-fit: contain;
       margin: 0 -24px;
       padding: 380px 50px;
     }
+    .home_img_container {
+      margin: 0 -24px;
+      padding: 400px 30px;
+    }
   }
   @media screen and (min-width: 1300px) {
 
     .home_hero {
       margin: -140px -72px 0 -72px;
-   
     }
 
   }
@@ -182,7 +187,10 @@ object-fit: contain;
     }
     .physical_hero {
       padding: 400px 50px;
-    
+    }
+    .home_img_container {
+      margin: 0 -45px;
+      padding: 500px 30px;
     }
    }
   
