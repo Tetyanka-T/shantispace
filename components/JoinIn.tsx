@@ -5,7 +5,7 @@ const JoinIn = () => {
   return (
     <div className="my-5">
 
-     <h3 className="font-bolt text-center text-lg mb-2 2xl:text-2xl">Учасники простору Shanti мають змогу</h3>
+     <h3 className="font-bolt text-center text-lg mb-2 2xl:text-2xl">Учасники простору Shanti мають змогу:</h3>
      <ul className="text-lg my-4 mx-3 md:mx-6 lg:text-xl lg:ml-10 2xl:text-2xl">
         <li className="flex items-center mb-2">
           <Image src="/double2.png" alt="" width={60} height={50}/>
