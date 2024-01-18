@@ -44,6 +44,7 @@ export default function Home() {
           <div className={s.home_classes_container_img_yoga}>
             <Link href="/yoga" className="absolute bottom-4 right-3 border-b-2 border-amber-950 text-amber-950 text-md md:text-lg md:bottom-8 md:right-6">Детальніше</Link>
           </div>
+          <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Завдяки йозі людина отримує знання про своє тіло, його стани, про техніки та методики щоденного впливу для покращення свого фізичного здоров&apos;я.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Йога як метод дуже добре впливає на емоційність, збудливість, порушення сну та  дисбаланси в станах збудження-розслаблення (депресивні стани).</p>
           <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl">Записатись на практику</Link>
         </li>

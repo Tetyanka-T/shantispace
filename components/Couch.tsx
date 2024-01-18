@@ -3,19 +3,15 @@ import Link from "next/link"
 import s from "@/app/styles/common.module.css"
 const Couch = () => {
   return (
-    <div className=" mx-3 md:flex md:justify-center">
+    <div className="md:flex md:justify-center">
       <div>
-        <div className={s.couch_container_img}>
-          <Image src="/couch.jpeg" alt="" width={320} height={300}/>
-        </div>
-        <p className="text-md text-center my-2 lg:text-lg lg:ml-10">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</p>
-        <Link className=" text-md lg:text-lg lg:ml-10 cursor-pointer " href="/blog">Читати корисні статті</Link>
+          <Image src="/couch.jpeg" alt="" width={320} height={300} className="w-full h-auto mx-auto object-cover md:w-[500px]"/>
+          <p className="text-md text-center my-2">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</p>
+          <Link className="mx-3 text-lg lg:ml-10 cursor-pointer" href="/blog">Читати корисні статті <span className="border-b-2 border-amber-950">тут</span></Link>
       </div>
-       
-
-      <div className=" md:ml-8">
+      <div className="mt-4 md:ml-8">
         <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад йога-практик</p>
-        <ul className="text-lg my-2 lg:text-xl lg:ml-4">
+        <ul className="mx-3 text-lg my-2 lg:text-xl lg:ml-4">
           <li className="mt-2">Вівторок, четвер - 8.30 та 18.30</li>
           <li className="mt-2">Неділя - 10.00</li>
           <li className="mt-2">
@@ -25,7 +21,6 @@ const Couch = () => {
         </ul>
         <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl">Записатись на практику</Link>
       </div>
-    
     </div>
   
   )

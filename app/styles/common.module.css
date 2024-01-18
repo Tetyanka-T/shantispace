@@ -51,9 +51,9 @@
   height: auto;
   object-fit: contain;
 }
-.couch_container_img {
-margin: 0 -12px;
-}
+/* .couch_container_img {
+margin: 0 -8px;
+} */
 .couch_container_img img{
 width: 100%;
 height: auto;
@@ -124,7 +124,7 @@ object-fit: contain;
       height: 350px;
     }
     .yoga_hero {
-      margin: 0 -15px;
+      /* margin: 0 -15px; */
       padding: 200px 50px;
     }
     .home_hero {

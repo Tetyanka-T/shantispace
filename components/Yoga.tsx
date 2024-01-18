@@ -58,33 +58,43 @@ const Yoga = () => {
         <Image src="/practica4.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto"/>
       </div>
       <div className={s.container_text__yoga}>
-      <p className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_Space - це місце де кожен отимає кваліфіковану допомогу:</p>
-      <ul className="text-lg  lg:text-xl 2xl:text-2xl">
-        <li className="flex items-center mt-2">
-          <Image src="/lying-twist.png" alt="" width={50} height={50}/>
-          <p className="ml-2">у здобутті гармонії фізичної та душевної,</p>
-        </li>
-        <li className="flex items-center mt-2">
-          <Image src="/mukha.png" alt="" width={50} height={50}/>
-          <p className="ml-2">відновлення фізичного стану,</p>
-        </li>
-        <li className="flex items-center mt-2">
-          <Image src="/gode.png" alt="" width={50} height={50}/>
-          <p className="ml-2">отримати дієві інструменти та техніки для гармонійного фізичного розвитку,</p>
-        </li>
-        <li className="flex items-center mt-2">
-          <Image src="/double3.png" alt="" width={50} height={50}/>
-          <p className="ml-2">отримати емоційну підтримку,</p>
-        </li>
-        <li className="flex items-center mt-2">
-          <Image src="/onarm.png" alt="" width={50} height={50}/>
-          <p className="ml-2">корегування окремих обмежень (особливостей).</p>
-        </li>
-      </ul>
-
+        <p className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_Space - це місце де кожен отимає кваліфіковану допомогу:</p>
+        <ul className="text-lg  lg:text-xl 2xl:text-2xl">
+          <li className="flex items-center mt-2">
+            <Image src="/lying-twist.png" alt="" width={50} height={50}/>
+            <p className="ml-2">у здобутті гармонії фізичної та душевної,</p>
+          </li>
+          <li className="flex items-center mt-2">
+            <Image src="/mukha.png" alt="" width={50} height={50}/>
+            <p className="ml-2">відновлення фізичного стану,</p>
+          </li>
+          <li className="flex items-center mt-2">
+            <Image src="/gode.png" alt="" width={50} height={50}/>
+            <p className="ml-2">отримати дієві інструменти та техніки для гармонійного фізичного розвитку,</p>
+          </li>
+          <li className="flex items-center mt-2">
+            <Image src="/double3.png" alt="" width={50} height={50}/>
+            <p className="ml-2">отримати емоційну підтримку,</p>
+          </li>
+          <li className="flex items-center mt-2">
+            <Image src="/onarm.png" alt="" width={50} height={50}/>
+            <p className="ml-2">корегування окремих обмежень (особливостей).</p>
+          </li>
+        </ul>
       </div>
      
       <Couch/>
+      <div className="mt-8 md:flex md:justify-center">
+        <div>
+          <Image src="/svitlana.jpg" width={320} height={300} alt="Світлана Погребняк - тренер з йоги та оздоровчої фізкультури" className="w-full h-auto mx-auto object-cover"/>
+          <p className="text-md text-center my-2">Світлана Погребняк - тренер з йоги та оздоровчої фізкультури</p>
+        </div>  
+        <div className="md:ml-8 mt-4">
+          <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад йога-практик</p>
+          <p className="text-lg my-2 ml-4 lg:text-xl lg:ml-4">Понеділок, середа, п`ятниця - 17.00</p>
+          <Link href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl">Записатись на практику</Link>
+        </div>
+      </div>
      
      
       
