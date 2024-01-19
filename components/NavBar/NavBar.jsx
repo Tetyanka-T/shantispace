@@ -3,15 +3,15 @@
 import { useSession, signOut } from 'next-auth/react'
 import Link from 'next/link'
 import Image from 'next/image'
-import s from './NavBar.module.css'
-import NavBarAdminMobile from '../Admin/NavBar/NavBarAdminMobile'
 import { useState } from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { AiOutlineClose } from 'react-icons/ai'
+import NavBarAdminMobile from '../Admin/NavBar/NavBarAdminMobile'
 import NavBarAdminDescktop from '../Admin/NavBar/NavBarAdminDescktop'
 import NavBarUserMobile from '../User/NavBar/NavBarUserMobile'
 import NavBarUserDesctop from '../User/NavBar/NavBarUserDesctop'
 import NavBarNotAuthMobile from './NavBarNotAuthMobile'
+import s from './NavBar.module.css'
 
 const NavBar = () => {
   const { data: session, status } = useSession()
@@ -92,9 +92,14 @@ const NavBar = () => {
 
       <div className='ml-auto'>
         {isNotAuth && (
-          <button>
+          <button aria-label='Кнопка увійти в обліковий запис'>
             <Link href='/login'>
-              <Image src='/scorpio.png' alt='' width={70} height={70} />
+              <Image
+                src='/scorpio.png'
+                alt='Кнопка увійти в обліковий запис асана'
+                width={70}
+                height={70}
+              />
               <span className='text-xs text-amber-950'>Увійти</span>
             </Link>
           </button>
@@ -105,10 +110,12 @@ const NavBar = () => {
             <span className='mr-2 text-base font-medium text-amber-950'>
               Привіт, {session?.user?.name}
             </span>
-            <button onClick={() => signOut()}>
+            <button
+              onClick={() => signOut()}
+              aria-label='Кнопка вийти з облікового запису'
+            >
               <div>
                 <Image src='/twist.png' alt='асана' width={70} height={60} />
-
                 <span className='text-xs text-amber-950'>Вихід</span>
               </div>
             </button>

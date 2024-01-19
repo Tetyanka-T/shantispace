@@ -34,8 +34,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <div className={s.home_img_container}>
-      </div>
+      <div className={s.home_img_container}></div>
       <JoinIn/> 
       <h2 className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Напрями занять нашого простору:</h2>
       <ul>
@@ -56,6 +55,8 @@ export default function Home() {
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Фізична реабілітація – це комплекс заходів, спрямованих на відновлення повноцінної функціональності організму, особливо після серйозних травм та операцій.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">В нашому просторі реабілітація проходить в групових та індивідуальних заняттях в групах різної направленості по нозології.</p>
+          <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Працюючи у сфері фізичної реабілітації ми використовуємо різноманітні знання та інновації, щоб забезпечити найкращу можливу допомогу пацієнтам.</p>
+          <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Фізична реабілітація стає необхідним етапом для тих, хто пройшов травму чи операцію, допомагаючи повернутися до повноцінного життя та насолоджуватися його всіма аспектами.</p>
           <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl">Записатись</Link>
         </li>
         <li>
@@ -73,7 +74,7 @@ export default function Home() {
       </ul>
       <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Дарина та Світлана - засновниці та тренери Shanti_space </p>
       <div className="lg:flex lg:items-center">
-        <Image src="/couches_main.jpg" width={320} height={300} alt="Дарина та Світлана - тренери та засновниці Shanti_space" className="w-full h-auto mx-auto object-cover"/>
+        <Image src="/couches_main.jpg" width={320} height={300} alt="Дарина та Світлана - тренери та засновниці Shanti_space" className="w-full h-auto mx-auto object-cover 2xl:w-[500px]"/>
         <div className="lg:ml-4">
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Людям потрібен простір для емоційних зустрічей. Колективні заняття стають тією емоційною пітримкою, яку людина прагне отримати від тренера та друзів по заняттю.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Індивідуальний підхід - це можливість врахувати індивідуальні потреби та особливості організму кожного практикуючого.</p>

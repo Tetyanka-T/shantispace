@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import s from "@/app/styles/common.module.css"
+
 const Couch = () => {
   return (
     <div className="md:flex md:justify-center">

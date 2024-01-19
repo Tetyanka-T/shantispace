@@ -43,7 +43,6 @@ const Yoga = () => {
         <Image src="/darina2.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
         <Image src="/darina4.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
         <Image src="/darina3.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
-       
       </div>
       
       <div className="flex items-center justify-center my-3">
