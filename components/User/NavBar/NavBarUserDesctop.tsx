@@ -50,6 +50,7 @@ const NavBarUserDesctop = () => {
             <li className="font-semibold hover:text-amber-950 hover:border-b-2 hover:border-amber-950">
                 <Link href="/physical-therapy">Фізична реабілітація</Link>
             </li>
+           
         </ul>
         
     </nav>

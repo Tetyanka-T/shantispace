@@ -25,28 +25,28 @@ const SliderCertificate = () => {
         modules={[Scrollbar]}
       >
         <SwiperSlide>
-            <Image src="/8.jpg" alt="" width={200} height={200}/>
+            <Image src="/8.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/7.jpg" alt="" width={200} height={200}/>
+            <Image src="/7.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/6.jpg" alt="" width={200} height={200}/>
+            <Image src="/6.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/5.jpg" alt="" width={200} height={200}/>
+            <Image src="/5.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/4.jpg" alt="" width={200} height={200}/>
+            <Image src="/4.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/3.jpg" alt="" width={200} height={200}/>
+            <Image src="/3.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/2.jpg" alt="" width={200} height={200}/>
+            <Image src="/2.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/1.jpg" alt="" width={200} height={200}/>
+            <Image src="/1.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -60,28 +60,28 @@ const SliderCertificate = () => {
         modules={[Scrollbar]}
       >
         <SwiperSlide>
-            <Image src="/8.jpg" alt="" width={200} height={200}/>
+            <Image src="/8.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/7.jpg" alt="" width={200} height={200}/>
+            <Image src="/7.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/6.jpg" alt="" width={200} height={200}/>
+            <Image src="/6.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/5.jpg" alt="" width={200} height={200}/>
+            <Image src="/5.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/4.jpg" alt="" width={200} height={200}/>
+            <Image src="/4.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/3.jpg" alt="" width={200} height={200}/>
+            <Image src="/3.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/2.jpg" alt="" width={200} height={200}/>
+            <Image src="/2.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
         <SwiperSlide>
-            <Image src="/1.jpg" alt="" width={200} height={200}/>
+            <Image src="/1.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
       </Swiper>
     </div>

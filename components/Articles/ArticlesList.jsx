@@ -56,9 +56,7 @@ const ArticlesList = ({ articles }) => {
                     className='mx-auto'
                   />
                 </div>
-
                 <h2 className='text-center my-2'>{article.fields.title}</h2>
-
                 <p className='truncate'>{article.fields.description}</p>
                 <p className='text-right my-3 text-sm bottom-0'>Читати далі</p>
               </Link>

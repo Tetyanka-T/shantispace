@@ -75,16 +75,38 @@ const NavBar = () => {
         <nav className={s.visible}>
           <ul className='flex justify-center text-amber-950 items-center text-lg font-normal tracking-wide leading-6 lg:text-xl'>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
-              <Link href='/'>Головна</Link>
+              <Link href='/' aria-label='посилання на головну сторінку'>
+                Головна
+              </Link>
             </li>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
-              <Link href='/blog'>Блог</Link>
+              <Link
+                href='/blog'
+                aria-label='посилання на сторінку блогу з корисними статтями'
+              >
+                Блог
+              </Link>
             </li>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
-              <Link href='/yoga'>Простір йоги</Link>
+              <Link href='/yoga' aria-label='посилання на сторінку йоги'>
+                Простір йоги
+              </Link>
             </li>
-            <li className='hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
-              <Link href='/physical-therapy'>Фізична реабілітація</Link>
+            <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
+              <Link
+                href='/physical-therapy'
+                aria-label='посилання на сторінку фізичної реабілітації'
+              >
+                Фізична реабілітація
+              </Link>
+            </li>
+            <li className=' hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
+              <Link
+                href='/contacts'
+                aria-label='посилання на сторінку контактів'
+              >
+                Контакти
+              </Link>
             </li>
           </ul>
         </nav>

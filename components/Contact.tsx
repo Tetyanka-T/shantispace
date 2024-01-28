@@ -28,7 +28,7 @@ function Contact() {
           </li>
           <li className="flex items-center mr-2 mb-2">
             <FaInstagram className="fill-amber-950 mr-2 "/>
-            <a href="https://www.instagram.com/_shanti_space/" target="_blank">@shanti_space</a>
+            <a href="https://www.instagram.com/_shanti_space/" target="_blank">@_shanti_space</a>
         </li>
         </ul>
         <div className={s.contact_maplocation}>

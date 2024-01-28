@@ -6,7 +6,7 @@ const Couch = () => {
     <div className="md:flex md:justify-center">
       <div>
           <Image src="/couch.jpeg" alt="" width={320} height={300} className="w-full h-auto mx-auto object-cover md:w-[500px]"/>
-          <p className="text-md text-center my-2">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</p>
+          <h3 className="text-md text-center my-2">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</h3>
           <Link className="mx-3 text-lg lg:ml-10 cursor-pointer" href="/blog">Читати корисні статті <span className="border-b-2 border-amber-950">тут</span></Link>
       </div>
       <div className="mt-4 md:ml-8">
@@ -19,7 +19,7 @@ const Couch = () => {
             <p>Понеділок, середа, п`ятниця - 10.00</p>
           </li>
         </ul>
-        <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl">Записатись на практику</Link>
+        <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання для запису на практику до Дарини Полозок">Записатись на практику</Link>
       </div>
     </div>
   

@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import s from "@/app/styles/common.module.css"
-import JoinInButton from "@/components/JoinInButton"
 import JoinIn from "@/components/JoinIn"
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
         </div>
       </div>
       <div className={s.container_text__yoga}>
-        <p className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_space це місце де кожен може отримати:</p>
+        <h2 className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_space це місце де кожен може отримати:</h2>
         <ul className="text-lg lg:text-xl 2xl:text-2xl">
           <li className="flex items-center mt-2">
             <Image src="/onarm.png" alt="" width={50} height={50}/>
@@ -41,35 +40,32 @@ export default function Home() {
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Йога-практики</h3>
           <div className={s.home_classes_container_img_yoga}>
-            <Link href="/yoga" className="absolute bottom-4 right-3 border-b-2 border-amber-950 text-amber-950 text-md md:text-lg md:bottom-8 md:right-6">Детальніше</Link>
+            <Link href="/yoga" className="absolute bottom-4 right-3 border-b-2 border-amber-950 text-amber-950 text-md md:text-lg md:bottom-8 md:right-6" aria-label="посилання на сторінку йоги">Детальніше</Link>
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Завдяки йозі людина отримує знання про своє тіло, його стани, про техніки та методики щоденного впливу для покращення свого фізичного здоров&apos;я.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Йога як метод дуже добре впливає на емоційність, збудливість, порушення сну та  дисбаланси в станах збудження-розслаблення (депресивні стани).</p>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl">Записатись на практику</Link>
+          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl" aria-label="посилання на телефон тренера з йоги">Записатись на практику</Link>
         </li>
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Фізична реабілітація</h3>
           <div className={s.home_classes_container_img_therapy}>
-            {/* <Image src="/therapy.jpg" width={320} height={300} alt="Фізична реабілітація" className="w-full h-auto"/> */}
-            <Link href="/physical-therapy" className="absolute top-5 left-4 border-b-2 border-amber-950 text-amber-950 text-md md:text-lg">Детальніше</Link>
+            <Link href="/physical-therapy" className="absolute top-5 left-4 border-b-2 border-amber-950 text-amber-950 text-md md:text-lg" aria-label="посилання на сторінку фізичної реабілітації">Детальніше</Link>
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Фізична реабілітація – це комплекс заходів, спрямованих на відновлення повноцінної функціональності організму, особливо після серйозних травм та операцій.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">В нашому просторі реабілітація проходить в групових та індивідуальних заняттях в групах різної направленості по нозології.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Працюючи у сфері фізичної реабілітації ми використовуємо різноманітні знання та інновації, щоб забезпечити найкращу можливу допомогу пацієнтам.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Фізична реабілітація стає необхідним етапом для тих, хто пройшов травму чи операцію, допомагаючи повернутися до повноцінного життя та насолоджуватися його всіма аспектами.</p>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl">Записатись</Link>
+          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl" aria-label="посилання на телефон тренера з фізичної реабілітації">Записатись  на заняття</Link>
         </li>
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Практика стояння на цвяхах</h3>
           <div className={s.home_classes_container_img_nails}>
-            {/* <Image src="/nails.jpg" width={320} height={300} alt="Дошка Садху"/>
-            <Image src="/nails2.jpg" width={320} height={300} alt="Дарина в бакасані"/> */}
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Практика стояння на цвяхах (дошка Садху) — шлях до внутрішнього звільнення та гармонізації через енергетичні канали та нейронні зв&apos;язки.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Стоячи на цвяхах, варто віддати себе моменту і відчути внутрішню силу, яка притаманна кожному з нас. Розслаблення тіла та розуму дозволяє відпустити напругу і відкрити для себе нові рівні усвідомлення.
             Пам&apos;ятай, що в цьому процесі важливо не боротися з собою, а дозволяти собі просто бути. Висловлюй емоції, слухай власне тіло, відчувай пульс своєї енергії. Ця практика — це можливість зануритися в себе і відкрити те, що може залишатися прихованим у повсякденному житті. 🌌💫
           </p>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl">Записатись</Link>
+          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-8 md:mt-8 lg:text-xl" aria-label="посилання для запису практики стояння на цвяхах">Записатись на практику</Link>
         </li>
       </ul>
       <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Дарина та Світлана - засновниці та тренери Shanti_space </p>
@@ -82,10 +78,7 @@ export default function Home() {
             Ви матимете можливість більш глибоко зануритись в пізнання себе та бути для себе відкриттям!
           </p>
         </div>
-
-
       </div>     
-     
       <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">До зустрічі у просторі Shanti!</p>
     </section>
   )

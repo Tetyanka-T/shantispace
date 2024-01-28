@@ -9,16 +9,16 @@ const Navigation = ({section}: {section: string | any}) => {
     
   return (
     <ul className="flex items-center p-4">
-       <li className="mr-2">
+      <li className="mr-2">
         <Link href="/">
           <AiOutlineHome size={20} className="fill-amber-950 "/> 
         </Link>
           
-       </li>
-        <li className="mr-2">
-            <GrFormNext size={16} className="fill-amber-950 "/>
-        </li>
-        <li>{section}</li>
+      </li>
+      <li className="mr-2">
+        <GrFormNext size={16} className="fill-amber-950 "/>
+      </li>
+      <li>{section}</li>
     </ul>
   )
 }

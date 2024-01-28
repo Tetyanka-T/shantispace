@@ -23,7 +23,7 @@ const Footer = () => {
         </li>
         <li className="flex items-center">
           <FaInstagram className="fill-white mr-2"/>
-          <a href="https://www.instagram.com/_shanti_space/" target="_blank">@shanti_space</a>
+          <a href="https://www.instagram.com/_shanti_space/" target="_blank">@_shanti_space</a>
         </li>
       </ul>
       <p className='mt-3 border-t-2 py-2 text-center'>&#169; {new Date().getFullYear()}</p>
