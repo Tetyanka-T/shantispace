@@ -14,7 +14,7 @@ export default async function ConversationsLayout({
   return (
     
     <Sidebar>
-      <div className='h-full'>
+      <div className=''>
         <ConversationsList
           users={users}
           title='Messages'

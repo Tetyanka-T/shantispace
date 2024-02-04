@@ -51,10 +51,10 @@ const Yoga = () => {
       </div>
       <JoinInButton/>
       <div className="mx-auto md:grid md:grid-cols-2 md:gap-1 lg:gap-2">
-        <Image src="/practica.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto"/>
-        <Image src="/practica2.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto"/>
-        <Image src="/practica3.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto"/>
-        <Image src="/practica4.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto"/>
+        <Image src="/practica.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>
+        <Image src="/practica2.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>
+        <Image src="/practica3.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>
+        <Image src="/practica4.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>
       </div>
       <div className={s.container_text__yoga}>
         <h2 className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_Space - це місце де кожен отимає кваліфіковану допомогу:</h2>

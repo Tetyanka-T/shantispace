@@ -6,7 +6,7 @@ export default async function ChatLayout({ children }) {
   const users = await getUsers()
   return (
     <SideBar>
-      <div className='h-full'>
+      <div className=''>
         <UserList items={users} />
         {children}
       </div>

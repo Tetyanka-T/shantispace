@@ -5,7 +5,7 @@ const EmptyState = () => {
     <div className="
     absolute
     top-[128px]
-    w-[600px]
+    w-[500px]
     h-full
     flex 
     justify-center 
