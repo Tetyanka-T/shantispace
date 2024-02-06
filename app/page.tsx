@@ -1,8 +1,15 @@
+import type { Metadata } from 'next'
 import Image from "next/image"
 import Link from "next/link"
-import s from "@/app/styles/common.module.css"
 import JoinIn from "@/components/JoinIn"
+import s from "@/app/styles/common.module.css"
 
+export const metadata: Metadata = {
+  title: 'ShantiSpace йога, фізична реабілітація, ЛФК, практика стояння на цвяхах Кривий Ріг',
+  description: "Простір здоров'я та душевної рівноваги, індивідуальні та групові заняття з йоги, фізичної реабілітації, оздоровчої гімнастики (ЛФК) Кривий Ріг",
+  keywords: 'йога, реабілітація, фізична реабілітація, йогатерапія, цвяхостояння, лікувальна фізкультура, оздоровча гімнастика, ЛФК, групові заняття, індивідуальні заняття, простір для відновлення, почувай себе як вдома, Кривий Ріг, жіноче коло, практика асан, індивідуальний підхід, вихід з негативу, чистий розум',
+ 
+}
 export default function Home() {
 
   return (

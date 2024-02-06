@@ -1,7 +1,15 @@
-import s from "@/app/styles/common.module.css"
+import type { Metadata } from 'next'
 import Link from "next/link"
 import Image from "next/image"
 import JoinIn from "@/components/JoinIn"
+import s from "@/app/styles/common.module.css"
+
+export const metadata: Metadata = {
+  title: 'ShantiSpace фізична реабілітація, ЛФК Кривий Ріг',
+  description: "Простір здоров'я та душевної рівноваги, індивідуальні та групові заняття з йоги, фізичної реабілітації, оздоровчої гімнастики (ЛФК) Кривий Ріг",
+  keywords: 'реабілітація, фізична реабілітація, цвяхостояння, лікувальна фізкультура, оздоровча гімнастика, ЛФК, групові заняття, індивідуальні заняття, простір для відновлення, почувай себе як вдома, Кривий Ріг, індивідуальний підхід, сучасні методи фізичної реабілітації',
+ 
+}
 
 const PhysicalPage = () => {
   return (

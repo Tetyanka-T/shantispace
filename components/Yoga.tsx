@@ -1,8 +1,11 @@
+
 import Image from "next/image"
-import s from "@/app/styles/common.module.css"
+import Link from "next/link"
 import JoinInButton from "./JoinInButton"
 import Couch from "./Couch"
-import Link from "next/link"
+import s from "@/app/styles/common.module.css"
+
+
 
 const Yoga = () => {
   return (
