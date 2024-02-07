@@ -17,11 +17,11 @@ export default function Home() {
       <div className={s.home_hero}>
         <div className="text-center leading-7 text-2xl font-black tracking-wider">
           <h1 className="text-2xl font-bold leading-5 md:text-[36px] lg:text-[40px] 2xl:text-[45px]">Простір здоров&apos;я</h1>
-          <p className="text-xl font-semibold leading-5 mt-3 md:text-[26px] md:mt-5 lg:text-[38px] lg:mt-8 2xl:mt-12">Віднайди гармонію!</p>
+          <h2 className="text-xl font-semibold leading-5 mt-3 md:text-[26px] md:mt-5 lg:text-[38px] lg:mt-8 2xl:mt-12">Віднайди гармонію!</h2>
         </div>
       </div>
       <div className={s.container_text__yoga}>
-        <h2 className="text-lg mb-4 lg:text-xl 2xl:text-2xl">Shanti_space це місце де кожен може отримати:</h2>
+        <h2 className="text-lg mb-4 lg:text-xl 2xl:text-2xl"><span className='font-bold'>Shanti_space</span> це місце де кожен може отримати:</h2>
         <ul className="text-lg lg:text-xl 2xl:text-2xl">
           <li className="flex items-center mt-2">
             <Image src="/onarm.png" alt="" width={50} height={50}/>
@@ -75,9 +75,9 @@ export default function Home() {
           <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-8 md:mt-8 lg:text-xl" aria-label="посилання для запису практики стояння на цвяхах">Записатись на практику</Link>
         </li>
       </ul>
-      <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Дарина та Світлана - засновниці та тренери Shanti_space </p>
+      <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Дарина та Світлана - засновниці та тренери Shanti_space</p>
       <div className="lg:flex lg:items-center">
-        <Image src="/couches_main.jpg" width={320} height={300} alt="Дарина та Світлана - тренери та засновниці Shanti_space" className="w-full h-auto mx-auto object-cover 2xl:w-[500px]"/>
+        <Image src="/couches_main.jpg" width={320} height={300} alt="Дарина та Світлана - тренери та засновниці Shanti_space" className="w-full h-auto mx-auto object-cover 2xl:h-[600px] 2xl:w-auto"/>
         <div className="lg:ml-4">
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Людям потрібен простір для емоційних зустрічей. Колективні заняття стають тією емоційною пітримкою, яку людина прагне отримати від тренера та друзів по заняттю.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Індивідуальний підхід - це можливість врахувати індивідуальні потреби та особливості організму кожного практикуючого.</p>

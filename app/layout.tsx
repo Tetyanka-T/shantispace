@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthProvider>
         <NavBar/>
-        <main className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-8 lg:px-10 xl:px-20 min-[1500px]:mx-[120px]'>
+        <main className='text-slate-700 mx-auto min-[-320px]:px-2 sm:px-4 md:px-8 lg:px-10 xl:px-20 min-[1500px]:px-[150px]'>
           <ToasterContext/>
           <ActiveStatus/>
           {children}
