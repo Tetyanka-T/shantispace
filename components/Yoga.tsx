@@ -83,8 +83,8 @@ const Yoga = () => {
           </li>
         </ul>
       </div>
-     <div className="2xl:flex">
-     <div className="md:flex md:items-center">
+     <div className="2xl:mx-[340px]">
+     <div className="md:flex">
         <div>
           <Image src="/couch.jpeg" alt="Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт" width={320} height={300} className="w-full h-auto object-cover md:w-[490px]"/>
           <h3 className="text-md text-center my-2">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</h3>
@@ -103,7 +103,7 @@ const Yoga = () => {
          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання для запису на практику до Дарини Полозок">Записатись на практику</Link>
         </div>
       </div>
-      <div className="mt-8 md:flex md:items-center 2xl:mt-0">
+      <div className="mt-8 md:flex">
         <div>
           <Image src="/svitlana.jpg" width={320} height={300} alt="Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури" className="w-full h-auto object-cover md:w-[490px]"/>
           <h3 className="text-md text-center my-2">Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури</h3>

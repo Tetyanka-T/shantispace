@@ -99,7 +99,7 @@ const PhysicalPage = () => {
       <p className="text-lg mx-3 my-2 lg:text-xl 2xl:text-2xl 2xl:mx-[60px]">Також ми підбираємо вправи для самостійного виконання вдома після завершення лікування.</p>
       <p className="text-lg mx-3 font-bold my-2 lg:text-xl 2xl:text-2xl 2xl:mx-[60px]">Важливо! Незважаючи на те, що деяким людям вправи можуть здатися простими та легкими, вони повинні виконуватись під суворим контролем інструктора чи фізичного терапевта.</p>
       <h3 className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl 2xl:mx-[60px]">Інструктори фізичної терапії та оздоровчої фізкультури:</h3>
-      <div className="2xl:flex">
+      <div className="2xl:mx-[340px]">
         <div className="md:flex">
         <div>
           <Image src="/couch.jpeg" alt="Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт" width={320} height={300} className="w-full h-auto object-cover md:w-[490px]"/>
@@ -114,7 +114,7 @@ const PhysicalPage = () => {
           <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Дарини Полозок">Записатись на заняття</Link>
         </div>
         </div>
-        <div className="mt-8 md:flex 2xl:mt-0 2xl:ml-12">
+        <div className="mt-8 md:flex">
         <div>
           <Image src="/svitlana.jpg" width={320} height={300} alt="Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури" className="w-full h-auto object-cover md:w-[490px]"/>
           <h2 className="text-md text-center my-2">Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури</h2>
