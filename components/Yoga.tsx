@@ -94,7 +94,7 @@ const Yoga = () => {
           <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад йога-практик:</p>
           <ul className="mx-3 text-lg my-2 lg:text-xl lg:ml-4">
             <li className="mt-2">Вівторок, четвер - 8.30 та 18.30</li>
-            <li className="mt-2">Неділя - 10.00</li>
+            <li className="mt-2">Субота - 11.30</li>
             <li className="mt-2">
               <p className="font-bold mb-2">Для початківців:</p>
               <p>Понеділок, середа, п`ятниця - 10.00</p>
