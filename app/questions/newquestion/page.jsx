@@ -3,7 +3,7 @@ import Navigation from '../../../components/Navigation'
 
 const NewQuestionPage = () => {
   return (
-    <div className='my-5'>
+    <div className='my-5 h-screen'>
       <Navigation section='Нове питання' />
       <QuestionsPage vision='new' />
     </div>

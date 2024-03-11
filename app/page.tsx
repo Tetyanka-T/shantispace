@@ -16,8 +16,8 @@ export default function Home() {
     <section className="h-full -mx-[8px]">
       <div className={s.home_hero}>
         <div className="text-center leading-7 text-2xl font-black tracking-wider">
-          <h1 className="text-2xl font-bold leading-5 md:text-[36px] lg:text-[40px] 2xl:text-[45px]">Простір здоров&apos;я</h1>
-          <h2 className="text-xl font-semibold leading-5 mt-3 md:text-[26px] md:mt-5 lg:text-[38px] lg:mt-8 2xl:mt-12">Віднайди гармонію!</h2>
+          <h1 className="animate-fade-down animate-once animate-delay-200 animate-ease-in-out animate-duration-[2000ms] text-2xl font-bold leading-5 md:text-[36px] lg:text-[40px] 2xl:text-[45px]">Простір здоров&apos;я</h1>
+          <h2 className=" animate-fade-up animate-once animate-delay-200 animate-ease-in-out animate-duration-[2000ms] text-xl font-semibold leading-5 mt-3 md:text-[26px] md:mt-5 lg:text-[38px] lg:mt-8 2xl:mt-12">Віднайди гармонію!</h2>
         </div>
       </div>
       <div className={s.container_text__yoga}>

@@ -16,8 +16,7 @@ const NavBarUserMobile = ({ onClick }: {onClick: Function}) => {
         userMenu ? setUserMenu(false) : setUserMenu(true);
       };
   return (
-    <nav className="absolute bg-slate-100 w-full top-0 left-0 text-lg font-normal tracking-wide leading-6 translate-x-50 translate-y-50 z-10">
-      
+    <nav className="absolute bg-slate-100 w-full h-screen top-0 left-0 text-lg font-normal tracking-wide leading-6 z-10">
     <ul className="px-8 py-20">
         <li className="mb-2 border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
             <Link href="/">Головна</Link>
@@ -26,7 +25,7 @@ const NavBarUserMobile = ({ onClick }: {onClick: Function}) => {
             <div className="flex items-center">
                 <Link href="/blog-user" onClick={() => onClick()}>Блог</Link>
                 <button onClick={() => onShowMenu()} className="ml-auto">
-                    <BiDownArrowAlt size={24} className="fill-amber-950"/>
+                    <BiDownArrowAlt size={24} className="fill-amber-950 animate-bounce"/>
                 </button>
             </div>
             

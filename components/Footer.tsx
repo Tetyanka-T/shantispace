@@ -27,6 +27,14 @@ const Footer = () => {
         </li>
       </ul>
       <p className='mt-3 border-t-2 py-2 text-center'>&#169; {new Date().getFullYear()}</p>
+      <a
+      className="text-center block underline"
+        
+        href="https://tetyanka-t.github.io/portfolio/"
+        target="_blanket"
+      >
+        Розробник
+      </a>
     </footer>
   )
 }

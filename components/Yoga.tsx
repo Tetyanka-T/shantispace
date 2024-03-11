@@ -11,8 +11,8 @@ const Yoga = () => {
     <section className="-mx-[8px]">
       <div className={s.yoga_hero}>
         <div className="text-center leading-7 text-2xl font-black tracking-wider">
-          <h1 className="text-3xl md:text-[36px] lg:text-[48px]">Простір йоги</h1>
-          <Link href="tel:+380977339045" className="block w-[150px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-[40px] lg:w-[200px] lg:text-xl" aria-label="посилання на запис на практику йоги">Записатись на практику</Link>
+          <h1 className="text-3xl md:text-[36px] lg:text-[48px] animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out">Простір йоги</h1>
+          <Link href="tel:+380977339045" className="animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out block w-[150px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-[40px] lg:w-[200px] lg:text-xl" aria-label="посилання на запис на практику йоги">Записатись на практику</Link>
         </div>
       </div>
       <div className="flex items-center justify-center my-3">
