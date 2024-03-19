@@ -9,6 +9,9 @@ import useActiveList from '../../../../hooks/useActiveList';
 import Avatar from '../../../../components/Chat/Avatar';
 import AvatarGroup from '../../../../components/Chat/AvatarGroup';
 import ConfirmModal from './ConfirmModal';
+import AddMemberToChat from '@/components/Chat/modals/AddMemberToChat';
+import { MdOutlineGroupAdd } from 'react-icons/md';
+import getUsers from '../../../../actions/getUsers'
 
 interface ProfileDrawerProps {
   isOpen: boolean;
@@ -56,6 +59,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
         isOpen={confirmOpen} 
         onClose={() => setConfirmOpen(false)}
       />
+      {/* <AddMemberToChat/> */}
       <Transition.Root show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={onClose}>
           <Transition.Child
@@ -118,6 +122,14 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 Видалити дану розмову
                               </div>
                             </div>
+                            {/* <div className="flex flex-col gap-3 items-center cursor-pointer hover:opacity-75">
+                              <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
+                                <MdOutlineGroupAdd size={20} />
+                              </div>
+                              <div className="text-sm font-light text-neutral-600">
+                                Додати до чату
+                              </div>
+                            </div> */}
                           </div>
                         <div className="w-full pb-5 pt-5 sm:px-0 sm:pt-0">
                         <dl className="space-y-8 px-4 sm:space-y-6 sm:px-6">
