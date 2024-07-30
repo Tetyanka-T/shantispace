@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
 import { AiOutlineClose } from 'react-icons/ai'
+import { BiDownArrowAlt } from 'react-icons/bi'
 import NavBarAdminMobile from '../Admin/NavBar/NavBarAdminMobile'
 import NavBarAdminDescktop from '../Admin/NavBar/NavBarAdminDescktop'
 import NavBarUserMobile from '../User/NavBar/NavBarUserMobile'
@@ -30,6 +31,15 @@ const NavBar = () => {
   }
   const toggleMenu = () => {
     showMenu ? setShowMenu(false) : setShowMenu(true)
+  }
+  const [userMenu, setUserMenu] = useState(false)
+
+  const onShowBlogMenu = () => {
+    setUserMenu(true)
+    toggleBlogMenu()
+  }
+  const toggleBlogMenu = () => {
+    userMenu ? setUserMenu(false) : setUserMenu(true)
   }
   return (
     <header className='p-3 flex justify-center items-center border-b-2 relative lg:px-8 xl:px-10'>
@@ -79,13 +89,26 @@ const NavBar = () => {
                 Головна
               </Link>
             </li>
-            <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
-              <Link
-                href='/blog'
-                aria-label='посилання на сторінку блогу з корисними статтями'
-              >
-                Блог
-              </Link>
+            <li className='relative mr-10 font-semibold hover:text-amber-950 hover:border-b-2 hover:border-amber-950'>
+              <div className='flex items-center'>
+                <Link href='/blog' onClick={() => setUserMenu(false)}>
+                  Блог
+                </Link>
+                <button onClick={() => onShowBlogMenu()} className='ml-5'>
+                  <BiDownArrowAlt size={24} className='fill-amber-950' />
+                </button>
+              </div>
+
+              {userMenu && (
+                <ul className='absolute top-[57px] left-0 bg-slate-200 p-5 flex justify-center items-center w-max z-50 rounded-md'>
+                  <li
+                    className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'
+                    onClick={() => setUserMenu(false)}
+                  >
+                    <Link href='/questions'>Питання</Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link href='/yoga' aria-label='посилання на сторінку йоги'>

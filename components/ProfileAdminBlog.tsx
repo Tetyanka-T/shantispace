@@ -1,7 +1,14 @@
+'use client'
+
+import Link from "next/link"
+import { useSession, signOut } from 'next-auth/react'
 import Image from "next/image"
 import SliderCertificate from "./SliderCertificate"
 
 const ProfileAdminBlog = () => {
+  const { data: session, status } = useSession()
+
+  const isAuth = status === 'authenticated'
   return (
     <div className="mx-auto pt-4">
       <div className="min-[1500px]:flex items-center">
@@ -24,7 +31,7 @@ const ProfileAdminBlog = () => {
           <p className="mt-2">Я володію різними методиками та техніками фізичної терапії, спрямованими на поліпшення гнучкості, сили та роботи м&apos;язів. 
            Моя робота не лише про лікування, але і про попередження та створення здорового стилю життя.</p>
           <p className="mt-2">
-           Завжди відкрита до нових викликів і готова поділитися своїми знаннями і досвідом. Якщо у вас є які-небудь питання або ви хочете розпочати свій шлях до фізичного відновлення, приєднуйтеся до простору <a href="/register" target="_blank" className="border-b-2 border-amber-950">ShantiSpace</a> та <a href="/questions/addquestion" target="_blank" className="border-b-2 border-amber-950"><strong>напишіть мені!</strong></a>
+           Завжди відкрита до нових викликів і готова поділитися своїми знаннями і досвідом. Якщо у вас є які-небудь питання або ви хочете розпочати свій шлях до фізичного відновлення, приєднуйтеся до простору <a href="/register" target="_blank" className="border-b-2 border-amber-950">ShantiSpace</a> та {isAuth ? (<a href="/questions/addquestion" target="_blank" className="border-b-2 border-amber-950"><strong>напишіть мені!</strong></a>) : (<a href="/register" target="_blank" className="border-b-2 border-amber-950"><strong>напишіть мені!</strong></a>)}
           </p>
           <p className="mt-2">Спільно ми зможемо досягти ваших цілей та стати активними та здоровими разом!</p>
           <p className="mt-2">Запрошую вас на килимок для йоги, де ми разом будемо вивчати і розвивати наші тіла та розум. Я готова допомогти вам знайти гармонію та силу всередині себе.</p>

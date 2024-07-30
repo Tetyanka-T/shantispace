@@ -103,7 +103,7 @@ const PhysicalPage = () => {
         <div className="md:flex">
         <div>
           <Image src="/couch.jpeg" alt="Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт" width={320} height={300} className="w-full h-auto object-cover md:w-[490px]"/>
-          <h2 className="text-md text-center my-2">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</h2>
+          <h2 className="text-md text-center my-2">Дарина Потапова - інструктор з йоги, йогатерапевт та фізтерапевт</h2>
         </div>
         <div className="mt-4 md:ml-8">
           <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад лікувальна фізкультура:</p>

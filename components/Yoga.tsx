@@ -87,7 +87,7 @@ const Yoga = () => {
      <div className="md:flex">
         <div>
           <Image src="/couch.jpeg" alt="Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт" width={320} height={300} className="w-full h-auto object-cover md:w-[490px]"/>
-          <h3 className="text-md text-center my-2">Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт</h3>
+          <h3 className="text-md text-center my-2">Дарина Потапова - інструктор з йоги, йогатерапевт та фізтерапевт</h3>
           <Link className="text-lg lg:ml-10 cursor-pointer" href="/blog">Читати корисні статті <span className="border-b-2 border-amber-950">тут</span></Link>
         </div>
         <div className="mt-4 md:ml-8">

@@ -23,7 +23,10 @@ const SliderCertificate = () => {
         slidesPerView={2}
         spaceBetween={10}
         modules={[Scrollbar]}
-      >
+      > 
+       <SwiperSlide>
+          <Image src="/9.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
+       </SwiperSlide>
         <SwiperSlide>
             <Image src="/8.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>
@@ -59,6 +62,9 @@ const SliderCertificate = () => {
         spaceBetween={10}
         modules={[Scrollbar]}
       >
+         <SwiperSlide>
+          <Image src="/9.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
+        </SwiperSlide>
         <SwiperSlide>
             <Image src="/8.jpg" alt="сертифікат Дарини Полозок" width={200} height={200}/>
         </SwiperSlide>

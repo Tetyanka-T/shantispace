@@ -8,7 +8,7 @@ const JoinIn = () => {
       <ul className="text-lg my-4 mx-3 md:mx-6 lg:text-xl lg:ml-10 2xl:text-2xl">
         <li className="flex items-center mb-2">
           <Image src="/double2.png" alt="малюнок асани" width={60} height={50}/>
-          <p className="ml-2">задати питання Дарині Полозок - інструктору з йоги, йогатерапевту та фізтерапевту</p>
+          <p className="ml-2">задати питання Дарині Потаповій - інструктору з йоги, йогатерапевту та фізтерапевту</p>
         </li>
         <li className="flex items-center">
           <Image src="/double.png" alt="малюнок асани" width={60} height={50}/>
