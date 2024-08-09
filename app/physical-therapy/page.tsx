@@ -41,7 +41,7 @@ const PhysicalPage = () => {
             <p>- фізіотерапія та мануальна терапія - забезпечують глибокий вплив на м&apos;язово-скелетну систему сприяючи поліпшенню кровообігу, заживленню тканин та позбавленню болю.</p>
           </li>
        </ul>
-      <div className="mx-auto my-0 md:grid md:grid-cols-2 md:gap-2 2xl:mx-[40px]">
+      <div className="2xl:mx-60 my-0 md:grid md:grid-cols-2 md:gap-2">
         <Image src="/therapy3.jpg" width={320} height={300} alt="Фізична реабілітація індивідуальне заняття" className="w-full h-auto object-cover md:h-[450px] lg:h-[750px]"/>
         <Image src="/therapy6.jpg" width={320} height={300} alt="Фізична реабілітація індивідуальне заняття" className="w-full h-auto object-cover md:h-[450px] lg:h-[750px]"/>
         <Image src="/therapy5.jpg" width={320} height={300} alt="Фізична реабілітація індивідуальне заняття" className="w-full h-auto object-cover md:h-[450px] lg:h-[750px]"/>
@@ -74,7 +74,7 @@ const PhysicalPage = () => {
       <h3 className="text-lg mx-6 my-2 md:mx-12 lg:text-xl 2xl:text-2xl 2xl:mx-[60px]">Індивідуальний підхід до кожного випадку, підбір оптимальних фізичних вправ та методів лікування, дозволяють досягти максимально ефективних результатів у відновленні.</h3>
       <Link href="tel:+380977339045" className="block w-[200px] md:w-[250px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl">Записатись на індивідуальне заняття</Link>
 
-      <div className="mx-auto my-0 md:grid md:grid-cols-2 md:gap-2 2xl:mx-[40px]">
+      <div className="my-0 md:grid md:grid-cols-2 md:gap-2 2xl:mx-60">
         <Image src="/LFK.jpg" width={320} height={300} alt="Фізична реабілітація індивідуальне заняття" className="w-full h-auto object-contain"/>
         <Image src="/LFK6.jpg" width={320} height={300} alt="Фізична реабілітація індивідуальне заняття" className="w-full h-auto object-contain"/>
         <Image src="/LFK5.jpg" width={320} height={300} alt="Фізична реабілітація індивідуальне заняття" className="w-full h-auto object-contain"/>

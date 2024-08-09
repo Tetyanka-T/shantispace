@@ -20,11 +20,11 @@ const Yoga = () => {
         <h2 className="text-lg lg:text-2xl"><span className="font-bold">Йога</span> допомагає формуванню душевної рівноваги та впливає на душевний стан людини.</h2>
       </div>
       <JoinInButton/>
-      <div className={s.yoga_img_container}>
-        <Image src="/darina.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
-        <Image src="/darina2.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
-        <Image src="/darina4.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
-        <Image src="/darina3.jpg" alt="Дарина Полозок в асані" width={320} height={300}/>
+      <div className="2xl:mx-60 md:grid md:grid-cols-2 md:gap-1 lg:gap-2">
+        <Image src="/darina.jpg" alt="Дарина Полозок в асані" width={320} height={300} className="w-full h-auto object-contain"/>
+        <Image src="/darina2.jpg" alt="Дарина Полозок в асані" width={320} height={300} className="w-full h-auto object-contain"/>
+        <Image src="/darina4.jpg" alt="Дарина Полозок в асані" width={320} height={300} className="w-full h-auto object-contain"/>
+        <Image src="/darina3.jpg" alt="Дарина Полозок в асані" width={320} height={300} className="w-full h-auto object-contain"/>
       </div>
       
       <div className={s.container_text__yoga}>
@@ -52,7 +52,7 @@ const Yoga = () => {
           </li>
         </ul>
       </div>
-      <div className="mx-auto md:grid md:grid-cols-2 md:gap-1 lg:gap-2">
+      <div className="2xl:mx-60 md:grid md:grid-cols-2 md:gap-1 lg:gap-2">
         <Image src="/practica.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>
         <Image src="/practica2.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>
         <Image src="/practica3.jpg" alt="групова практика" width={320} height={300} className="w-full h-auto object-contain"/>

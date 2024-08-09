@@ -5,10 +5,7 @@ import Navigation from '@/components/Navigation'
 const getQuestionById = async id => {
   try {
     const res = await fetch(
-      `https://shantispace.vercel.app/api/questions/${id}`,
-      {
-        cache: 'no-store'
-      }
+      `https://shantispace.vercel.app/api/questions/${id}`
     )
 
     if (!res.ok) {

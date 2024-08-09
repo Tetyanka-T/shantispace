@@ -1,4 +1,3 @@
-import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 import GoogleProvider from 'next-auth/providers/google'
 import bcrypt from 'bcryptjs'
@@ -51,44 +50,16 @@ export const authOptions = {
   ],
   debug: process.env.NODE_ENV === 'development',
   callbacks: {
-    // Ref: https://authjs.dev/guides/basics/role-based-access-control#persisting-the-role
     async jwt({ token, user }) {
       if (user) token.role = user.role
       return token
     },
-    // If you want to use the role in client components
+
     async session({ session, token }) {
       if (session?.user) session.user.role = token.role
       return session
     }
   },
-  // callbacks: {
-  //   async jwt({ token, user }) {
-  //     if (user) {
-  //       token.accessToken = user.accessToken
-  //       token.refreshToken = user.refreshToken
-  //       token.accessTokenExpires = user.accessTokenExpires
-  //       token.role = user.role
-  //       token.id = user.id
-  //     }
-
-  //     return token
-  //   },
-
-  //   async session({ session, token }) {
-  //     return {
-  //       ...session,
-  //       user: {
-  //         ...session.user,
-  //         accessToken: token.accessToken,
-  //         refreshToken: token.refreshToken,
-  //         role: token.role,
-  //         id: token.id
-  //       },
-  //       error: token.error
-  //     }
-  //   }
-  // },
   session: {
     strategy: 'jwt'
   },

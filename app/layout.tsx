@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="uk">
       <head>
       <link rel="icon" href="/logo.png" />
-      <GoogleTagManager gtmId="G-HLDDJKXJP7" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2134930039505652"
+     crossOrigin="anonymous"></script>
+      <GoogleTagManager gtmId="G-M41CP79Z6M" />
       </head>
       <body className={inter.className}>
         <AuthProvider>
