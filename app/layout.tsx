@@ -1,5 +1,5 @@
 
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import {AuthProvider} from "../context/Providers"
 import { Inter } from 'next/font/google'
 import NavBar from '../components/NavBar/NavBar'
@@ -22,7 +22,7 @@ export default function RootLayout({
       <link rel="icon" href="/logo.png" />
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2134930039505652"
      crossOrigin="anonymous"></script>
-      <GoogleTagManager gtmId="G-M41CP79Z6M" />
+      <GoogleAnalytics gaId="G-M41CP79Z6M" />
       </head>
       <body className={inter.className}>
         <AuthProvider>
