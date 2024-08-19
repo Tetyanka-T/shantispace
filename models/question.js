@@ -1,32 +1,32 @@
-import mongoose, { Schema, models } from "mongoose";
+import mongoose, { Schema, models } from 'mongoose'
 
 const questionSchema = new Schema(
   {
     text: {
       type: String,
-      required: true,
+      required: true
     },
     userEmail: {
       type: String,
-      required: true,
+      required: true
     },
     userName: {
       type: String,
-      required: true,
+      required: true
     },
     adminAnswer: {
       type: String,
-      default: "",
+      default: ''
     },
     adminName: {
       type: String,
-      default: "Дарина Полозок",
-    },
+      default: 'Дарина Потапова'
+    }
   },
   { versionKey: false, timestamps: true }
-);
+)
 
 const Question =
-  mongoose.models.Question || mongoose.model("Question", questionSchema);
+  mongoose.models.Question || mongoose.model('Question', questionSchema)
 
-export default Question;
+export default Question
