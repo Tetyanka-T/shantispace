@@ -3,7 +3,7 @@ import QuestionsListWithAnswer from "./QuestionsListWithAnswer"
 
 const getQuestions = async () => {
     try {
-       const res = await fetch("https://shantispace.vercel.app/api/questions")
+       const res = await fetch("https://shantispace.com.ua/api/questions", { cache: 'no-cache' })
 
         if(!res.ok) {
             throw new Error("Failed to fetch question")

@@ -1,7 +1,16 @@
+import { Metadata } from 'next'
 import { client, previewClient } from '../../../libs/contentful/client'
 import ArticlePageDescription from '../../../components/Articles/ArticlePageDescription'
 import Navigation from '../../../components/Navigation'
-import Footer from '@/components/Footer'
+
+
+
+export const metadata: Metadata = {
+  title: 'ShantiSpace фізична реабілітація, ЛФК, корекція постави у дітей Кривий Ріг',
+  description: "Простір здоров'я та душевної рівноваги, індивідуальні та групові заняття з йоги, фізичної реабілітації, оздоровчої гімнастики (ЛФК), група кореції постави у дітей, реабілітація військових Кривий Ріг",
+  keywords: 'йогатерапія, вагітність, здоров`я, стопи, дихання, свідомість, усвідомлення',
+}
+
 
 type Params = {
   params: {
