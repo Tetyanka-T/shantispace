@@ -3,6 +3,12 @@
 import AddQuestionButton from './AddQuestionButton'
 
 const QuestionsListWithAnswer = ({ questions }) => {
+  questions.sort(function (a, b) {
+    if (a.createdAt > b.createdAt) {
+      return -1
+    }
+  })
+
   return (
     <>
       {questions.length !== 0 ? (
