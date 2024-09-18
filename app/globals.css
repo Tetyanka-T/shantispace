@@ -98,7 +98,7 @@ blockquote {
   font-size: 20px;
 }
 .markdown p a {
-  text-decoration: underline brown;
+  text-decoration: underline;
 }
 .markdown img {
   display: block;
