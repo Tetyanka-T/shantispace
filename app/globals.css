@@ -49,7 +49,6 @@ select{
 .swiper {
   width: 100%;
   height: 100%;
-  /* margin: 20px 0; */
 }
 @media screen and (min-width: 500px ) {
   .swiper {
@@ -119,14 +118,12 @@ blockquote {
  }
 @media screen and (min-width: 768px) {
   .markdown img {
-    
     width: 500px;
-    
   }
 }
 @media screen and (min-width: 1200px) {
   .markdown img {
-  width: auto;
+    width: auto;
     height: 780px;
   }
 }
