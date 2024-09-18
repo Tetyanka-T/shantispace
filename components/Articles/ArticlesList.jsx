@@ -18,6 +18,12 @@ const ArticlesList = ({ articles }) => {
   const onShowAllArticles = () => {
     setFilter(false)
   }
+  const currentTime = new Date().toLocaleDateString('uk-Uk', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+
   return (
     <>
       <FilterArticles
@@ -36,16 +42,8 @@ const ArticlesList = ({ articles }) => {
                 <h2 className='text-right mb-2'>
                   Тема: {article.fields.thema}
                 </h2>
-                <p className='text-right text-sm my-2'>
-                  Опубліковано{' '}
-                  {new Date(article.fields.dateCreate).toLocaleDateString(
-                    'uk-Uk',
-                    {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    }
-                  )}
+                <p suppressHydrationWarning className='text-right text-sm my-2'>
+                  Опубліковано {currentTime(article.fields.dateCreate)}
                 </p>
                 <div className={s.img_container}>
                   <Image

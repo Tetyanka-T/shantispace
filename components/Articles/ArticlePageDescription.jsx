@@ -5,18 +5,17 @@ import remarkGfm from 'remark-gfm'
 
 const ArticlePageDescription = ({ article }) => {
   const { title, dateCreate, coverImg, thema, content } = article.fields
-
+  const currentTime = new Date(dateCreate).toLocaleDateString('uk-Uk', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
   return (
     <>
       <GoBackButton />
       <div className='my-4 mx-auto'>
-        <span className='text-right text-sm'>
-          Опубліковано{' '}
-          {new Date(dateCreate).toLocaleDateString('uk-Uk', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}
+        <span suppressHydrationWarning className='text-right text-sm'>
+          Опубліковано {currentTime}
         </span>
 
         <h2 className='text-right my-2'>Тема: {thema}</h2>
