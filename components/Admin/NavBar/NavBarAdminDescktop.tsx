@@ -48,9 +48,7 @@ const NavBarAdminDescktop = () => {
             <li className="mr-9" >
                 <Link href="/yoga">Простір йоги</Link>
             </li>
-            {/* <li className="mr-9" >
-                <Link href="/LFK">ЛФК</Link>
-            </li> */}
+          
             <li className="">
                 <Link href="/physical-therapy">Фізична реабілітація</Link>
             </li>
