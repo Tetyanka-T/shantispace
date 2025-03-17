@@ -88,18 +88,23 @@ const Yoga = () => {
         <div>
           <Image src="/couch.jpeg" alt="Дарина Полозок - інструктор з йоги, йогатерапевт та фізтерапевт" width={320} height={300} className="w-full h-auto object-cover md:w-[490px]"/>
           <h3 className="text-md text-center my-2">Дарина Потапова - інструктор з йоги, йогатерапевт та фізтерапевт</h3>
-          <Link className="text-lg lg:ml-10 cursor-pointer" href="/blog">Читати корисні статті <span className="border-b-2 border-amber-950">тут</span></Link>
+          <Link className="ml-3 text-lg lg:ml-10 cursor-pointer" href="/blog">Читати корисні статті <span className="border-b-2 border-amber-950">тут</span></Link>
         </div>
         <div className="mt-4 md:ml-8">
           <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад йога-практик:</p>
           <ul className="mx-3 text-lg my-2 lg:text-xl lg:ml-4">
-            <li className="mt-2">Вівторок, четвер - 8.30 та 18.30</li>
-            <li className="mt-2">Субота - 11.30</li>
+            <li className="mt-2">Понеділок, середа, п`ятниця - 10.00, 17.00, 18.30</li>
+            <li className="mt-2">Вівторок, четвер - 08.30</li>
+            <li className="mt-2">Неділя - 10.00</li>
             <li className="mt-2">
-              <p className="font-bold mb-2">Для початківців:</p>
-              <p>Понеділок, середа, п`ятниця - 10.00</p>
+              <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">ЛФК (дорослі та діти):</p>
+              <ul>
+                <li>Понеділок, середа, п`ятниця - 16.00</li>
+                <li className="mt-2">Неділя - 09.00</li>
+              </ul>
             </li>
           </ul>
+          <p className="ml-3 mb-4">*можуть бути зміни в розкладі</p>
          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання для запису на практику до Дарини Полозок">Записатись на практику</Link>
         </div>
       </div>
@@ -110,7 +115,10 @@ const Yoga = () => {
         </div>  
         <div className="md:ml-8 mt-4">
           <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад йога-практик:</p>
-          <p className="text-lg my-2 ml-4 lg:text-xl lg:ml-4">Понеділок, середа, п`ятниця - 17.00</p>
+          <ul className="text-lg my-2 ml-4 lg:text-xl lg:ml-4">
+            <li>Понеділок, середа, п`ятниця - 08.30</li>
+            <li className="mt-2">Вівторок, четвер - 17.45</li>
+          </ul>
           <Link href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання для запису на практику до Світлани Погребняк">Записатись на практику</Link>
         </div>
       </div>

@@ -105,11 +105,11 @@ const PhysicalPage = () => {
           <h2 className="text-md text-center my-2">Дарина Потапова - інструктор з йоги, йогатерапевт та фізтерапевт</h2>
         </div>
         <div className="mt-4 md:ml-8">
-          <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад лікувальна фізкультура:</p>
-          <ul className="mx-3 text-lg my-2 lg:text-xl lg:ml-4">
-            <li className="mt-2">Понеділок, середа, п&apos;ятниця - 10.00</li>
-            <li className="mt-2">П&apos;ятниця - 17.00</li>
-          </ul>
+        <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад лікувальна фізкультура (ЛФК дорослі та діти):</p>
+              <ul className="mx-3 text-lg my-2 lg:text-xl lg:ml-4">
+                <li className="mt-2">Понеділок, середа, п`ятниця - 16.00</li>
+                <li className="mt-2">Неділя - 09.00</li>
+              </ul>
           <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Дарини Полозок">Записатись на заняття</Link>
         </div>
         </div>
@@ -119,10 +119,10 @@ const PhysicalPage = () => {
           <h2 className="text-md text-center my-2">Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури</h2>
         </div>
         <div className="mt-4 md:ml-8">
-          <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад лікувальна фізкультура:</p>
-          <ul className="mx-3 text-lg my-2 lg:text-xl lg:ml-4">
-            <li className="mt-2">Понеділок, середа - 17.00</li>
-            <li className="mt-2">Субота - 10.00</li>
+          <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад:</p>
+          <ul className="text-lg my-2 ml-4 lg:text-xl lg:ml-4">
+            <li>Понеділок, середа, п`ятниця - 08.30</li>
+            <li className="mt-2">Вівторок, четвер - 17.45</li>
           </ul>
           <Link href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Світлани Погребняк">Записатись на заняття</Link>
         </div>  
