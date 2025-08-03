@@ -24,7 +24,6 @@
     "mongoose": "^7.5.3",
     "next": "^14.2.5",
     "next-auth": "^4.23.2",
-    "next-intl": "^4.3.4",
     "pusher": "^5.2.0",
     "pusher-js": "^8.3.0",
     "react": "latest",
@@ -55,5 +54,8 @@
     "prisma": "^5.6.0",
     "tailwindcss": "^3.3.3",
     "typescript": "latest"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }

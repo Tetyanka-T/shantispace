@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-// import { useFormatter } from 'next-intl'
 import { useState } from 'react'
 import FilterArticles from './FilterArticles'
 
@@ -20,15 +19,6 @@ const ArticlesList = ({ articles }) => {
   const onShowAllArticles = () => {
     setFilter(false)
   }
-
-  // const format = useFormatter()
-  // const currentTime = new Date()
-
-  // format.currentTime(currentTime, {
-  //   year: 'numeric',
-  //   month: 'long',
-  //   day: 'numeric'
-  // })
 
   return (
     <>
@@ -48,9 +38,6 @@ const ArticlesList = ({ articles }) => {
                 <h2 className='text-right mb-2'>
                   Тема: {article.fields.thema}
                 </h2>
-                {/* <p className='text-right text-sm my-2'>
-                    Опубліковано {currentTime(article.fields.dateCreate)}
-                  </p> */}
                 <div className={s.img_container}>
                   <Image
                     src={'https:' + article.fields.coverImg?.fields.file?.url}
@@ -79,9 +66,6 @@ const ArticlesList = ({ articles }) => {
               >
                 <Link href={`/articles/${slug}`}>
                   <h2 className='text-right mb-2 fonb'>{thema}</h2>
-                  {/* <p className='text-right text-sm my-2'>
-                    Опубліковано {currentTime(article.fields.dateCreate)}
-                  </p> */}
                   <div className={s.img_container}>
                     <Image
                       src={'https:' + coverImg?.fields.file?.url}
