@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.jsx",
     ".next/types/**/*.ts",
- "components/ArticlesPagetsx", "components/Articles/ArticlesPage.jsx", "components/Articles/ArticlesList.jsx", "app/articles/[slug]/page.tsx", "components/Articles/ArticlePageDescription.jsx", "components/Articles/FilterArticles.jsx", "components/Articles/Article.jsx", "app/chat/layout.jsx", "components/Chat/SideBar.jsx", "actions/getSession.js", "app/conversations/layout.tsx", "actions/getConversationById.js", "pages/api/pusher/auth.js", "components/NavBar/NavBar.jsx"  ],
+  "components/Articles/ArticlesPage.jsx", "components/Articles/ArticlesList.jsx", "app/articles/[slug]/page.tsx", "components/Articles/ArticlePageDescription.jsx", "components/Articles/FilterArticles.jsx", "components/Articles/Article.jsx", "app/chat/layout.jsx", "components/Chat/SideBar.jsx", "actions/getSession.js", "app/conversations/layout.tsx", "actions/getConversationById.js", "pages/api/pusher/auth.js", "components/NavBar/NavBar.jsx"  ],
   "exclude": ["node_modules"]
 }
