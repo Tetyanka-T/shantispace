@@ -12,7 +12,7 @@ const ProfileAdminBlog = () => {
   return (
     <div className="mx-auto pt-4">
       <div className="min-[1500px]:flex items-center">
-          <Image src="/profile-admin2.jpg" alt="Дарина Полозок" width={320} height={200} className="mx-auto md:w-96 lg:w-[420px]"/>
+          <Image src="/profile-admin-new.jpg" alt="Дарина Полозок" width={320} height={200} className="mx-auto md:w-96 lg:w-[420px]"/>
         <div className="my-2 text-lg font-normal tracking-normal leading-6 md:ml-4">
           <p className="indent-4">
           Привіт! Мене звати Дарина, і я дипломований фізичний терапевт, ерготерапевт, інструктор з йоги та йогатерапевт, який вірить у магію йоги як засобу для відновлення та гармонії у нашому тілі та розумі.
