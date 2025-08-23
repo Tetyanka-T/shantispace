@@ -43,9 +43,16 @@
   background-size: cover;
   padding: 190px 50px;
 }
-
+.rent_hero {
+  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_rent.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 50px;
+}
 .contact_maplocation iframe {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 .container_text__yoga {
   display: flex;
@@ -61,7 +68,6 @@
   background-position: center;
   background-size: cover;
   padding: 130px 30px;
-
 }
 .home_classes_container_img_therapy {
   position: relative;
@@ -78,6 +84,14 @@
   background-size: cover;
   padding: 150px 30px;
 }
+.home_classes_container_img_rent {
+  position: relative;
+  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/hero_rent.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 30px;
+}
 .therapy_img_container {
   background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/therapy2.jpg);
   background-repeat: no-repeat;
@@ -90,13 +104,15 @@
 .physical_hero {
   padding: 240px 50px;
 }
-.home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_classes_container_img_nails {
+.home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_classes_container_img_nails, .home_classes_container_img_rent {
   padding: 220px 30px;
 }
 .therapy_img_container {
   padding: 140px 30px;
 }
-
+.rent_hero {
+  padding: 240px 50px;
+}
  }
 @media screen and (min-width: 600px) {
   .yoga_img_container {
@@ -124,7 +140,11 @@
       margin: 0 -15px;
       padding: 300px 50px;
     }
-    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_img_container, .home_classes_container_img_nails {
+    .rent_hero {
+      margin: 0 -15px;
+      padding: 300px 50px;
+    }
+    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_img_container, .home_classes_container_img_nails, .home_classes_container_img_rent {
       padding: 300px 30px;
     }
     .therapy_img_container {
@@ -149,11 +169,15 @@
       margin: 0 -24px;
       padding: 300px 50px;
     }
+    .rent_hero {
+      margin: 0 -24px;
+      padding: 300px 50px;
+    }
     .home_img_container {
       margin: 0 -24px;
       padding: 400px 30px;
     }
-    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_classes_container_img_nails {
+    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_classes_container_img_nails, .home_classes_container_img_rent {
       padding: 400px 30px;
     }
     .therapy_img_container {
@@ -173,6 +197,10 @@
     }
     .physical_hero {
       padding: 400px 50px;
+    }
+    .rent_hero {
+      
+      padding: 500px 50px;
     }
     .home_img_container {
       margin: 0 -45px;

@@ -49,6 +49,9 @@ const NavBarUserMobile = ({ onClick }: {onClick: Function}) => {
         <li className="mb-2 border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
             <Link href="/physical-therapy">Фізична реабілітація</Link>
         </li>
+        <li className="mb-2 border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
+            <Link href="/rent">Оренда</Link>
+        </li>
         <li className="border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
             <Link href="/contacts">Контакти</Link>
         </li>

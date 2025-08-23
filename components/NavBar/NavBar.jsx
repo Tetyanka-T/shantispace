@@ -123,6 +123,11 @@ const NavBar = () => {
                 Фізична реабілітація
               </Link>
             </li>
+            <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
+              <Link href='/rent' aria-label='посилання на сторінку форенди'>
+                Оренда
+              </Link>
+            </li>
             <li className=' hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>
               <Link
                 href='/contacts'

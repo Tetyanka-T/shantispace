@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation'
 
 const ContactPage = () => {
   return (
-    <div className='h-screen'>
+    <div className='h-full'>
       <Navigation section="Контакти"/>
       <div className='pt-18'>
         <Contact/>
