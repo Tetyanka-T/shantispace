@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Завдяки йозі людина отримує знання про своє тіло, його стани, про техніки та методики щоденного впливу для покращення свого фізичного здоров&apos;я.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Йога як метод дуже добре впливає на емоційність, збудливість, порушення сну та  дисбаланси в станах збудження-розслаблення (депресивні стани).</p>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl" aria-label="посилання на телефон тренера з йоги">Записатись на практику</Link>
+          <a href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl" aria-label="посилання на телефон тренера з йоги">Записатись на практику</a>
         </li>
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Фізична реабілітація</h3>
@@ -62,7 +62,7 @@ export default function Home() {
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">В нашому просторі реабілітація проходить в групових та індивідуальних заняттях в групах різної направленості по нозології. Також є група з корекції постави у дітей.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Працюючи у сфері фізичної реабілітації ми використовуємо різноманітні знання та інновації, щоб забезпечити найкращу можливу допомогу пацієнтам.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Фізична реабілітація стає необхідним етапом для тих, хто пройшов травму чи операцію, допомагаючи повернутися до повноцінного життя та насолоджуватися його всіма аспектами.</p>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl" aria-label="посилання на телефон тренера з фізичної реабілітації">Записатись  на заняття</Link>
+          <a href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-3 md:mt-8 lg:text-xl" aria-label="посилання на телефон тренера з фізичної реабілітації">Записатись  на заняття</a>
         </li>
         <li>
           <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Практика стояння на цвяхах</h3>
@@ -72,7 +72,7 @@ export default function Home() {
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Стоячи на цвяхах, варто віддати себе моменту і відчути внутрішню силу, яка притаманна кожному з нас. Розслаблення тіла та розуму дозволяє відпустити напругу і відкрити для себе нові рівні усвідомлення.
             Пам&apos;ятай, що в цьому процесі важливо не боротися з собою, а дозволяти собі просто бути. Висловлюй емоції, слухай власне тіло, відчувай пульс своєї енергії. Ця практика — це можливість зануритися в себе і відкрити те, що може залишатися прихованим у повсякденному житті.
           </p>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-8 md:mt-8 lg:text-xl" aria-label="посилання для запису практики стояння на цвяхах">Записатись на практику</Link>
+          <a href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-8 md:mt-8 lg:text-xl" aria-label="посилання для запису практики стояння на цвяхах">Записатись на практику</a>
         </li>
           <li>
          <h3 className="mx-[20px] my-[20px] text-lg lg:text-xl 2xl:text-2xl">Погодинна оренда залу</h3>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Shanti Space — це місце, де кожен захід набуває особливої атмосфери. Ми пропонуємо в оренду камерний простір, створений для тих, хто цінує затишок, спокій та можливість зосередитися на головному.</p>
           <p className="mx-[20px] my-[20px] text-md lg:text-xl 2xl:text-xl">Це ідеальне місце для ваших тренувань, майстер-класів, зустрічей та семінарів. Тут ви знайдете все необхідне для продуктивної роботи та приємного відпочинку.</p>
-          <Link href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-8 md:mt-8 lg:text-xl" aria-label="посилання для запису практики стояння на цвяхах">Дізнатись деталі</Link>
+          <a href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 mb-8 md:mt-8 lg:text-xl" aria-label="посилання для запису практики стояння на цвяхах">Дізнатись деталі</a>
         </li>
       </ul>
       <p className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Дарина та Світлана - засновниці та тренери Shanti_space</p>

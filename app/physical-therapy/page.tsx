@@ -16,7 +16,7 @@ const PhysicalPage = () => {
       <div className={s.physical_hero}>
         <div className="text-center leading-7 text-2xl font-black tracking-wider">
           <h1 className="animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out text-3xl text-amber-950 md:text-[36px] lg:text-[48px]">Фізична реабілітація</h1>
-          <Link href="tel:+380977339045" className="animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out block w-[150px] rounded-md border-2 p-2 text-center text-lg border-amber-950 mx-auto mt-[20px] lg:w-[200px] lg:text-xl xl:mt-[40px]" aria-label="посилання на телефон для запису на фізичну реабілітацію">Записатись на заняття</Link>
+          <a href="tel:+380977339045" className="animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out block w-[150px] rounded-md border-2 p-2 text-center text-lg border-amber-950 mx-auto mt-[20px] lg:w-[200px] lg:text-xl xl:mt-[40px]" aria-label="посилання на телефон для запису на фізичну реабілітацію">Записатись на заняття</a>
         </div>
       </div>
       <p className="text-lg mx-3 my-2 lg:text-xl 2xl:text-2xl 2xl:mx-[60px]"><span className='font-bold'>Фізична реабілітація</span> – це комплекс заходів, спрямованих на відновлення повноцінної функціональності організму, особливо після серйозних травм та операцій.</p>
@@ -110,7 +110,7 @@ const PhysicalPage = () => {
                 <li className="mt-2">Понеділок, середа, п`ятниця - 16.00</li>
                 <li className="mt-2">Неділя - 09.00</li>
               </ul>
-          <Link href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Дарини Полозок">Записатись на заняття</Link>
+          <a href="tel:+380977339045" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Дарини Полозок">Записатись на заняття</a>
         </div>
         </div>
         <div className="mt-8 md:flex">
@@ -124,7 +124,7 @@ const PhysicalPage = () => {
             <li>Понеділок, середа, п`ятниця - 08.30</li>
             <li className="mt-2">Вівторок, четвер - 17.45</li>
           </ul>
-          <Link href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Світлани Погребняк">Записатись на заняття</Link>
+          <a href="tel:+380971250101" className="block w-[200px] rounded-md border-2 p-1 text-center text-lg border-amber-950 mx-auto mt-3 md:mt-8 lg:text-xl" aria-label="посилання на запис на заняття до Світлани Погребняк">Записатись на заняття</a>
         </div>  
         </div>
      </div>

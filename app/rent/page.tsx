@@ -1,15 +1,13 @@
 import type { Metadata } from 'next'
-import Link from "next/link"
 import Image from "next/image"
-import JoinIn from "@/components/JoinIn"
 import s from "@/app/styles/common.module.css"
 
 
 
 export const metadata: Metadata = {
-  title: 'ShantiSpace йога Кривий Ріг',
-  description: "Простір здоров'я та душевної рівноваги, індивідуальні та групові заняття з йоги, фізичної реабілітації, оздоровчої гімнастики (ЛФК) Кривий Ріг, оренда приміщення, погодинна оренда",
-  keywords: 'оренда приміщення, погодинна оренда для заходів, трансформаційні ігри',
+  title: 'Погодинна оренда залу в ShantiSpace Кривий Ріг',
+  description: "Погодинна оренда залу на м'яких карематах з чай-кава зоною Кривий Ріг, для йоги, майстер-класів, трансформаційних ігор, простір для заходів в оренду",
+  keywords: 'оренда приміщення, погодинна оренда залу для заходів, оренда залу для трансформаційних ігор, для майстеркласів, для психологічних практик, для медитацій, простір для тренінгів, зал на карематах, зручна локація',
  
 }
 const RentPage = () => {
@@ -18,7 +16,7 @@ const RentPage = () => {
     <div className={s.rent_hero}>
       <div className="text-center leading-7 text-2xl font-black tracking-wider">
         <h1 className="animate-fade-right animate-once animate-duration-[2000ms] animate-ease-in-out text-3xl text-amber-950 md:text-[36px] lg:text-[48px]">Погодинна оренда залу</h1>
-        <Link href="tel:+380971250101" className="animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out block w-[250px] rounded-md border-2 p-4 text-center text-xl border-amber-950 mx-auto mt-[40px] lg:w-[200px] lg:text-xl xl:mt-[40px] bg-stone-300/50" aria-label="посилання на телефон для запису на фізичну реабілітацію">Забронювати зал</Link>
+        <a href="tel:+380971250101" className="animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out block w-[250px] rounded-md border-2 p-4 text-center text-xl border-amber-950 mx-auto mt-[40px] lg:w-[200px] lg:text-xl xl:mt-[40px] bg-stone-300/50" aria-label="посилання на телефон для запису на фізичну реабілітацію">Забронювати зал</a>
       </div>
     </div>
     <div className="flex items-center justify-center my-10">
@@ -54,7 +52,7 @@ const RentPage = () => {
       </li>
       <li className="flex items-center mt-2">
           <Image src="/mukha.png" alt="малюнок асани"width={50} height={50}/>
-          <p className="ml-2">Міні-лекції, майстер-класи, репетиції.</p>
+          <p className="ml-2">Лекції, майстер-класи, репетиції.</p>
       </li>
       <li className="flex items-center mt-2">
           <Image src="/gode.png" alt="малюнок асани" width={50} height={50}/>
@@ -100,7 +98,7 @@ const RentPage = () => {
           <p>- взуття залишаємо при вході;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- на матах працюємо босоніж або у чистих шкарпетках;</p>
+          <p>- на матах працюємо босоніж або у шкарпетках;</p>
         </li>
         <li className="flex items-center mt-2">
           <p>- бережно ставимося до покриття та меблів;</p>
@@ -125,7 +123,7 @@ const RentPage = () => {
          Тут є все необхідне для комфортної роботи групи 10–15 осіб.
       </p>
       <p className="font-bold text-xl text-centr mx-3 my-8 lg:text-xl 2xl:text-2xl">Забронюйте час і використайте простір максимально ефективно.</p>
-      <Link href="tel:+380971250101" className="font-bold mb-6 block w-[200px] rounded-md border-2 p-2 text-center text-lg border-amber-950 mx-auto mt-[20px] lg:w-[200px] lg:text-xl xl:mt-[40px] bg-stone-300/50" aria-label="посилання на телефон для запису на фізичну реабілітацію">Забронювати зал</Link>
+      <a href="tel:+380971250101" className="font-bold mb-6 block w-[200px] rounded-md border-2 p-2 text-center text-lg border-amber-950 mx-auto mt-[20px] lg:w-[200px] lg:text-xl xl:mt-[40px] bg-stone-300/50" aria-label="посилання на телефон для запису на фізичну реабілітацію">Забронювати зал</a>
     </section>
     
   )
