@@ -53,7 +53,7 @@ const NavBarAdminMobile = ({ onClick }: {onClick: Function}) => {
                 <Link href="/physical-therapy">Фізична реабілітація</Link>
             </li>
              <li className="border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
-                <Link href="/rent">Оренда</Link>
+                <Link href="/rent">Оренда залу</Link>
             </li>
         </ul>
         

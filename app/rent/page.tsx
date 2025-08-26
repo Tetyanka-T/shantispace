@@ -19,12 +19,12 @@ const RentPage = () => {
         <a href="tel:+380971250101" className="animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out block w-[250px] rounded-md border-2 p-4 text-center text-xl border-amber-950 mx-auto mt-[40px] lg:w-[200px] lg:text-xl xl:mt-[40px] bg-stone-300/50" aria-label="посилання на телефон для запису на фізичну реабілітацію">Забронювати зал</a>
       </div>
     </div>
-    <div className="flex items-center justify-center my-10">
+    <div className="flex items-center justify-center my-10 mx-3 2xl:mx-[300px]">
       <Image src="/stand.png" alt="малюнок асани" width={70} height={60}/>
-      <h2 className="text-lg lg:text-2xl"><span className="font-bold">Shanti Space</span> — це місце, де шум міста залишається за дверима, а на перший план виходить головне: ваша справа та ваш комфорт. Ми створили камерний простір, де ви можете повністю зосередитися на своїй меті, не відволікаючись на дрібниці.</h2>
+      <h2 className="text-lg lg:text-xl 2xl:text-2xl"><span className="font-bold">Shanti Space</span> — це місце, де шум міста залишається за дверима, а на перший план виходить головне: ваша справа та ваш комфорт. Ми створили камерний простір, де ви можете повністю зосередитися на своїй меті, не відволікаючись на дрібниці.</h2>
     </div>
-    <h3 className="text-center text-lg lg:text-2xl">Ми пропонуємо</h3>
-    <ul className="text-lg  lg:text-xl 2xl:text-2xl">
+    <h3 className="font-bold mb-6 text-center text-xl 2xl:text-2xl">Ми пропонуємо</h3>
+    <ul className="mx-3 mb-3 text-lg lg:text-xl 2xl:text-2xl 2xl:mx-[300px]">
       <li className="flex items-center mt-2">
         <Image src="/double2.png" alt="малюнок асани" width={50} height={50}/>
         <p className="ml-2">безпечне покриття для тілесних практик, не ковзає та добре амортизує;</p>
@@ -44,8 +44,8 @@ const RentPage = () => {
       <Image src="/rent3.jpg" alt="фото залу" width={320} height={300} className="w-full h-auto object-contain"/>
       <Image src="/rent4.jpg" alt="фото залу" width={320} height={300} className="w-full h-auto object-contain"/>
     </div>
-    <h3 className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Функціональний простір для різних форматів:</h3>
-    <ul className="text-lg  lg:text-xl 2xl:text-2xl">
+    <h3 className="font-bold text-center mx-3 my-8 text-xl 2xl:text-2xl">Функціональний простір для різних форматів:</h3>
+    <ul className="mx-3 mb-3 text-lg lg:text-xl 2xl:text-2xl 2xl:mx-[300px]">
       <li className="flex items-center mt-2">
           <Image src="/double.png" alt="малюнок асани" width={50} height={50}/>
           <p className="ml-2">Йога, пілатес, стретчинг, функціональні та ігрові тренування, дитячі заняття</p>
@@ -59,7 +59,7 @@ const RentPage = () => {
           <p className="ml-2">Трансформаційні ігри, психологічні групи.</p>
       </li>
     </ul>
-    <h3 className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl">Переваги оренди залу в Shanti Space:</h3>
+    <h3 className="font-bold text-center mx-3 my-8 text-xl 2xl:text-2xl">Переваги оренди залу в Shanti Space:</h3>
       <ul className="mx-3 mb-3 text-lg lg:text-xl 2xl:text-2xl 2xl:mx-[300px]">
          <li className="flex items-center mt-2">
            <Image src="/onarm.png" alt="малюнок асани" width={40} height={50}/>
@@ -92,37 +92,45 @@ const RentPage = () => {
         <Image src="/rent6.jpg" alt="фото залу" width={320} height={300} className="w-full h-auto object-contain"/>
         <Image src="/rent7.jpg" alt="фото залу" width={320} height={300} className="w-full h-auto object-contain"/>
     </div>
-      <h3 className="text-lg text-center mx-3 my-4 lg:text-xl 2xl:text-2xl 2xl:mx-[60px]">Правила простору:</h3>
-      <ul className="mx-3 mb-3 text-lg lg:text-xl 2xl:text-2xl 2xl:mx-[60px]">
+      <h3 className="font-bold text-center mx-3 my-8 text-xl 2xl:text-2xl">Правила простору:</h3>
+      <ul className="mx-3 mb-3 text-lg lg:text-xl 2xl:text-2xl 2xl:mx-[300px]">
         <li className="flex items-center mt-2">
-          <p>- взуття залишаємо при вході;</p>
+          <p className='mr-3 text-start'>-</p>
+          <p>взуття залишаємо при вході;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- на матах працюємо босоніж або у шкарпетках;</p>
+          <p className='mr-3 '>-</p>
+          <p>на матах працюємо босоніж або у шкарпетках;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- бережно ставимося до покриття та меблів;</p>
+          <p className='mr-3'>-</p>
+          <p>бережно ставимося до покриття та меблів;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- прийом їжі - лише у чай-кава-зоні;</p>
+          <p className='mr-3'>-</p>
+          <p>прийом їжі - лише у чай-кава-зоні;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- без алкоголю та гучних вечірок;</p>
+          <p className='mr-3'>-</p>
+          <p>без алкоголю та гучних вечірок;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- поважаємо сусідів: після 21:00 — режим тиші;</p>
+          <p className='mr-3'>-</p>
+          <p>поважаємо сусідів: після 21:00 — режим тиші;</p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- самостійно прибираємо сміття; </p>
+          <p className='mr-3'>-</p>
+          <p>самостійно прибираємо сміття; </p>
         </li>
         <li className="flex items-center mt-2">
-          <p>- домашні тварини - за попередньою домовленістю.</p>
+          <p className='mr-3'>-</p>
+          <p>домашні тварини - за попередньою домовленістю.</p>
         </li>
       </ul>
-      <p className="text-lg mx-3 my-4 lg:text-xl 2xl:text-2xl mt-6">Shanti Space — це компактний та зручний простір, який підлаштовується під ваш формат: заняття, ігри, навчання чи зустрічі.
+      <p className="text-lg mx-3 my-4 lg:text-xl 2xl:text-2xl mt-10 2xl:mx-[300px]">Shanti Space — це компактний та зручний простір, який підлаштовується під ваш формат: заняття, ігри, навчання чи зустрічі.
          Тут є все необхідне для комфортної роботи групи 10–15 осіб.
       </p>
-      <p className="font-bold text-xl text-centr mx-3 my-8 lg:text-xl 2xl:text-2xl">Забронюйте час і використайте простір максимально ефективно.</p>
+      <p className="font-bold text-xl text-centr mx-3 my-8 lg:text-xl 2xl:text-3xl xl:mx-[400px]">Забронюйте час і використайте простір максимально ефективно.</p>
       <a href="tel:+380971250101" className="font-bold mb-6 block w-[200px] rounded-md border-2 p-2 text-center text-lg border-amber-950 mx-auto mt-[20px] lg:w-[200px] lg:text-xl xl:mt-[40px] bg-stone-300/50" aria-label="посилання на телефон для запису на фізичну реабілітацію">Забронювати зал</a>
     </section>
     
