@@ -30,6 +30,9 @@ const NavBarAdminDescktop = () => {
                 
                 {adminMenu && (
                     <ul className="text-gray-700 absolute top-[55px] left-0 bg-slate-200 p-5 flex justify-center items-center w-max z-50 rounded-md">
+                        <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950' onClick={() => setAdminMenu(false)}>
+                            <Link href='/blog'>Корисні статті</Link>
+                        </li>
                         <li className="mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950" onClick={() => setAdminMenu(false)}>
                             <Link href="/chat">Чат</Link>
                         </li>

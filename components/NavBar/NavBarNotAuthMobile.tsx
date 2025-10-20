@@ -33,6 +33,9 @@ const NavBarNotAuthMobile = ({ onClick }: {onClick: Function}) => {
             {userMenu && (
                 <ul className="px-3">
                     <li onClick={() => onClick()} className="my-2">
+                        <Link href="/blog">Корисні статті</Link>
+                    </li>
+                    <li onClick={() => onClick()} className="my-2">
                         <Link href="/questions">Питання</Link>
                     </li>
                 </ul>

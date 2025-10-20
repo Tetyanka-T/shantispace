@@ -105,6 +105,12 @@ const NavBar = () => {
                     className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'
                     onClick={() => setUserMenu(false)}
                   >
+                    <Link href='/blog'>Корисні статті</Link>
+                  </li>
+                  <li
+                    className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'
+                    onClick={() => setUserMenu(false)}
+                  >
                     <Link href='/questions'>Питання</Link>
                   </li>
                 </ul>

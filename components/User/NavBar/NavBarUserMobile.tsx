@@ -31,6 +31,9 @@ const NavBarUserMobile = ({ onClick }: {onClick: Function}) => {
             
             {userMenu && (
                 <ul className="px-3">
+                    <li className="my-2" onClick={() => onClick()}>
+                        <Link href='/blog'>Корисні статті</Link>
+                    </li>
                     <li onClick={() => onClick()} className="my-2">
                         <Link href="/chat">Чат</Link>
                     </li>
