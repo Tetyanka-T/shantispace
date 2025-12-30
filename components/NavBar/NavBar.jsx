@@ -126,7 +126,7 @@ const NavBar = () => {
                 href='/physical-therapy'
                 aria-label='посилання на сторінку фізичної реабілітації'
               >
-                Фізична реабілітація
+                Рухова активність
               </Link>
             </li>
             <li className='mr-8 hover:text-amber-950 font-bold hover:border-b-2 hover:border-amber-950'>

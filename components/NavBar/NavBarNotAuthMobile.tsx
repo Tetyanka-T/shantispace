@@ -46,7 +46,7 @@ const NavBarNotAuthMobile = ({ onClick }: {onClick: Function}) => {
         </li>
       
         <li className="border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
-            <Link href="/physical-therapy">Фізична реабілітація</Link>
+            <Link href="/physical-therapy">Рухова активність</Link>
         </li>
            <li className="border-b-2 border-amber-950 py-3" onClick={() => onClick()}>
             <Link href="/rent">Оренда залу</Link>

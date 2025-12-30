@@ -51,7 +51,7 @@ const NavBarUserDesctop = () => {
             </li>
     
             <li className="mr-9 font-semibold hover:text-amber-950 hover:border-b-2 hover:border-amber-950">
-                <Link href="/physical-therapy">Фізична реабілітація</Link>
+                <Link href="/physical-therapy">Рухова активність</Link>
             </li>
             <li className="font-semibold hover:text-amber-950 hover:border-b-2 hover:border-amber-950">
                 <Link href="/rent">Оренда</Link>
