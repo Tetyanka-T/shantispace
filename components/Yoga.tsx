@@ -97,10 +97,9 @@ const Yoga = () => {
             <li className="mt-2">Вівторок, четвер - 08.30</li>
             <li className="mt-2">Неділя - 10.00</li>
             <li className="mt-2">
-              <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">ЛФК (дорослі та діти):</p>
+              <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Оздоровча активність:</p>
               <ul>
                 <li>Понеділок, середа, п`ятниця - 16.00</li>
-                <li className="mt-2">Неділя - 09.00</li>
               </ul>
             </li>
           </ul>
@@ -111,7 +110,7 @@ const Yoga = () => {
       <div className="mt-8 md:flex">
         <div>
           <Image src="/svitlana.jpg" width={320} height={300} alt="Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури" className="w-full h-auto object-cover md:w-[490px]"/>
-          <h3 className="text-md text-center my-2">Світлана Погребняк - інструктор з йоги та оздоровчої фізкультури</h3>
+          <h3 className="text-md text-center my-2">Світлана Погребняк - інструктор з йоги та оздоровчої активності</h3>
         </div>  
         <div className="md:ml-8 mt-4">
           <p className="text-center text-lg my-2 lg:text-xl lg:ml-4">Розклад йога-практик:</p>
