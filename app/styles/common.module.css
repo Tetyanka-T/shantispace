@@ -1,7 +1,7 @@
-
 .slider_desktop {
   display: none;
 }
+
 .img_container {
   width: 100%;
   margin: 0 auto;
@@ -15,47 +15,62 @@
   height: 100%;
   object-fit: cover;
 }
+
 .home_hero {
-  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_main.jpg);
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 0.4962359943977591) 9%, rgba(148, 187, 233, 0.42620798319327735) 59%), url(../../public/hero_main.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 320px 30px;
   margin-top: -130px;
 }
+
 .home_img_container {
-  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/support.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../public/support.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 130px 30px;
   position: relative;
 }
+
 .yoga_hero {
-  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_yoga.jpg);
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 0.4962359943977591) 9%, rgba(148, 187, 233, 0.42620798319327735) 59%), url(../../public/hero_yoga.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 190px 50px;
 }
+
 .physical_hero {
-  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_therapy.jpg);
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 0.4962359943977591) 9%, rgba(148, 187, 233, 0.42620798319327735) 59%), url(../../public/hero_therapy.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 190px 50px;
 }
+
 .rent_hero {
-  background-image: radial-gradient(circle, rgba(238,174,202,0.4962359943977591) 9%, rgba(148,187,233,0.42620798319327735) 59%), url(../../public/hero_rent.jpg);
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 0.4962359943977591) 9%, rgba(148, 187, 233, 0.42620798319327735) 59%), url(../../public/hero_rent.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 190px 50px;
 }
+
+.rentlarge_hero {
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 0.4962359943977591) 9%, rgba(148, 187, 233, 0.42620798319327735) 59%), url(../../public/hero_rent_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 190px 50px;
+}
+
 .contact_maplocation iframe {
   width: 90%;
   margin: 0 auto;
 }
+
 .container_text__yoga {
   display: flex;
   flex-direction: column;
@@ -63,142 +78,192 @@
   align-items: center;
   margin: 30px 20px;
 }
+
 .home_classes_container_img_yoga {
   position: relative;
-  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/yoga.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../public/yoga.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 130px 30px;
 }
+
 .home_classes_container_img_therapy {
   position: relative;
-  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/therapy.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../public/therapy.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 130px 30px;
 }
+
 .home_classes_container_img_nails {
-  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/nails.JPG);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../public/nails.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 150px 30px;
 }
+
 .home_classes_container_img_rent {
   position: relative;
-  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/hero_rent.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../public/hero_rent.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 200px 30px;
 }
+
 .therapy_img_container {
-  background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../../public/therapy2.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../public/therapy2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 90px 30px;
 }
+
 @media screen and (min-width: 500px) {
 
-.physical_hero {
-  padding: 240px 50px;
+  .physical_hero {
+    padding: 240px 50px;
+  }
+
+  .home_classes_container_img_yoga,
+  .home_classes_container_img_therapy,
+  .home_classes_container_img_nails,
+  .home_classes_container_img_rent {
+    padding: 220px 30px;
+  }
+
+  .therapy_img_container {
+    padding: 140px 30px;
+  }
+
+  .rent_hero {
+    padding: 240px 50px;
+  }
 }
-.home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_classes_container_img_nails, .home_classes_container_img_rent {
-  padding: 220px 30px;
-}
-.therapy_img_container {
-  padding: 140px 30px;
-}
-.rent_hero {
-  padding: 240px 50px;
-}
- }
+
 @media screen and (min-width: 600px) {
   .yoga_img_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
- }
-  @media screen and (min-width: 768px) {
-    .slider_desktop {
-      display: block;
-    }
-    .yoga_hero {
-      padding: 200px 50px;
-    }
-    .home_hero {
-      margin: -140px -16px 0 -16px;
-      padding: 420px 50px;
-    }
-    .physical_hero {
-      margin: 0 -15px;
-      padding: 300px 50px;
-    }
-    .rent_hero {
-      margin: 0 -15px;
-      padding: 300px 50px;
-    }
-    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_img_container, .home_classes_container_img_nails, .home_classes_container_img_rent {
-      padding: 300px 30px;
-    }
-    .therapy_img_container {
-      padding: 200px 30px;
-    }
-   }
-  
+}
 
-   @media screen and (min-width: 1200px) {
-    .yoga_hero{
-      margin: 0 -24px;
-      padding: 280px 50px;
-    }
-    .home_hero {
-      margin: -140px -25px 0 -25px;
-      padding: 400px 90px;
-    }
-    .physical_hero {
-      margin: 0 -24px;
-      padding: 300px 50px;
-    }
-    .rent_hero {
-      margin: 0 -24px;
-      padding: 300px 50px;
-    }
-    .home_img_container {
-      margin: 0 -24px;
-      padding: 400px 30px;
-    }
-    .home_classes_container_img_yoga, .home_classes_container_img_therapy, .home_classes_container_img_nails, .home_classes_container_img_rent {
-      padding: 400px 30px;
-    }
-    .therapy_img_container {
-      padding: 320px 30px;
-    }
+@media screen and (min-width: 768px) {
+  .slider_desktop {
+    display: block;
   }
 
+  .yoga_hero {
+    padding: 200px 50px;
+  }
 
-  @media screen and (min-width: 1500px) {
-    .yoga_hero{
-      padding: 380px 50px;
-    }
-    .home_hero {
-      margin: 0 auto;
-      background-size: 2400px 1500px;
-      padding: 460px 90px;
-    }
-    .physical_hero {
-      padding: 400px 50px;
-    }
-    .rent_hero {
-      padding: 500px 50px;
-    }
-    .home_img_container {
-      margin: 0 -45px;
-      padding: 500px 30px;
-    }
-   }
-  
+  .home_hero {
+    margin: -140px -16px 0 -16px;
+    padding: 420px 50px;
+  }
+
+  .physical_hero {
+    margin: 0 -15px;
+    padding: 300px 50px;
+  }
+
+  .rent_hero {
+    margin: 0 -15px;
+    padding: 300px 50px;
+  }
+
+  .rentlarge_hero {
+    margin: 0 -15px;
+    padding: 300px 50px;
+  }
+
+  .home_classes_container_img_yoga,
+  .home_classes_container_img_therapy,
+  .home_img_container,
+  .home_classes_container_img_nails,
+  .home_classes_container_img_rent {
+    padding: 300px 30px;
+  }
+
+  .therapy_img_container {
+    padding: 200px 30px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .yoga_hero {
+    margin: 0 -24px;
+    padding: 280px 50px;
+  }
+
+  .home_hero {
+    margin: -140px -25px 0 -25px;
+    padding: 400px 90px;
+  }
+
+  .physical_hero {
+    margin: 0 -24px;
+    padding: 300px 50px;
+  }
+
+  .rent_hero {
+    margin: 0 -24px;
+    padding: 300px 50px;
+  }
+
+  .rentlarge_hero {
+    margin: 0 -24px;
+    padding: 300px 50px;
+  }
+
+  .home_img_container {
+    margin: 0 -24px;
+    padding: 400px 30px;
+  }
+
+  .home_classes_container_img_yoga,
+  .home_classes_container_img_therapy,
+  .home_classes_container_img_nails,
+  .home_classes_container_img_rent {
+    padding: 400px 30px;
+  }
+
+  .therapy_img_container {
+    padding: 320px 30px;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  .yoga_hero {
+    padding: 380px 50px;
+  }
+
+  .home_hero {
+    margin: 0 auto;
+    background-size: 2400px 1500px;
+    padding: 460px 90px;
+  }
+
+  .physical_hero {
+    padding: 400px 50px;
+  }
+
+  .rent_hero {
+    padding: 500px 50px;
+  }
+
+  .rentlarge_hero {
+    padding: 500px 50px;
+  }
+
+  .home_img_container {
+    margin: 0 -45px;
+    padding: 500px 30px;
+  }
+}
